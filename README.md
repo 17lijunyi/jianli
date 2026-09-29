@@ -6,7 +6,7 @@
   <p><a href="https://github.com/17lijunyi/jianli/releases/latest">下载 Mac 版</a> · <a href="#从源码构建">从源码构建</a> · <a href="https://github.com/17lijunyi/jianli/issues">反馈问题</a> · <a href="https://17lijunyi.github.io/">作者主页</a></p>
 </div>
 
-简励是李俊祎的个人项目，一款面向 Mac 的中文简历应用。提供简历编辑、模板选择、实时预览、PDF 导出与 AI 辅助，搭配玻璃质感窗口、悬浮控件和浅深色外观，让简历制作更直观、专注。
+简励是一款面向 Mac 的中文简历应用。提供简历编辑、模板选择、实时预览、PDF 导出与 AI 辅助，搭配玻璃质感窗口、悬浮控件和浅深色外观，让简历制作更直观、专注。
 
 ## 可以做什么
 
