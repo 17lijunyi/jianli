@@ -6,15 +6,13 @@
   <p><a href="https://github.com/17lijunyi/jianli/releases/latest">下载 Mac 版</a> · <a href="#从源码构建">从源码构建</a> · <a href="https://github.com/17lijunyi/jianli/issues">反馈问题</a> · <a href="https://17lijunyi.github.io/">作者主页</a></p>
 </div>
 
-简励基于 [JOYCEQL / Magic Resume](https://github.com/JOYCEQL/magic-resume) 2.0.9 二次开发，将简历编辑器带到 Mac 桌面。在保留中文文案、简历模板、实时预览和导出功能的基础上，加入 AppKit 玻璃材质、悬浮导航与底部操作条，以及统一的浅色、深色界面。
-
-> **使用条件：** 保留上游的 Apache 2.0 许可及非商业使用附加条款，个人非商业用途免费。源码公开不等于可自由商用；商业使用须依上游条款取得授权。完整原文见 [LICENSE](LICENSE)。这是独立维护的衍生项目，并非上游官方 Mac 客户端。
+简励是李俊祎的个人项目，一款面向 Mac 的中文简历应用。提供简历编辑、模板选择、实时预览、PDF 导出与 AI 辅助，搭配玻璃质感窗口、悬浮控件和浅深色外观，让简历制作更直观、专注。
 
 ## 可以做什么
 
 - **制作与管理简历**：新建、复制、搜索、模板切换、排版调整和实时预览。
 - **本地保存**：内容自动保存到本机，可选择文件夹备份；支持 JSON 导入、导出和 PDF 导出。
-- **AI 辅助**：沿用上游服务商与自定义模型配置，辅助优化简历内容；需自行配置 API，费用由服务商决定。
+- **AI 辅助**：支持多种 AI 服务商与自定义模型配置，辅助优化简历内容；需自行配置 API，费用由服务商决定。
 - **真实窗后玻璃**：使用 macOS `NSVisualEffectView` 取窗后材质，悬浮控件之外保留透明间隙，不使用壁纸截图冒充桌面。
 - **稳定的铺满与还原**：绿色按钮、窗口菜单和 `Control-Command-F` 共用还原尺寸记录；连续切换后可恢复原位置与大小。
 - **纸张保持独立**：界面玻璃化，简历仍按白色 A4 纸张排版；预览缩放不改变导出尺寸。
@@ -100,6 +98,8 @@ node tests/glass-preview.cjs
 窗口回归覆盖 24 次铺满/还原、24 次快速切换、6 次页面缩放、原生面板对齐与透明度，以及编辑、保存和重新加载。其他检查覆盖模板、JSON/PDF 导出、浅深外观及 A4 预览。CI 检查前端生产构建，原生桌面测试需在 Mac 图形会话中运行。
 
 ## 来源与许可
+
+> **使用条件：** 保留上游的 Apache 2.0 许可及非商业使用附加条款，个人非商业用途免费。源码公开不等于可自由商用；商业使用须依上游条款取得授权。完整原文见 [LICENSE](LICENSE)。这是独立维护的衍生项目，并非上游官方 Mac 客户端。
 
 感谢 [JOYCEQL / Magic Resume](https://github.com/JOYCEQL/magic-resume) 及其贡献者提供简历编辑器。此版本基于提交 `e369fbed4aa38e43257cf33817a521c6a5a559cd`，增加了桌面封装、AppKit 材质、简励品牌和相关界面调整。修改范围见 [MODIFICATIONS.md](MODIFICATIONS.md)，署名见 [NOTICE](NOTICE)。依赖和上游资源保留各自的许可与声明，字体说明见 [字体许可](magic-resume/public/fonts/licenses/README.md)。
 
