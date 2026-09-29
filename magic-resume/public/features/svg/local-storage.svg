@@ -1,0 +1,55 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes pulse-shield {
+      0%, 100% { stroke-width: 2; stroke-opacity: 1; transform: scale(1); }
+      50% { stroke-width: 3; stroke-opacity: 0.6; transform: scale(1.02); }
+    }
+    @keyframes lock-shackle {
+      0% { transform: translateY(-5px); }
+      20% { transform: translateY(0); }
+      80% { transform: translateY(0); }
+      90% { transform: translateY(-5px); }
+      100% { transform: translateY(-5px); }
+    }
+    @keyframes data-flow {
+      0% { stroke-dashoffset: 100; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+    .shield-anim { animation: pulse-shield 3s infinite ease-in-out; transform-origin: center; }
+    .lock-anim { animation: lock-shackle 3s infinite ease-in-out; }
+    .data-anim { animation: data-flow 2s infinite linear; stroke-dasharray: 100; }
+  </style>
+
+  <!-- Background Data Pattern -->
+  <pattern id="data-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#1B1B18" fill-opacity="0.1"/>
+  </pattern>
+  <rect x="0" y="0" width="400" height="300" fill="url(#data-pattern)" opacity="0.3"/>
+
+  <!-- Shield -->
+  <path d="M200 60C200 60 280 80 280 160C280 220 200 260 200 260C200 260 120 220 120 160C120 80 200 60 200 60Z" fill="#F9F9F7" stroke="#1B1B18" stroke-width="2" class="shield-anim"/>
+
+  <!-- Lock Form -->
+  <g transform="translate(170, 130)">
+    <!-- Animated Shackle -->
+    <path d="M15 20V15C15 7 21 0 30 0C39 0 45 7 45 15V20" stroke="#1B1B18" stroke-width="3" stroke-linecap="round" class="lock-anim"/>
+    <!-- Body -->
+    <rect x="0" y="20" width="60" height="45" rx="4" fill="#1B1B18"/>
+    <!-- Keyhole -->
+    <circle cx="30" cy="38" r="4" fill="#F2F0E9"/>
+    <path d="M30 42V50" stroke="#F2F0E9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Data Stream Entering -->
+  <path d="M80 160 H110" stroke="#1B1B18" stroke-width="2" stroke-linecap="round" class="data-anim"/>
+  <path d="M290 160 H320" stroke="#1B1B18" stroke-width="2" stroke-linecap="round" class="data-anim" style="animation-direction: reverse;"/>
+  
+  <!-- "Local" Label -->
+  <g transform="translate(160, 270)">
+    <rect x="0" y="0" width="80" height="20" rx="10" fill="#1B1B18" fill-opacity="0.05"/>
+    <text x="40" y="14" font-family="sans-serif" font-size="10" fill="#1B1B18" text-anchor="middle" letter-spacing="2">LOCAL</text>
+  </g>
+
+</svg>

@@ -1,0 +1,15 @@
+简励 / Jianli
+
+Derived from Magic Resume by JOYCEQL and its contributors.
+Upstream: https://github.com/JOYCEQL/magic-resume
+Source snapshot: e369fbed4aa38e43257cf33817a521c6a5a559cd (version 2.0.9).
+
+Desktop packaging, AppKit glass panels, floating Chinese UI, window restore
+handling and 简励 / JL branding: 17lijunyi, 2026.
+This is an independently maintained derivative, not an official upstream release.
+Modified source files carry notices; JSON and binary changes are listed in
+MODIFICATIONS.md. The original license and its non-commercial restrictions
+are reproduced in LICENSE and magic-resume/LICENSE.
+
+The JL raster icon was edited with an AI image tool. It does not imply an
+upstream endorsement. Third-party dependency licenses remain their own.

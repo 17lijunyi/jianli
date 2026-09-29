@@ -1,0 +1,1005 @@
+{
+  "common": {
+    "title": "简励",
+    "subtitle": "AI Driven Resume Editor",
+    "description": "简励 is an open source resume editor, free, privacy-first. No registration required, all data stored locally, support data backup and export, ensuring your resume data is always available.",
+    "dashboard": "Dashboard",
+    "edit": "Edit",
+    "delete": "Delete",
+    "newResume": "New Resume",
+    "copy": "Copy",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "deleteSuccess": "Deleted successfully",
+    "deleteModuleConfirm": "Are you sure you want to delete this module? This action cannot be undone.",
+    "configured": "Configured",
+    "notConfigured": "Not configured"
+  },
+  "home": {
+    "header": {
+      "title": "简励",
+      "startButton": "Get Started",
+      "features": "Features",
+      "pricing": "Pricing",
+      "about": "About",
+      "login": "Login",
+      "register": "Register",
+      "dashboard": "Dashboard"
+    },
+    "hero": {
+      "badge": "Smart Resume Creation",
+      "title": "Make Resume Creation Simple and Smart",
+      "subtitle": "简励 uses AI technology to help you quickly create professional resumes. No registration required, free to use, with secure data storage.",
+      "cta": "Get Started",
+      "secondary": "Browse Templates"
+    },
+    "features": {
+      "title": "Why Choose 简励?",
+      "subtitle": "We provide an all-in-one resume solution to make your job search journey smoother",
+      "ai": {
+        "badge": "AI Smart Check",
+        "title": "Smart Detection, Professional Advice",
+        "description": "Built-in smart grammar check, automatically identifies inappropriate expressions, provides professional modification suggestions, making your resume more outstanding.",
+        "item1": "Intelligent enhancement",
+        "item1_description": "AI automatically optimizes content expression, making your resume more professional",
+        "item2": "Grammar check",
+        "item2_description": "Automatically detects and corrects grammar and spelling errors"
+      },
+      "storage": {
+        "badge": "Local Storage",
+        "title": "Data Security, Privacy First",
+        "description": "All resume data is fully stored locally, no need to worry about privacy leaks. Support data export backup, ensure your resume data is always available.",
+        "item1": "Local file storage",
+        "item1_description": "Resume data securely stored on your computer's hard drive",
+        "item2": "Multiple export formats",
+        "item2_description": "Support PDF and JSON format export",
+        "item3": "Support data export backup"
+      },
+      "preview": {
+        "badge": "Real-time Preview",
+        "title": "What You See Is What You Get",
+        "item1": "Real-time preview of editing effects",
+        "item2": "Multiple export format support"
+      }
+    },
+    "news": {
+      "label": "News",
+      "content": "New AI Resume Enhancement Feature is Live"
+    },
+    "footer": {
+      "copyright": " 2025 Magic Resume. All rights reserved."
+    },
+    "changelog": "Changelog",
+    "cta": {
+      "title": "Start Your New Career Chapter",
+      "description": "Start using 简励 now to create an impressive resume",
+      "button": "Start Using for Free"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Is 简励 free to use?",
+          "answer": "简励 is currently free, meeting basic resume creation needs. The open-source version's features will remain unchanged"
+        },
+        {
+          "question": "Is my resume data secure?",
+          "answer": "Yes, very secure. 简励 uses local storage, meaning all your data is stored on your own device with no cloud storage, ensuring complete privacy protection."
+        },
+        {
+          "question": "What export formats are supported?",
+          "answer": "We currently support PDF export, PNG long image export, browser print, JSON config export, and Markdown export. PDF is best for formal applications and archiving, while PNG long image is useful for mobile previews, portfolio display, or image-upload workflows."
+        },
+        {
+          "question": "How can I sync across devices?",
+          "answer": "We provide JSON configuration export, allowing you to save your resume settings in JSON format, accessible anytime, anywhere, on any device."
+        },
+        {
+          "question": "How customizable is it?",
+          "answer": "We offer rich customization options, including colors, layouts, and more, allowing you to adjust your resume style according to personal preferences and industry requirements."
+        }
+      ]
+    }
+  },
+  "dashboard": {
+    "sidebar": {
+      "appName": "简励",
+      "resumes": "Resumes",
+      "settings": "Settings",
+      "templates": "Templates",
+      "ai": "AI Config"
+    },
+    "resumes": {
+      "created": "Created At",
+      "synced": "Synced Files",
+      "view": "View",
+      "myResume": "My Resumes",
+      "create": "Create Resume",
+      "newResume": "New Resume",
+      "newResumeDescription": "Create a new resume to get started.",
+      "import": "Import Resume",
+      "untitled": "Untitled Resume",
+      "importSuccess": "Configuration imported successfully",
+      "importError": "Import failed, please check the file format",
+      "importDialog": {
+        "title": "Import Resume",
+        "jsonTitle": "Import JSON",
+        "jsonDescription": "Import an exported resume config file (.json)",
+        "pdfTitle": "Import PDF",
+        "pdfDescription": "Extract content with your vision model. Up to 10 pages and 20 MB.",
+        "importing": "Importing, please wait...",
+        "pdfSuccess": "PDF imported successfully",
+        "pdfError": "PDF import failed. Check the file and PDF model settings.",
+        "configRequired": "Add a PDF-capable model in AI settings and assign it to PDF import.",
+        "modelLabel": "Import model: {model}",
+        "configure": "Configure model",
+        "previewTitle": "Review extracted resume",
+        "previewDescription": "Content will use the default template. Review and edit all details in the editor after creation. Original layout and photos are not retained.",
+        "confirmImport": "Create resume",
+        "cancelImport": "Cancel",
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Projects",
+        "missingName": "No name was recognized. Review the resume after creation.",
+        "errors": {
+          "configRequired": "Enter the PDF model API key, model ID and Base URL.",
+          "invalidRequest": "Invalid import request. Refresh and try again.",
+          "invalidProvider": "Provider and API protocol do not match. Check PDF settings.",
+          "invalidEndpoint": "Base URL must be an HTTP(S) URL without query parameters or credentials.",
+          "invalidImages": "Invalid page images. Select the PDF again.",
+          "tooManyPages": "PDF exceeds 10 pages. Split it before importing. No pages were imported.",
+          "fileTooLarge": "PDF exceeds 20 MB. Compress it and try again.",
+          "requestTooLarge": "Page images exceed the request size limit. Split the PDF and try again.",
+          "invalidPdf": "Unable to read the PDF. Check for corruption or encryption.",
+          "authenticationFailed": "The API key was rejected by this endpoint. Check the compatible service URL if this is a relay key.",
+          "modelAccessDenied": "The API key is valid, but this project cannot access the selected model.",
+          "rateLimited": "Provider rate limit or quota reached. Check your quota and retry later.",
+          "modelOrEndpointError": "The model or endpoint rejected this request. Check model ID, Base URL, protocol and image input support.",
+          "upstreamError": "The model service is unavailable. Try again later.",
+          "networkError": "Unable to connect to the model service. Check server network, proxy and Base URL.",
+          "timeout": "Recognition timed out. Reduce the page count or use a faster vision model.",
+          "invalidOutput": "The model returned an invalid resume structure. Retry or use another model.",
+          "emptyOutput": "No valid resume content was recognized. Check the PDF or change vision models.",
+          "truncatedOutput": "Model output was truncated. Reduce the page count and retry. No resume was created.",
+          "refused": "The model declined this content. Check the file or use another model.",
+          "visionTestFailed": "The test image was not read correctly. Verify image input support for this model and endpoint."
+        }
+      },
+      "notice": {
+        "title": "Attention",
+        "description": "It is recommended to configure a resume backup folder in the settings to prevent your data from being lost when the browser cache is cleared",
+        "goToSettings": "Go to Settings"
+      },
+      "deleteConfirmTitle": "Confirm Delete Resume?",
+      "deleteConfirmDescription": "This action cannot be undone. This will permanently delete this resume and remove the data from your device.",
+      "createDialog": {
+        "title": "Create New Resume",
+        "description": "Start a new resume from a blank template",
+        "tabs": {
+          "fromTemplate": "From Template",
+          "uploadFile": "Upload File"
+        },
+        "namePlaceholder": "Name",
+        "switchTemplate": "Switch Template",
+        "cancel": "Cancel",
+        "create": "Create",
+        "blankTitle": "Blank Resume",
+        "startFromBlank": "Start from Blank",
+        "startFromTemplate": "Start from Template",
+        "blankCardDescription": "Use a default built-in layout and start from scratch.",
+        "blankThumbnailDescription": "Start with a clean page and shape a code-driven resume with complete creative control.",
+        "createNow": "Create Now",
+        "backToGrid": "Back to template grid",
+        "blankPreviewDescription": "Choose a blank page and build everything from zero, without any preset constraints.",
+        "useThisTemplate": "Use This Template",
+        "sample": {
+          "company": "Google",
+          "position": "Senior Software Engineer",
+          "present": "Present",
+          "workDescription": "Led the frontend team and improved page performance by 40%."
+        }
+      }
+    },
+    "settings": {
+      "title": "Settings",
+      "syncDirectory": {
+        "title": "Sync Directory",
+        "description": "Choose a folder to sync and backup your resumes.",
+        "currentSyncFolder": "Current Sync Folder",
+        "noFolderConfigured": "No folder configured",
+        "changeFolder": "Change Folder",
+        "selectFolder": "Select Folder"
+      },
+      "sync": {
+        "title": "Sync Directory",
+        "description": "Choose a folder to sync and backup your resumes.",
+        "select": "Select Folder"
+      },
+      "ai": {
+        "title": "AI Configuration",
+        "currentModel": "Current Model",
+        "selectModel": "Select Model",
+        "getApiKey": "Get API Key",
+        "doubao": {
+          "title": "Doubao",
+          "description": "Get API key from Volcengine",
+          "apiKey": "Doubao API Key",
+          "modelId": "Model ID"
+        },
+        "deepseek": {
+          "title": "DeepSeek",
+          "description": "Get API key from DeepSeek Platform",
+          "apiKey": "DeepSeek API Key"
+        },
+        "openai": {
+          "title": "OpenAI",
+          "description": "Obtain the API key at OpenAI or an open platform compatible with the OpenAI format",
+          "apiKey": "OpenAI API Key",
+          "modelId": "Model ID",
+          "apiEndpoint": "API Endpoint, example: https://openai.example.org/v1"
+        },
+        "gemini": {
+          "title": "Gemini",
+          "description": "Supports polish, grammar check, and PDF image resume import. Recommended model: gemini-flash-latest",
+          "apiKey": "Gemini API Key",
+          "modelId": "Gemini Model ID"
+        },
+        "workspace": {
+          "eyebrow": "WORKSPACE / PREFERENCES",
+          "title": "AI models",
+          "description": "Manage models in one place. Choose the right one for resume writing and PDF recognition.",
+          "catalogDescription": "Configure one API key per provider, use built-in models or fetch more from the provider, then assign them to writing and PDF parsing.",
+          "addModel": "Add model",
+          "add": "Add",
+          "library": "My models",
+          "assignments": "Model assignments",
+          "providerConfig": "Model settings",
+          "providerConfigHint": "Choose a provider and enter its connection details",
+          "providersTitle": "Model providers",
+          "providersHint": "Choose a provider and configure it once",
+          "providerModelsHint": "Enter an API key to use the models below",
+          "providerKeyPlaceholder": "Enter this provider's API key",
+          "keySharedHint": "All models from this provider share this key. It is saved in this browser.",
+          "compatibleService": "Use an OpenAI-compatible service",
+          "customEndpointActive": "Using a custom compatible-service endpoint",
+          "compatibleServiceHint": "Keep the default URL for an official OpenAI key. For a relay or compatible service, enter its API base URL.",
+          "builtinModels": "Built-in models",
+          "availableModels": "Available models",
+          "builtinModelsHint": "No model ID required",
+          "modelCount": "{count} models",
+          "recommended": "Recommended",
+          "usedByText": "Used for writing",
+          "usedByPdf": "Used for PDF parsing",
+          "formHint": "Settings are saved automatically in this browser",
+          "configured": "Configured",
+          "textTag": "Text",
+          "textChange": "Choose the writing model",
+          "pdfChange": "Choose the PDF model",
+          "textTitle": "Writing assistant",
+          "textDescription": "Polish · Grammar check",
+          "pdfTitle": "PDF parsing",
+          "pdfDescription": "Read pages · Extract content",
+          "unassigned": "Choose a model",
+          "noModels": "Add a model first",
+          "noPdfModels": "No PDF-capable models",
+          "textBadge": "Writing",
+          "pdfBadge": "PDF import",
+          "incomplete": "Incomplete",
+          "libraryEmpty": "Add your first model to manage it here.",
+          "emptyTitle": "Connect your first model",
+          "emptyDescription": "Enter your provider API key and model ID to polish resumes. Models with image input can also import PDFs.",
+          "localStorage": "Settings stay in this browser. Requests are sent to your chosen provider.",
+          "newModel": "Add a model connection",
+          "editModel": "Model settings",
+          "unsaved": "Unsaved changes",
+          "saved": "Settings saved · Ready to test",
+          "delete": "Delete model",
+          "deleteModel": "Delete model {model}",
+          "provider": "Provider",
+          "name": "Display name",
+          "optional": "Optional",
+          "namePlaceholder": "e.g. Everyday writing, Resume reader",
+          "getKey": "Get an API key",
+          "keyPlaceholder": "Enter your provider API key",
+          "keyRequired": "Enter an API key.",
+          "showKey": "Show API key",
+          "hideKey": "Hide API key",
+          "modelId": "Model ID",
+          "modelPlaceholder": "Enter the model ID from your provider",
+          "modelRequired": "Enter a model ID.",
+          "modelHint": "Use the exact model ID from your provider. Doubao also accepts an inference endpoint ID.",
+          "supportsPdf": "Supports PDF image recognition",
+          "pdfHint": "Enable only for models that accept images. The model will then appear in the PDF import selector above.",
+          "pdfSimpleHint": "Enable when the model accepts images. It can then be used for PDF parsing.",
+          "advanced": "Connection & advanced settings",
+          "endpointHint": "The official endpoint is prefilled. Change it for proxies, compatible services or another region.",
+          "endpointInvalid": "Enter an HTTP(S) base URL without query parameters or credentials.",
+          "protocol": "API protocol",
+          "testText": "Test text connection",
+          "testPdf": "Test PDF recognition",
+          "detectConnection": "Test connection",
+          "detecting": "Testing connection…",
+          "connectionSuccess": "Connection successful",
+          "connectionFailed": "Connection failed. Check the settings.",
+          "autoSaved": "Changes saved automatically",
+          "testHint": "Tests use sample content and a small amount of API quota. Testing does not save changes.",
+          "pdfTestSuccess": "Image recognition and JSON response verified.",
+          "textTestSuccess": "Text connection verified.",
+          "saveHint": "Saving updates every feature using this model.",
+          "cancel": "Cancel",
+          "save": "Save model",
+          "saveSuccess": "Model saved",
+          "assignmentSaved": "Model assignment updated",
+          "unsavedTitle": "Keep these changes?",
+          "unsavedDescription": "This model has unsaved changes. Save or discard them before switching.",
+          "keepEditing": "Keep editing",
+          "discard": "Discard changes",
+          "saveAndContinue": "Save and switch",
+          "deleteTitle": "Delete “{name}”?",
+          "deleteDescription": "This removes the local model configuration. Features using it will need another model. Existing resumes are unaffected.",
+          "providers": {
+            "openai": "OpenAI / compatible",
+            "qwen": "Qwen",
+            "doubao": "Doubao",
+            "deepseek": "DeepSeek",
+            "gemini": "Gemini",
+            "anthropic": "Claude"
+          },
+          "protocols": {
+            "chat-completions": "Chat Completions",
+            "responses": "Responses",
+            "gemini": "Gemini API",
+            "anthropic": "Anthropic Messages"
+          },
+          "fetchModels": {
+            "button": "Fetch model list",
+            "noKey": "Enter the API key first",
+            "success": "Model list fetched",
+            "empty": "The provider returned no models",
+            "failed": "Failed to fetch the model list",
+            "listTitle": "Models from the provider",
+            "add": "Add",
+            "addModel": "Add model {model}",
+            "added": "Added",
+            "customModel": "Custom model from the provider's model list",
+            "errors": {
+              "configRequired": "Check the API key",
+              "invalidProvider": "Invalid provider configuration",
+              "invalidEndpoint": "Check the API endpoint",
+              "requestTooLarge": "The request is too large",
+              "authenticationFailed": "The API key is invalid. Check the key.",
+              "modelAccessDenied": "This API key cannot access the model list",
+              "rateLimited": "The provider rate-limited the request. Try again later.",
+              "modelOrEndpointError": "The provider rejected the request. Check the API endpoint.",
+              "upstreamError": "The provider is temporarily unavailable. Try again later.",
+              "networkError": "Unable to connect to the provider. Check the network and API endpoint.",
+              "timeout": "Fetching the model list timed out. Try again later.",
+              "invalidRequest": "Invalid request. Try again."
+            }
+          }
+        }
+      }
+    },
+    "templates": {
+      "title": "Templates",
+      "useTemplate": "Use Template",
+      "preview": "Preview",
+      "switchTemplate": "Switch Template",
+      "classic": {
+        "name": "Classic",
+        "description": "Traditional and minimalist layout, suitable for most job applications"
+      },
+      "modern": {
+        "name": "Two Column",
+        "description": "Classic two-column layout, highlighting personal characteristics"
+      },
+      "leftRight": {
+        "name": "Section Title Background",
+        "description": "Distinctive section titles with background color"
+      },
+      "timeline": {
+        "name": "Timeline Layout",
+        "description": "Timeline style, emphasizing chronological order of experiences"
+      },
+      "minimalist": {
+        "name": "Minimalist",
+        "description": "Large amount of whitespace, clean and pure layout style"
+      },
+      "elegant": {
+        "name": "Elegant",
+        "description": "Centered title single-column design, with a touch of elegance"
+      },
+      "creative": {
+        "name": "Creative",
+        "description": "Visual contrast design, vibrant and personalized"
+      },
+      "editorial": {
+        "name": "Editorial",
+        "description": "Luxurious blend of bold serif and refined sans-serif typography"
+      },
+      "swiss": {
+        "name": "Swiss Aesthetic",
+        "description": "Artistic Bauhaus layout with strong typographic hierarchy and geometric accents, showing modern minimalism"
+      }
+    }
+  },
+  "pdfExport": {
+    "modal": {
+      "title": "Export Resume",
+      "subtitle": "Select the format you want to export your resume",
+      "pdfDesc": "High-precision rendering with 100% format accuracy. Recommended for job applications.",
+      "longPagePdfDesc": "Renders the entire resume as an image in a custom-height, single-page PDF. Best for online preview and sharing; not recommended for printing, text selection, or ATS parsing.",
+      "longPageImageDesc": "Exports the entire resume as a single tall PNG. Best for mobile preview, portfolios, and image uploads; not recommended for formal applications or printing.",
+      "printDesc": "Save via system print dialog. Use as a fallback or for custom margins.",
+      "jsonDesc": "Export your resume data as JSON to backup or transfer between devices.",
+      "markdownDesc": "Convert to plain Markdown text for easy sharing with AI models.",
+      "privacyNotice": "简励 promise never to collect, upload, or store any of your resume data. Your privacy is fully protected."
+    },
+    "button": {
+      "export": "Export",
+      "exportPdf": "Export PDF (Server)",
+      "exportLongPagePdf": "PDF (Long Page)",
+      "exportLongPageImage": "PNG (Long Image)",
+      "exportJson": "Export JSON Config",
+      "exportMarkdown": "Export Markdown",
+      "exporting": "Exporting...",
+      "exportingJson": "Exporting...",
+      "exportingMarkdown": "Exporting...",
+      "print": "Browser Print"
+    },
+    "toast": {
+      "success": "PDF exported successfully",
+      "error": "PDF export failed",
+      "imageSuccess": "PNG long image exported successfully",
+      "imageError": "PNG long image export failed",
+      "jsonSuccess": "Configuration exported successfully",
+      "jsonError": "Configuration export failed",
+      "markdownSuccess": "Markdown exported successfully",
+      "markdownError": "Markdown export failed"
+    }
+  },
+  "previewDock": {
+    "switchTemplate": "Switch Template",
+    "grammarCheck": {
+      "idle": "AI Grammar Check",
+      "checking": "Checking...",
+      "configurePrompt": "Please configure AI Model",
+      "configureButton": "Configure",
+      "errorToast": "Grammar check failed, please try again"
+    },
+    "sidePanel": {
+      "expand": "Expand Side Panel",
+      "collapse": "Collapse Side Panel"
+    },
+    "editPanel": {
+      "expand": "Expand Edit Panel",
+      "collapse": "Collapse Edit Panel"
+    },
+    "previewPanel": {
+      "expand": "Expand Preview Panel",
+      "collapse": "Collapse Preview Panel"
+    },
+    "github": "GitHub",
+    "backToDashboard": "Back to Dashboard",
+    "copyResume": {
+      "tooltip": "Copy Resume",
+      "success": "Resume copied successfully",
+      "error": "Failed to copy resume"
+    },
+    "export": {
+      "tooltip": "Export Resume",
+      "pdf": "Export PDF",
+      "json": "Export JSON",
+      "markdown": "Export Markdown",
+      "print": "Print"
+    },
+    "autoOnePage": {
+      "tooltip": "Auto Fit One Page",
+      "enabled": "One page mode enabled",
+      "disabled": "One page mode disabled",
+      "cannotFit": "Too much content. Optimized as much as possible but cannot fit on one page. Try simplifying the content or adjusting margins and font size in the sidebar."
+    },
+    "pageBreakLine": {
+      "tooltip": "Page Break Line",
+      "visible": "Page break line shown",
+      "hidden": "Page break line hidden"
+    },
+    "backup": {
+      "configured": "Backed up",
+      "notConfigured": "Not backed up",
+      "clickToConfigure": "Click to configure"
+    }
+  },
+  "workbench": {
+    "sidePanel": {
+      "layout": {
+        "title": "Layout",
+        "addCustomSection": "Add Module",
+        "addCustomSectionOption": "Add Custom Section",
+        "standardSections": {
+          "skills": "Skills",
+          "experience": "Experience",
+          "projects": "Projects",
+          "education": "Education",
+          "selfEvaluation": "Self Evaluation",
+          "certificates": "Certificates"
+        }
+      },
+      "theme": {
+        "title": "Theme Color",
+        "custom": "Custom"
+      },
+      "typography": {
+        "title": "Typography",
+        "font": {
+          "title": "Font",
+          "alibaba": "Alibaba PuHuiTi",
+          "misans": "MiSans",
+          "notosanssc": "Noto Sans SC",
+          "sourcehanserifsc": "Source Han Serif SC",
+          "note": "MiSans is used under its free commercial license. Keep MiSans attribution when distributing this project."
+        },
+        "lineHeight": {
+          "title": "Line Height",
+          "normal": "Default",
+          "relaxed": "Relaxed",
+          "loose": "Loose"
+        },
+        "baseFontSize": {
+          "title": "Base Font Size"
+        },
+        "headerSize": {
+          "title": "Section Header Size"
+        },
+        "subheaderSize": {
+          "title": "Subsection Header Size"
+        }
+      },
+      "spacing": {
+        "title": "Spacing",
+        "pagePadding": {
+          "title": "Page Padding"
+        },
+        "sectionSpacing": {
+          "title": "Section Spacing"
+        },
+        "paragraphSpacing": {
+          "title": "Paragraph Spacing"
+        }
+      },
+      "mode": {
+        "title": "Mode",
+        "useIconMode": {
+          "title": "Icon Mode"
+        },
+        "centerSubtitle": {
+          "title": "Center Subtitle"
+        },
+        "flexibleHeaderLayout": {
+          "title": "Long Title"
+        }
+      }
+    },
+    "basicPanel": {
+      "title": "Profile",
+      "avatar": "Avatar",
+      "basicField": "Basic",
+      "customField": "Custom",
+      "layout": "Align",
+      "customFields": {
+        "placeholders": {
+          "label": "Label",
+          "value": "Value"
+        },
+        "displayLabel": "Show label",
+        "addButton": "Add Custom Field"
+      },
+      "basicFields": {
+        "name": "Name",
+        "title": "Title",
+        "email": "Email",
+        "phone": "Phone",
+        "website": "Website",
+        "location": "Location",
+        "birthDate": "Birth Date",
+        "employementStatus": "Employ"
+      },
+      "fieldVisibility": {
+        "show": "Show",
+        "hide": "Hide"
+      },
+      "githubContributions": "GitHub Contributions"
+    },
+    "experiencePanel": {
+      "title": "Work Experience",
+      "addButton": "Add Work Experience",
+      "defaultProject": {
+        "company": "Tech Company Ltd.",
+        "position": "Senior Frontend Engineer",
+        "date": "2020 - Present",
+        "details": "Responsible for core product development..."
+      },
+      "placeholders": {
+        "company": "company name",
+        "position": "job title",
+        "date": "employment period",
+        "details": "job responsibilities and achievements"
+      }
+    },
+    "experienceItem": {
+      "labels": {
+        "company": "Company Name",
+        "position": "Position",
+        "date": "Employment Period",
+        "details": "Job Responsibilities"
+      },
+      "placeholders": {
+        "company": "Enter company name",
+        "position": "e.g., Frontend Engineer",
+        "date": "e.g., 2020-Present",
+        "details": "Describe your responsibilities and achievements in this role"
+      },
+      "buttons": {
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "visibility": {
+        "show": "Show",
+        "hide": "Hide"
+      }
+    },
+    "projectPanel": {
+      "title": "Project Experience",
+      "addButton": "Add Project",
+      "defaultProject": {
+        "name": "Personal Project",
+        "description": "Project Description",
+        "role": "Responsibilities",
+        "date": "2023.01 - 2023.06"
+      },
+      "placeholders": {
+        "name": "Project Name",
+        "description": "Briefly describe project background and goals",
+        "role": "Your role and responsibilities in the project",
+        "date": "Project time range",
+        "link": "Project link "
+      }
+    },
+    "projectItem": {
+      "labels": {
+        "name": "Project Name",
+        "role": "Project Role",
+        "date": "Project Period",
+        "description": "Project Description",
+        "technologies": "Tech Stack",
+        "link": "Project Link",
+        "linkLabel": "Display Text"
+      },
+      "placeholders": {
+        "name": "Enter project name",
+        "role": "Your role in the project",
+        "date": "Project time range",
+        "description": "Briefly describe project background and goals",
+        "technologies": "Technologies and tools used",
+        "link": "Project link",
+        "linkLabel": "Display text"
+      },
+      "hints": {
+        "linkLabel": "If display text is empty, the domain or full URL will be shown automatically. Only http:// and https:// links are supported."
+      },
+      "buttons": {
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "visibility": {
+        "show": "Show",
+        "hide": "Hide"
+      }
+    },
+    "educationPanel": {
+      "title": "Education",
+      "addButton": "Add Education",
+      "defaultProject": {
+        "school": "School Name",
+        "degree": "Degree",
+        "major": "Major",
+        "date": "2020.09 - 2024.06"
+      },
+      "placeholders": {
+        "school": "Enter school name",
+        "degree": "Select degree",
+        "major": "Enter major",
+        "date": "Enter study period"
+      }
+    },
+    "educationItem": {
+      "labels": {
+        "school": "School Name",
+        "degree": "Degree",
+        "major": "Major",
+        "date": "Study Period",
+        "description": "Description",
+        "gpa": "GPA",
+        "location": "Location",
+        "startDate": "Start Date",
+        "endDate": "End Date"
+      },
+      "placeholders": {
+        "school": "Enter school name",
+        "degree": "Select degree",
+        "major": "Enter major",
+        "date": "Enter study time range",
+        "description": "Enter school description",
+        "gpa": "Enter GPA",
+        "location": "Enter location"
+      },
+      "buttons": {
+        "edit": "Edit",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete"
+      },
+      "visibility": {
+        "show": "Show",
+        "hide": "Hide"
+      }
+    },
+    "certificatesPanel": {
+      "title": "Certificates",
+      "addButton": "Add Certificate",
+      "tips": "Upload or paste (Cmd/Ctrl + V) images directly. Adjust width ratio for horizontal layout.",
+      "width": "Width (%)",
+      "delete": "Delete",
+      "empty": "No images yet. Please upload or paste images."
+    }
+  },
+  "field": {
+    "selectDate": "Select Date",
+    "enterYear": "Enter Year",
+    "toPresent": "To Present"
+  },
+  "richEditor": {
+    "bold": "Bold",
+    "italic": "Italic",
+    "underline": "Underline",
+    "link": "Link",
+    "linkPlaceholder": "Enter a URL, for example https://example.com",
+    "linkApply": "Apply",
+    "linkRemove": "Remove",
+    "linkInvalid": "Please enter a valid URL",
+    "textColor": "Text Color",
+    "fontSize": "Body font size",
+    "fontSizeDefault": "Default",
+    "fontSizeMixed": "Mixed",
+    "fontSizeReset": "Reset to default",
+    "fontSizeSelectText": "Select body text first",
+    "backgroundColor": "Background Color",
+    "alignLeft": "Align Left",
+    "alignCenter": "Align Center",
+    "alignRight": "Align Right",
+    "alignJustify": "Justify",
+    "bulletList": "Bullet List",
+    "orderedList": "Ordered List",
+    "undo": "Undo",
+    "redo": "Redo",
+    "aiPolish": "AI Polish",
+    "paragraph": "Paragraph",
+    "heading1": "Heading 1",
+    "heading2": "Heading 2",
+    "heading3": "Heading 3",
+    "colors": {
+      "black": "Black",
+      "darkGray": "Dark Gray",
+      "gray": "Gray",
+      "red": "Red",
+      "orange": "Orange",
+      "orangeYellow": "Orange Yellow",
+      "yellow": "Yellow",
+      "yellowGreen": "Yellow Green",
+      "green": "Green",
+      "cyan": "Cyan",
+      "lightBlue": "Light Blue",
+      "blue": "Blue",
+      "purple": "Purple",
+      "magenta": "Magenta",
+      "pink": "Pink"
+    }
+  },
+  "iconSelector": {
+    "all": "All",
+    "searchPlaceholder": "Search icons...",
+    "noMatchingIcons": "No matching icons found",
+    "tryOtherKeywords": "Please try other search keywords",
+    "selectOtherCategory": "Please select another category",
+    "categories": {
+      "personal": "Personal Info",
+      "education": "Education",
+      "experience": "Work Experience",
+      "skills": "Skills",
+      "languages": "Languages",
+      "projects": "Projects",
+      "achievements": "Achievements",
+      "hobbies": "Hobbies",
+      "social": "Social Media",
+      "others": "Others"
+    },
+    "icons": {
+      "user": "User",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "website": "Website",
+      "mobile": "Mobile",
+      "education": "Education",
+      "school": "School",
+      "major": "Major",
+      "library": "Library",
+      "scholarship": "Scholarship",
+      "work": "Work",
+      "company": "Company",
+      "office": "Office",
+      "dateRange": "Date Range",
+      "workTime": "Work Time",
+      "programming": "Programming",
+      "system": "System",
+      "database": "Database",
+      "terminal": "Terminal",
+      "techStack": "Tech Stack",
+      "language": "Language",
+      "speaking": "Speaking",
+      "communication": "Communication",
+      "project": "Project",
+      "branch": "Branch",
+      "release": "Release",
+      "target": "Target",
+      "trophy": "Trophy",
+      "medal": "Medal",
+      "star": "Star",
+      "interest": "Interest",
+      "music": "Music",
+      "art": "Art",
+      "photography": "Photography",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "profile": "Profile",
+      "review": "Review",
+      "filter": "Filter",
+      "link": "Link",
+      "salary": "Salary",
+      "idea": "Idea",
+      "send": "Send",
+      "share": "Share",
+      "settings": "Settings",
+      "search": "Search",
+      "flag": "Flag",
+      "bookmark": "Bookmark",
+      "thumbsUp": "Thumbs Up",
+      "skill": "Skill"
+    }
+  },
+  "aiPolishDialog": {
+    "title": "AI Polish",
+    "description": {
+      "ready": "Add optional instructions, then click \"Start polish\"",
+      "polishing": "Polishing your content...",
+      "finished": "Content has been optimized, please check the result"
+    },
+    "error": {
+      "configRequired": "Please configure AI model first",
+      "polishFailed": "Polish failed",
+      "applied": "Polish content applied"
+    },
+    "content": {
+      "original": "Original Content",
+      "polished": "Polished Content"
+    },
+    "customInstructions": "Custom instructions",
+    "customInstructionsPlaceholder": "e.g. Use more technical terms, highlight metrics, keep tone formal… (optional)",
+    "button": {
+      "start": "Start polish",
+      "regenerate": "Regenerate",
+      "generating": "Generating...",
+      "apply": "Apply Content"
+    }
+  },
+  "photoConfig": {
+    "title": "Photo Settings",
+    "description": "Customize your resume photo",
+    "upload": {
+      "title": "Online Link",
+      "dragHint": "Drag and drop or click to upload image",
+      "sizeLimit": "Image size must not exceed 2MB",
+      "typeLimit": "Please upload an image file",
+      "urlPlaceholder": "Enter image link",
+      "invalidUrl": "Invalid image URL or inaccessible, please try another image link",
+      "timeout": "Loading timeout",
+      "loadError": "Failed to load image"
+    },
+    "config": {
+      "aspectRatio": "Aspect Ratio",
+      "size": "Size",
+      "width": "Width",
+      "height": "Height",
+      "border-radius": "Border Radius",
+      "widthPlaceholder": "Width",
+      "heightPlaceholder": "Height",
+      "ratios": {
+        "1:1": "1:1 Square",
+        "4:3": "4:3 Landscape",
+        "3:4": "3:4 Portrait",
+        "16:9": "16:9 Widescreen",
+        "custom": "Custom"
+      },
+      "borderRadius": {
+        "none": "None",
+        "medium": "Medium",
+        "full": "Circle",
+        "custom": "Custom",
+        "customPlaceholder": "Custom border radius"
+      }
+    },
+    "actions": {
+      "reset": "Reset",
+      "close": "Close",
+      "cancel": "Cancel",
+      "removePhoto": "Remove Photo"
+    }
+  },
+  "templates": {
+    "switchTemplate": "Switch Template"
+  },
+  "themeModal": {
+    "delete": {
+      "title": "Confirm Deletion",
+      "description": "Are you sure you want to delete {title}?",
+      "confirmText": "Delete",
+      "cancelText": "Cancel"
+    }
+  },
+  "grammarCheck": {
+    "title": "AI Grammar Check",
+    "description": "Found {count} suggestions",
+    "exit": "Exit",
+    "spelling": "Spelling",
+    "punctuation": "Punctuation",
+    "original": "Original",
+    "error_point": "Error",
+    "suggestion": "Suggestion",
+    "reason": "Reason",
+    "accept": "Apply",
+    "ignore": "Ignore",
+    "found_issues": "Found {count} issues",
+    "applied_success": "Changes applied",
+    "apply_error": "Text not found, cannot apply automatically",
+    "no_errors_title": "Perfect!",
+    "no_errors_desc": "No grammar or punctuation errors found."
+  },
+  "faqDialog": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "description": "Common tips and solutions for the 简励 workbench.",
+    "items": {
+      "browser-compatibility": {
+        "question": "Which browser is recommended?",
+        "answer": "We recommend using the latest version of Chrome or Edge for the best layout and export experience. Some outdated browsers may cause styling issues."
+      },
+      "export-failure": {
+        "question": "What if export fails or style is broken?",
+        "answer": "1. We recommend using Google Chrome (https://www.google.cn/intl/zh-CN/chrome/) for best compatibility.\n2. If it still fails, try in 'Incognito Mode' to exclude extension interference.\n3. Alternatively, click 'PDF (Backup)' in the export menu and select 'Save as PDF' in the print dialog."
+      },
+      "export-methods": {
+        "question": "Which export format should I use?",
+        "answer": "• PDF: Uses the backend service for high-precision rendering. Recommended for formal applications, printing, and archiving.\n\n• PDF (Long Page): Renders the resume as an image in a custom-height, single-page PDF. Best for online preview and sharing; not recommended for printing, text selection, or ATS parsing.\n\n• PNG (Long Image): Exports the resume as one tall image. Best for mobile preview, portfolios, and image-upload workflows.\n\n• PDF (Backup): Uses the browser's print dialog to save a PDF. Use it when the primary export service is unavailable or when you need to adjust print margins manually.\n\n• JSON Config: Exports a resume data backup for restoration or migration.\n\n• Markdown: Exports plain text for use in other tools."
+      },
+      "drag-and-drop": {
+        "question": "How do I drag and drop to reorder modules?",
+        "answer": "In the 'Layout' settings of the left edit panel, hover your cursor over the 'Drag Handle' (usually represented by a six-dot icon) on the left side of the module card. Click and hold the left mouse button to drag the module up or down to reorder the sections of your entire resume."
+      }
+    }
+  }
+}

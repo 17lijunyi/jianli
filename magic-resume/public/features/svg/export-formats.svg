@@ -1,0 +1,65 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes main-doc-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    @keyframes path-flow {
+      0% { stroke-dashoffset: 100; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+    @keyframes badge-pop-1 {
+      0% { transform: translate(260px, 100px) scale(0.8); opacity: 0; }
+      30% { transform: translate(260px, 100px) scale(1.1); opacity: 1; }
+      40% { transform: translate(260px, 100px) scale(1); opacity: 1; }
+      100% { transform: translate(260px, 100px) scale(1); opacity: 1; }
+    }
+    @keyframes badge-pop-2 {
+      0% { transform: translate(260px, 190px) scale(0.8); opacity: 0; }
+      50% { transform: translate(260px, 190px) scale(0.8); opacity: 0; }
+      80% { transform: translate(260px, 190px) scale(1.1); opacity: 1; }
+      90% { transform: translate(260px, 190px) scale(1); opacity: 1; }
+      100% { transform: translate(260px, 190px) scale(1); opacity: 1; }
+    }
+    .doc-pulse { animation: main-doc-pulse 3s infinite ease-in-out; transform-origin: 140px 150px; }
+    .flow-line { animation: path-flow 2s infinite linear; stroke-dasharray: 100; }
+    .badge-1 { animation: badge-pop-1 4s infinite ease-in-out; }
+    .badge-2 { animation: badge-pop-2 4s infinite ease-in-out; }
+  </style>
+
+  <!-- Main Resume Document (Left) -->
+  <g class="doc-pulse">
+    <rect x="90" y="80" width="100" height="140" rx="4" fill="#F9F9F7" stroke="#1B1B18" stroke-width="2"/>
+    <!-- Mock Content -->
+    <rect x="110" y="100" width="40" height="40" rx="20" fill="#1B1B18" fill-opacity="0.1"/>
+    <rect x="110" y="150" width="60" height="6" rx="2" fill="#1B1B18" fill-opacity="0.2"/>
+    <rect x="110" y="165" width="60" height="6" rx="2" fill="#1B1B18" fill-opacity="0.2"/>
+    <rect x="110" y="180" width="40" height="6" rx="2" fill="#1B1B18" fill-opacity="0.2"/>
+  </g>
+
+  <!-- Export Paths -->
+  <!-- Top Path to PDF -->
+  <path d="M200 120 C 220 120, 230 120, 250 120" stroke="#1B1B18" stroke-width="2" stroke-dasharray="4 4" stroke-opacity="0.2"/>
+  <path d="M200 120 C 220 120, 230 120, 250 120" stroke="#1B1B18" stroke-width="2" fill="none" class="flow-line"/>
+
+  <!-- Bottom Path to JSON -->
+  <path d="M200 180 C 220 180, 230 180, 250 180" stroke="#1B1B18" stroke-width="2" stroke-dasharray="4 4" stroke-opacity="0.2"/>
+  <path d="M200 180 C 220 180, 230 180, 250 180" stroke="#1B1B18" stroke-width="2" fill="none" class="flow-line" style="animation-delay: 0.5s"/>
+
+  <!-- PDF Badge (Top Right) -->
+  <g class="badge-1">
+    <rect x="-30" y="-20" width="60" height="40" rx="6" fill="#1B1B18"/> <!-- Dark bg for high contrast -->
+    <text x="0" y="5" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="14" fill="#F9F9F7">PDF</text>
+    <!-- Paper corner fold hint -->
+    <path d="M15 -20 L30 -5 L30 -20 Z" fill="#F9F9F7" fill-opacity="0.2"/> 
+  </g>
+
+  <!-- JSON Badge (Bottom Right) -->
+  <g class="badge-2">
+    <rect x="-35" y="-20" width="70" height="40" rx="6" fill="#F9F9F7" stroke="#1B1B18" stroke-width="2"/> <!-- Light bg, Dark border -->
+    <text x="0" y="5" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="14" fill="#1B1B18">{JSON}</text>
+  </g>
+
+</svg>

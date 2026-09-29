@@ -1,0 +1,90 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes text-optimize {
+      0% { width: 0; }
+      15% { width: 0; }
+      45% { width: 200px; }
+      85% { width: 200px; }
+      100% { width: 0; }
+    }
+    @keyframes wand-move {
+      0% { transform: translate(100px, 110px) rotate(-10deg); }
+      15% { transform: translate(100px, 110px) rotate(-10deg); }
+      45% { transform: translate(300px, 110px) rotate(10deg); }
+      85% { transform: translate(300px, 110px) rotate(10deg); }
+      100% { transform: translate(100px, 110px) rotate(-10deg); }
+    }
+    @keyframes sparkle-pop {
+      0%, 40% { transform: scale(0); opacity: 0; }
+      50% { transform: scale(1.2); opacity: 1; }
+      60% { transform: scale(1); opacity: 1; }
+      90% { transform: scale(1); opacity: 0; }
+      100% { transform: scale(0); opacity: 0; }
+    }
+    .mask-reveal { animation: text-optimize 4s infinite ease-in-out; }
+    .wand-anim { animation: wand-move 4s infinite ease-in-out; }
+    .sparkle-anim-1 { animation: sparkle-pop 4s infinite ease-in-out; animation-delay: 0.5s; transform-origin: 280px 100px; }
+    .sparkle-anim-2 { animation: sparkle-pop 4s infinite ease-in-out; animation-delay: 0.7s; transform-origin: 290px 140px; }
+  </style>
+
+  <!-- Background Card -->
+  <rect x="80" y="50" width="240" height="200" rx="12" fill="#F9F9F7" stroke="#E6E6E3" stroke-width="2"/>
+  
+  <!-- UI Header -->
+  <rect x="80" y="50" width="240" height="30" rx="12" fill="#F2F0E9" fill-opacity="0.5"/>
+  <rect x="80" y="70" width="240" height="10" fill="#F2F0E9" fill-opacity="0.5"/>
+  <circle cx="100" cy="65" r="4" fill="#E6E6E3"/>
+  <circle cx="115" cy="65" r="4" fill="#E6E6E3"/>
+  
+  <!-- Text Content Area -->
+  <g transform="translate(100, 100)">
+    <!-- Original "Draft" Text (Lighter, Greier) -->
+    <g opacity="0.4">
+      <rect x="0" y="0" width="160" height="10" rx="2" fill="#91918E"/>
+      <rect x="0" y="25" width="190" height="10" rx="2" fill="#91918E"/>
+      <rect x="0" y="50" width="140" height="10" rx="2" fill="#91918E"/>
+      <rect x="0" y="75" width="170" height="10" rx="2" fill="#91918E"/>
+    </g>
+
+    <!-- Polished "Optimized" Text (Darker, Sharper) - Revealed by Mask -->
+    <defs>
+      <clipPath id="reveal-mask">
+        <rect x="0" y="-10" width="0" height="120" class="mask-reveal"/>
+      </clipPath>
+    </defs>
+    
+    <g clip-path="url(#reveal-mask)">
+      <rect x="0" y="0" width="160" height="10" rx="2" fill="#1B1B18"/>
+      <rect x="0" y="25" width="190" height="10" rx="2" fill="#1B1B18"/>
+      <rect x="0" y="50" width="140" height="10" rx="2" fill="#1B1B18"/>
+      <rect x="0" y="75" width="170" height="10" rx="2" fill="#1B1B18"/>
+      
+      <!-- Subtle "Highlight" effect on the text being polished -->
+      <rect x="0" y="-10" width="2" height="120" fill="#1B1B18" fill-opacity="0.1" transform="translate(200, 0)">
+        <animate attributeName="x" values="0;200;200;0" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- Magic Wand / Enhancer -->
+  <g class="wand-anim">
+    <!-- Wand Stem -->
+    <line x1="0" y1="0" x2="-20" y2="20" stroke="#1B1B18" stroke-width="3" stroke-linecap="round"/>
+    <!-- Wand Tip -->
+    <circle cx="0" cy="0" r="4" fill="#1B1B18"/>
+    <!-- Tip Glow (Neutral) -->
+    <circle cx="0" cy="0" r="8" stroke="#1B1B18" stroke-width="1" stroke-opacity="0.2">
+      <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Sparkles (Neutral/Dark) -->
+  <g class="sparkle-anim-1">
+    <path d="M10 0L12 8L20 10L12 12L10 20L8 12L0 10L8 8L10 0Z" fill="#1B1B18"/>
+  </g>
+  <g class="sparkle-anim-2">
+    <path d="M8 0L9.5 6L16 7.5L9.5 9L8 15L6.5 9L0 7.5L6.5 6L8 0Z" fill="#1B1B18" fill-opacity="0.6"/>
+  </g>
+
+</svg>

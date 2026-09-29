@@ -1,0 +1,5 @@
+magic-resume/pnpm-lock.yaml linguist-generated=true
+magic-resume-desktop/package-lock.json linguist-generated=true
+*.png binary
+*.icns binary
+*.ico binary

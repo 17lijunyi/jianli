@@ -1,0 +1,16 @@
+{
+  "name": "magic-resume-desktop",
+  "productName": "简励",
+  "version": "2.0.9",
+  "private": true,
+  "main": "main.cjs",
+  "description": "Magic Resume local macOS desktop application",
+  "scripts": {
+    "start": "electron .",
+    "package": "node package.cjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "44.4.5"
+  }
+}
