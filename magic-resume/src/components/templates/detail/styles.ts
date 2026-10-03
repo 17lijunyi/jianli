@@ -8,7 +8,7 @@ export const DETAIL_TEMPLATE_CSS = `
   .detail-v2 .detail-v2-photo { grid-area: photo; object-fit: cover; display: block; max-width: 100%; }
   .detail-v2 .detail-v2-identity { grid-area: identity; min-width: 0; }
   .detail-v2 .detail-v2-header-details { grid-area: details; min-width: 0; }
-  .detail-v2 .detail-v2-name { color: var(--detail-accent); font-size: var(--detail-name-size); font-weight: 700; line-height: 1.15; margin: 0 0 10px; }
+  .detail-v2 .detail-v2-name { color: #202020; font-size: var(--detail-name-size); font-weight: 700; line-height: 1.15; margin: 0 0 10px; }
   .detail-v2 .detail-v2-target { font-size: var(--detail-title-size); line-height: 1.45; margin: 0 0 8px; }
   .detail-v2 .detail-v2-kicker { color: #bcbcbc; font-size: 12px; margin: 0 0 32px; }
   .detail-v2 .detail-v2-contact { display: flex; flex-wrap: wrap; gap: 7px 20px; font-size: 1em; }

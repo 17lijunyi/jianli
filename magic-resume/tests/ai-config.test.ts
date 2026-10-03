@@ -124,6 +124,9 @@ test("PDF capability follows known model families without a manual setting", () 
   assert.equal(modelSupportsPdf("qwen", "qwen3-vl-plus"), true);
   assert.equal(modelSupportsPdf("qwen", "qwen3-max"), false);
   assert.equal(modelSupportsPdf("openai", "gpt-4o"), true);
+  assert.equal(modelSupportsPdf("openai", "gpt-6.1-sol"), true);
+  assert.equal(modelSupportsPdf("openai", "openai/gpt-6.1-sol"), true);
+  assert.equal(modelSupportsPdf("openai", "gpt-6-unknown"), false);
   assert.equal(modelSupportsPdf("deepseek", "deepseek-chat"), false);
   assert.equal(modelSupportsPdf("gemini", "gemini-2.5-flash"), true);
 });

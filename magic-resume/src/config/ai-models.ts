@@ -113,11 +113,18 @@ export const BUILTIN_AI_MODELS: Record<AIProvider, readonly BuiltinAIModel[]> =
   {
     openai: [
       {
+        id: "gpt-6.1-sol",
+        name: "GPT-6.1 Sol",
+        description: "新一代简历润色与多模态解析",
+        supportsPdf: true,
+        recommended: true,
+        protocol: "responses",
+      },
+      {
         id: "gpt-5.6-sol",
         name: "GPT-5.6 Sol",
         description: "复杂写作与高质量解析",
         supportsPdf: true,
-        recommended: true,
         protocol: "responses",
       },
       {
@@ -276,7 +283,7 @@ export function modelSupportsPdf(provider: AIProvider, model: string): boolean {
   if (provider === "qwen")
     return /(?:qwen.*(?:vl|omni)|(?:vl|omni).*qwen)/.test(id);
   if (provider === "openai") {
-    return /gpt-4o|gpt-4\.1|gpt-5|(?:^|[-_.])o[134](?:[-_.]|$)|vision|\bvl\b|multimodal/.test(
+    return /gpt-4o|gpt-4\.1|gpt-5|gpt-6(?:\.1)?-(?:astra|sol|luna)(?:[-/]|$)|(?:^|[-_.])o[134](?:[-_.]|$)|vision|\bvl\b|multimodal/.test(
       id,
     );
   }

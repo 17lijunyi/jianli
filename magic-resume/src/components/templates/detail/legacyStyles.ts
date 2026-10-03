@@ -8,7 +8,7 @@ export const DETAIL_TEMPLATE_CSS = `
   .detail-resume .detail-header { display: flex; align-items: center; gap: 20px; margin: 0 0 18px; break-inside: avoid; }
   .detail-resume .detail-header-right { flex-direction: row-reverse; }
   .detail-resume .detail-header-info { flex: 1; min-width: 0; }
-  .detail-resume .detail-name { font-size: 27px; line-height: 1.3; font-weight: 700; margin: 0 0 8px; }
+  .detail-resume .detail-name { color: #202020; font-size: 27px; line-height: 1.3; font-weight: 700; margin: 0 0 8px; }
   .detail-resume .detail-job { font-size: 1.15em; font-weight: 600; margin: 0 0 6px; }
   .detail-resume .detail-contact { display: flex; flex-wrap: wrap; column-gap: 16px; row-gap: 4px; }
   .detail-resume .detail-photo { flex-shrink: 0; object-fit: cover; }

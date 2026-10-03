@@ -82,7 +82,13 @@ let app;
   await page.getByPlaceholder('请输入公司名称', {exact:true}).fill('原生字段验收公司');
   await page.locator('#resume-preview').getByText('原生字段验收公司', {exact:true}).waitFor();
   await page.locator('button[title="#2E8B57"]').click();
-  await page.waitForFunction(() => getComputedStyle(document.querySelector('#resume-preview .detail-v2-name')).color === 'rgb(46, 139, 87)');
+  await page.waitForFunction(() => {
+    const name = document.querySelector('#resume-preview .detail-v2-name');
+    const section = document.querySelector('#resume-preview .detail-v2-section-title');
+    return name && section
+      && getComputedStyle(name).color === 'rgb(32, 32, 32)'
+      && getComputedStyle(section).color === 'rgb(46, 139, 87)';
+  });
   const detailed = await page.evaluate(() => {
     const state = JSON.parse(localStorage.getItem('resume-storage')).state;
     return state.resumes[location.pathname.split('/').pop()];
@@ -101,6 +107,29 @@ let app;
   assert.equal(detailPdf?.state, 'completed', 'Detailed native template PDF export completes');
   assert.equal(fs.readFileSync(detailPdf.file).subarray(0,5).toString(), '%PDF-');
   console.log('DETAIL_NATIVE_OK', detailPdf.file);
+  // An existing provider gains the new catalog option without losing its
+  // credentials, compatible endpoint, or previous task selections.
+  await page.evaluate(() => {
+    const oldId = 'builtin:openai:gpt-5.6-sol';
+    localStorage.setItem('ai-config-storage', JSON.stringify({version:1,state:{
+      models:[{id:oldId,provider:'openai',name:'GPT-5.6 Sol',apiKey:'local-test-key',model:'gpt-5.6-sol',baseUrl:'https://models-test.invalid/v1',protocol:'responses',supportsPdf:true}],
+      textModelId:oldId,pdfModelId:oldId,
+    }}));
+  });
+  await page.goto(new URL('/app/dashboard/ai', page.url()).href);
+  await page.getByRole('heading', {name:'GPT-6.1 Sol',exact:true}).waitFor();
+  const upgradedAI = await page.evaluate(() => JSON.parse(localStorage.getItem('ai-config-storage')).state);
+  assert.equal(upgradedAI.textModelId, 'builtin:openai:gpt-5.6-sol');
+  assert.equal(upgradedAI.pdfModelId, 'builtin:openai:gpt-5.6-sol');
+  const sol61 = upgradedAI.models.find(model => model.model === 'gpt-6.1-sol');
+  assert.equal(sol61.apiKey, 'local-test-key');
+  assert.equal(sol61.baseUrl, 'https://models-test.invalid/v1');
+  assert.equal(sol61.protocol, 'responses');
+  for (const label of ['选择文字助手模型', '选择 PDF 解析模型']) {
+    await page.getByRole('combobox', {name:label}).click();
+    await page.getByRole('option', {name:'GPT-6.1 Sol',exact:true}).click();
+  }
+  console.log('MODEL_CATALOG_OK: GPT-6.1 Sol added, existing settings preserved, both task selectors work.');
   const stored = await page.evaluate(() => localStorage.getItem('resume-storage'));
   assert.ok(stored && Object.keys(JSON.parse(stored).state.resumes).length > 0, 'New resume persisted');
   const resumeID = Object.values(JSON.parse(stored).state.resumes)[0].id;
@@ -113,6 +142,9 @@ let app;
   const restored = await second.evaluate(() => localStorage.getItem('resume-storage'));
   assert.ok(Object.values(JSON.parse(restored).state.resumes).some(resume => resume.id === resumeID), 'Resume survives app restart');
   assert.equal(JSON.parse(restored).state.resumes[resumeID].basic.name, '桌面版测试');
+  const restoredAI = await second.evaluate(() => JSON.parse(localStorage.getItem('ai-config-storage')).state);
+  assert.equal(restoredAI.textModelId, 'builtin:openai:gpt-6.1-sol');
+  assert.equal(restoredAI.pdfModelId, 'builtin:openai:gpt-6.1-sol');
   console.log('PAGE_ERRORS', JSON.stringify(errors));
   assert.equal(errors.length, 0);
   console.log('PASS: packaged launch, isolated renderer, directory picker API, resume editing, JSON/PDF export, persistent storage, quit cleanup, relaunch.');
