@@ -10,7 +10,8 @@ export function syncExplicitResumePages(root: HTMLElement): void {
     // Computed height is in document CSS pixels; getBoundingClientRect would
     // accidentally include the presentation scale in the gallery/editor.
     const height = parseFloat(getComputedStyle(body).height) || body.scrollHeight;
-    const pageCount = Math.max(1, Math.ceil(height / pageHeight));
+    const topInset = page.hasAttribute("data-detail-full-page") ? parseFloat(getComputedStyle(page).paddingTop) || 0 : 0;
+    const pageCount = Math.max(1, Math.ceil((height + topInset) / pageHeight));
     const minHeight = `${pageCount * pageHeight}px`;
     if (page.style.minHeight !== minHeight) page.style.minHeight = minHeight;
     page.dataset.detailPhysicalPages = String(pageCount);
@@ -35,8 +36,10 @@ export function cloneResumeForExport(element: HTMLElement, usePageMargins = fals
   // 固定未缩放的容器宽度，让百分比内层继续使用与预览相同的计算基准。
   const style = getComputedStyle(element);
   const padding = parseFloat(style.paddingLeft) + parseFloat(style.paddingRight);
-  clone.style.width = `${parseFloat(style.width) - (usePageMargins ? padding : 0)}px`;
+  const hasSelfContainedPages = Boolean(element.querySelector(".detail-v2"));
+  clone.style.width = `${parseFloat(style.width) - (usePageMargins && !hasSelfContainedPages ? padding : 0)}px`;
   if (usePageMargins) clone.style.padding = "0";
+  if (usePageMargins && hasSelfContainedPages) clone.setAttribute("data-detail-print-document", "");
   clone.querySelectorAll(".page-break-line").forEach((line) => line.remove());
   return clone;
 }

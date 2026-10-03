@@ -1,5 +1,6 @@
 import { initialResumeState, initialResumeStateEn } from "./initialResumeData";
-import detailTemplates from "./detailTemplates.json";
+import detailTemplateContent from "./detailTemplateContent.json";
+import { getDetailPreset } from "@/components/templates/detail/presets";
 import type { ResumeData } from "@/types/resume";
 
 export type ResumeSeed = Omit<ResumeData, "id" | "createdAt" | "updatedAt">;
@@ -11,60 +12,55 @@ export function getTemplateSeed(
 ): ResumeSeed {
   const initial = locale === "en" ? initialResumeStateEn : initialResumeState;
   const seed: ResumeSeed = { ...structuredClone(initial), templateId: templateId ?? undefined };
-  const detail = detailTemplates.find((entry) => entry.id === templateId);
-  if (!detail) return seed;
+  const original = detailTemplateContent.find((entry) => entry.id === templateId);
+  if (!original) return seed;
 
+  const detail = structuredClone(original);
+  const preset = getDetailPreset(detail.id);
   seed.title = detail.name;
   seed.templateId = detail.id;
   seed.basic = {
     ...seed.basic,
+    ...detail.basic,
     name: "简小励",
-    title: detail.id === "detail-graduate-fde" ? "AI 产品经理 / FDE" : "AI 产品经理",
     email: "jianxiaoli@example.com",
     phone: "13800000000",
-    location: "",
-    birthDate: "",
-    employementStatus: "",
     photo: "/avatar.png",
-    photoConfig: { ...seed.basic.photoConfig, width: 72, height: 96, aspectRatio: "3:4", visible: true },
+    photoConfig: {
+      ...seed.basic.photoConfig,
+      width: preset.photo.width,
+      height: preset.photo.height,
+      aspectRatio: "custom",
+      borderRadius: preset.photo.round ? "full" : "none",
+      visible: true,
+    },
     githubKey: "",
     githubUseName: "",
     githubContributionsVisible: false,
-    customFields: [{ id: "wechat", label: "微信", value: "jianxiaoli", icon: "MessageCircle", visible: true }],
+    customFields: detail.basic.customFields,
   };
-  seed.education = [];
-  seed.experience = [];
-  seed.projects = [];
+  seed.education = detail.education;
+  seed.experience = detail.experience;
+  seed.projects = detail.projects;
   seed.certificates = [];
-  seed.skillContent = "";
-  seed.selfEvaluationContent = "";
-  seed.customData = {};
-  seed.menuSections = [{ id: "basic", title: "基本信息", icon: "👤", enabled: true, order: 0 }];
-  for (const page of detail.pages) {
-    const sectionId = `custom-detail-page-${page.page}`;
-    seed.menuSections.push({ id: sectionId, title: `第 ${page.page} 页`, icon: "📄", enabled: true, order: page.page });
-    seed.customData[sectionId] = [{
-      id: `${detail.id}-page-${page.page}`,
-      title: "",
-      subtitle: "",
-      dateRange: "",
-      description: page.html,
-      visible: true,
-    }];
-  }
+  seed.skillContent = detail.skillContent;
+  seed.selfEvaluationContent = detail.selfEvaluationContent;
+  seed.customData = detail.customData as ResumeData["customData"];
+  seed.menuSections = detail.menuSections;
+  seed.detailLayout = { ...detail.detailLayout, version: 2 };
   seed.activeSection = "basic";
   seed.globalSettings = {
     ...seed.globalSettings,
-    baseFontSize: ["detail-ai-product", "detail-product-practice"].includes(detail.id) ? 12 : 11,
-    lineHeight: detail.id === "detail-mechanical-transition" ? 1.35 : 1.4,
-    paragraphSpacing: detail.id === "detail-mechanical-transition" ? 2 : 3,
-    sectionSpacing: 8,
-    headerSize: 14,
-    subheaderSize: 12,
-    pagePadding: 36,
+    baseFontSize: preset.fontSize,
+    lineHeight: preset.lineHeight,
+    paragraphSpacing: preset.paragraphGap,
+    sectionSpacing: preset.sectionGap,
+    headerSize: preset.headingSize,
+    subheaderSize: preset.itemTitleSize,
+    pagePadding: preset.pagePadding,
     autoOnePage: false,
     useIconMode: false,
-    themeColor: "#202020",
+    themeColor: detail.id === "detail-graduate-fde" ? "#4d6273" : "#202020",
   };
   return seed;
 }

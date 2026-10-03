@@ -87,7 +87,7 @@ const EducationEditor: React.FC<EducationEditorProps> = ({
 
         <Field
           label={t("labels.description")}
-          value={education.description}
+          value={education.description || ""}
           onChange={(value) => handleChange("description", value)}
           type="editor"
           placeholder={t("placeholders.description")}
@@ -182,7 +182,7 @@ const EducationItem = ({ education }: { education: Education }) => {
                     "text-foreground"
                   )}
                 >
-                  {education.school || "未填写学校"}
+                  {education.school || [education.major, education.degree].filter(Boolean).join(" · ") || "教育经历"}
                 </h3>
                 {(education.major || education.degree) && (
                   <p

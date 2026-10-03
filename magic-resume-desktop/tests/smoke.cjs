@@ -71,6 +71,36 @@ let app;
   await page.locator('input[type=file][accept*=json]').setInputFiles(jsonExport);
   await page.locator('#resume-preview').getByText('桌面版测试',{exact:true}).waitFor();
   console.log('ROUND_TRIP_OK: copy, delete, JSON import, template drawer.');
+  await page.getByRole('button', {name:'返回我的简历',exact:true}).click();
+  await page.locator('button[aria-label="简历模板"]').click();
+  await page.getByRole('tab', {name:/简历细节模版/}).click();
+  await page.getByRole('tabpanel').getByRole('button', {name:'使用此模板',exact:true}).first().click();
+  await page.locator('#resume-preview .detail-v2').waitFor();
+  await page.getByPlaceholder('简历名称', {exact:true}).fill('细节模板验收');
+  await page.locator('li').filter({hasText:'工作经历'}).click();
+  await page.locator('#edit-panel h3').filter({hasText:'麦麦趣耕科技有限公司'}).click();
+  await page.getByPlaceholder('请输入公司名称', {exact:true}).fill('原生字段验收公司');
+  await page.locator('#resume-preview').getByText('原生字段验收公司', {exact:true}).waitFor();
+  await page.locator('button[title="#2E8B57"]').click();
+  await page.waitForFunction(() => getComputedStyle(document.querySelector('#resume-preview .detail-v2-name')).color === 'rgb(46, 139, 87)');
+  const detailed = await page.evaluate(() => {
+    const state = JSON.parse(localStorage.getItem('resume-storage')).state;
+    return state.resumes[location.pathname.split('/').pop()];
+  });
+  assert.equal(detailed.detailLayout.version, 2);
+  assert.equal(detailed.experience[0].company, '原生字段验收公司');
+  assert.ok(!detailed.menuSections.some(section => section.id.startsWith('custom-detail-page-')));
+  await page.getByRole('button', {name:'导出', exact:true}).click();
+  await page.getByRole('heading', {name:'PDF', exact:true}).locator('../..').click();
+  let detailPdf;
+  for (let attempt=0; attempt<150; attempt++) {
+    detailPdf = await app.evaluate(() => globalThis.smokeDownloads.find(item => item.file.endsWith('细节模板验收.pdf')));
+    if (detailPdf) break;
+    await new Promise(resolve => setTimeout(resolve,200));
+  }
+  assert.equal(detailPdf?.state, 'completed', 'Detailed native template PDF export completes');
+  assert.equal(fs.readFileSync(detailPdf.file).subarray(0,5).toString(), '%PDF-');
+  console.log('DETAIL_NATIVE_OK', detailPdf.file);
   const stored = await page.evaluate(() => localStorage.getItem('resume-storage'));
   assert.ok(stored && Object.keys(JSON.parse(stored).state.resumes).length > 0, 'New resume persisted');
   const resumeID = Object.values(JSON.parse(stored).state.resumes)[0].id;

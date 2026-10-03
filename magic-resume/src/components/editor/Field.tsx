@@ -127,6 +127,7 @@ const Field = ({
       <div className="block">
         {renderLabel()}
         <UnifiedDateInput
+          label={label}
           value={value}
           onChange={onChange}
           placeholder={placeholder}
@@ -142,6 +143,7 @@ const Field = ({
       <div className="block">
         {renderLabel()}
         <UnifiedDateRangeInput
+          label={label}
           value={value}
           onChange={onChange}
           placeholder={placeholder}

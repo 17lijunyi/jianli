@@ -1,0 +1,2182 @@
+[
+  {
+    "id": "detail-ai-product",
+    "name": "AI 产品实战",
+    "basic": {
+      "title": "AI产品经理",
+      "location": "北京",
+      "birthDate": "1997-06",
+      "employementStatus": "离职-月内到岗",
+      "customFields": []
+    },
+    "selfEvaluationContent": "<p><strong>【工业AI实战能力】</strong> 主导制造业AI数字员工平台从0到1完整闭环,独立设计三层Agent架构覆盖工厂根因分析五大场景;产品有效会</p>\n<p>话采纳率从50%提升至58%,复杂问题解决时长从4小时压缩至30分钟,已有付费客户并完成续约;</p>\n<p><strong>【AI Native的产品构建力】</strong>利用Claude Code+Skills完成10+产品POC验证,自研20+ Skills,在团队内完成Open claw数字员工落</p>\n<p>地部署,覆盖5+场景,提升各部门工作效率;</p>\n<p><strong>【个人影响力建设】</strong>上线个人项目Biblely产品,兼具PM判断力与执行效率,在人人都是产品经理平台发布14篇深度长文,积累</p>\n<p>7400+专业粉丝;自研AI PM工作流Skills开源至GitHub,持续输出可复用方法论,建立AI产品领域个人行业影响力;</p>\n<p><strong>【评测体系设计落地】</strong>具备评测体系设计与全链路优化AI产品效果的实践经验,在多个AI项目中搭建golden case评测体系。</p>",
+    "skillContent": "",
+    "experience": [
+      {
+        "id": "detail-ai-product-work-1",
+        "company": "麦麦趣耕科技有限公司",
+        "position": "AI产品负责人",
+        "date": "2024.04 - 至今",
+        "details": "<p><strong>【产品战略规划】</strong>主导两条产品线(Bllex AI中台 + Linker数字员工)并行推进,设计四层架构体系(底层基座—中台能力—场景应</p>\n<p>用—智能体封装),建立产品评测标准与数据处理流程,新项目交付成本降低30%;推动基座优先、应用驱动产品策略落地验证;</p>\n<p><strong>【AI场景验证】</strong>成功探索并交付如报告生成、设备解决方案推荐、合同合规审查等AI应用场景,抽象定制化项目中10+个共性解决方</p>\n<p>案融入标准化产品,丰富功能矩阵;</p>\n<p><strong>【技术培训】</strong>定期做AI落地技术分享与培训,公司内部署 OpenClaw,将自研 Skill 封装为即用型数字员工(代码审核员、市场调查</p>\n<p>员、产品设计师、前端工程师、项目管理专员 5 个角色),覆盖部门20+人的日常工作场景。以报销审核和 KPI 绩效为切入点,将单</p>\n<p>次处理耗时从 4 小时压缩至 30 分钟,实现 87.5% 的效率提升。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-work-2",
+        "company": "苏州峰之鼎信息科技有限公司",
+        "position": "产品经理",
+        "date": "2022.08 - 2024.04",
+        "details": "<p><strong>【市场分析】</strong>深度理解工业行业用户特征与操作习惯,持续关注行业内竞品动向及前沿AI信息,撰写产品用户调研、竞品分析相关文</p>\n<p>档,快速找到可行AI场景;</p>\n<p><strong>【产品规划】</strong>主导Codee低代码产品1-N迭代,从规划到发布全流程,规划落地企业知识库与AI助手模块,为公司开拓新增客户3</p>\n<p>家;在职期间项目交付周期缩短34%,售后问题数量降低30.2%。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-work-3",
+        "company": "阿里巴巴(中国)有限公司",
+        "position": "UX设计师",
+        "date": "2020.06 - 2022.08",
+        "details": "<p><strong>【产品优化】</strong>对接产品、研发 ,分析产品数据变化原因 ,协助产品提供建设意见,确保设计的可行性和高质量用户体验,提升运营</p>\n<p>活动参与率42.1%,成功提升商家入驻49%,铺开生鲜云市场;</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-ai-product-project-1",
+        "name": "Bellex AI中台",
+        "role": "AI产品经理",
+        "date": "2024.08 - 至今",
+        "description": "<p>面向工业、金融等大型企业客户的端内AI效能提升平台,针对交付客户满意度低问题分析两大痛点,产品侧:RAG检索准确率低、</p>\n<p>Agent输出质量不稳定;交付侧:交付团队不掌握Agent、Prompt工程方法论,每个项目靠手感调试,导致同样的平台能力在不同</p>\n<p>客户那里效果参差不齐。交付成本居高不下、每个客户几乎从头定制、项目质量不可控。核心目标:将交付模式从逐个定制转向标准</p>\n<p>化可复制,在提升底层AI能力的同时降低交付门槛,实现规模化落地。</p>\n<h4>工作内容</h4>\n<p><strong>【产品架构设计】</strong>主导产品战略规划,设计大模型基座-业务资产层-RAG/Agent引擎-应用开发-多渠道分发五层架构,明确底座能力</p>\n<p>优先、场景应用封装的产品路线,底层能力提升 + 交付标准化双线同步优化;</p>\n<p><strong>【核心功能设计】</strong>主导Agentic RAG增强链路优化:引入向量检索+关键词检索+混合排序的多路召回机制,叠加Rerank重排模型,</p>\n<p>将通用场景知识库检索准确率从71.1%提升至85%+。设计Multi-Agent协作框架,覆盖自主规划Agent(开放式任务自动分解与工具</p>\n<p>选择)和工作流Agent(业务SOP可视化拖拽编排),支撑从简单问答到复杂业务流程的全场景覆盖。主导模型选型评估,在模型间</p>\n<p>建立场景需求×计算资源×部署约束三维决策矩阵,输出差异化选型策略,为交付提供标准化模型选型SOP;</p>\n<p><strong>【产品落地推动】</strong>针对交付侧核心瓶颈,沉淀50+标准化Prompt模板库,确保不懂提示词工程的交付人员也能交出稳定质量的项</p>\n<p>目。设计标准化POC演示体系,支持行业场景快配、用户身份预设、知识库一键接入,将POC准备周期从8天压缩至2天;</p>\n<p><strong>【行业数据沉淀】</strong>搭建标准版企业知识库与外部权威数据源,沉淀标准化评测文档与数据处理流程,构建从技术指标到业务指标的全</p>\n<p>链路评估体系,覆盖准召率、输出内容质量、Agent调用成功率、用户采纳率关键维度,实现交付质量从凭感觉到可量化的转变,通</p>\n<p>过评测数据驱动产品迭代,持续优化核心指标,确保质量指标和过程指标均保持行业中上水位线。</p>\n<h4>工作业绩</h4>\n<p>设计标准化POC演示环境,支持快速配置行业场景、预设用户身份、知识库接入、权限管理,已完成5个客户POC演示,准备周期从8</p>\n<p>天压缩至2天,成功验证底座优先,应用驱动的产品策略有效性;</p>\n<p>沉淀行业资产,确保应用到同行业不同客户可快速完成冷启动,看到产品效果,客户平均满意度稳定在85%以上。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-project-2",
+        "name": "Linker数字员工平台",
+        "role": "AI产品经理",
+        "date": "2025.03 - 至今",
+        "description": "<p>面向制造业的AI根因分析平台,解决专家隐性知识无法传承、诊断依赖人工跨系统手动关联、多因复合根因超出规则引擎能力三大痛</p>\n<p>点。独立设计四级指标因果链驱动产品迭代,定义北极星\"有效会话采纳率\"并从50%提升至58%,拆解后发现三大问题:点赞率仅</p>\n<p>47%、工单转化率45%、归档率仅20%。</p>\n<h4>工作内容</h4>\n<p><strong>【场景共创与问题挖掘】</strong>深入工厂对质检员、工艺工程师等5类角色进行深度画像,拆解角色的日常工作流、核心诉求和典型痛点,</p>\n<p>设计了三层Agent架构(Master Agent意图路由 + 5个专家Agent + 原子Agent执行层)覆盖根因分析/知识问答/数据追溯/工单填</p>\n<p>报/制品追溯五大场景;</p>\n<p><strong>【分析质量提升】</strong>优化Master Agent的意图分类规则及few-shot示例,减少根因分析与知识问答之间的混淆误分发;建立数据语义</p>\n<p>层,实现工程师自然语言查询跨MES/PLC/简道云多系统数据,提升Text2SQL能力;根据文档类型定制切片策略,引入多路召回,配</p>\n<p>合搭建30+ golden case评测体系,点赞率从47%提升至62.3%;</p>\n<p><strong>【建议可执行率提升】</strong>为提升推理正确率,对比了Advanced RAG和Graph RAG两种方案,Graph RAG在核心场景中利用实体关系</p>\n<p>传导链路检索准确率提升6.3%,接入在线检测硬件数据,将数据关联至设备操作方法,关键场景证据链完整度达96%,评测体系中</p>\n<p>新增建议可执行性维度及指令遵循维度,通过3周6轮针对性评测优化将工单转化率从45%提升至59.4%;</p>\n<p><strong>【知识回流能力设计】</strong> 为提升数据飞轮价值、降低贡献摩擦,设计一键归档及Case Accumulation Agent自动分类打标;同时为显</p>\n<p>性化归档价值设计贡献机制推动一线专家使用,让贡献可见,通过飞轮健康度监测指标监控归档率两周从17.8%提升至32%,累计超</p>\n<p>过100+次归档;</p>\n<p><strong>【1-N模板化复制】</strong>将验证过的全套体系抽象为可复用模板,新客户无需从零构建:数据接入配置模板、语义层模板、提示词模板</p>\n<p>库、评测基准。推动Agent编排中台建设,原子Agent复用、tools管理、MCP集成、LangGraph编排引擎,新客户只需在语义层做</p>\n<p>字段映射适配即可接入;</p>\n<p><strong>【评测体系设计】</strong>明确上线基线,30+golden case按场景、难度双维度组织,通过专家盲评&amp;Langfuse链路追踪全量测试,累计驱</p>\n<p>动6轮关键迭代优化,发版前评测累计拦截2次回退风险。</p>\n<h4>工作业绩</h4>\n<p>有效会话采纳率50%提升至58%,点赞率/工单转化率/归档率三个子率同步提升,复杂问题解决时长从4小时缩短至30分钟;</p>\n<p>问题解决时间2h降低至15min;知识飞轮累计100+次归档,正循环启动,成功验证隐性知识自动沉淀路径;</p>\n<p>搭建30+ golden case评测体系,1-N模板化复制,MVP周期压缩至约2个月,客户二期签约正式合同金额120w。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-project-3",
+        "name": "Biblely AI圣经",
+        "role": "Side Project",
+        "date": "2025.11 - 至今",
+        "description": "<p>面向英语新教基督徒的AI个性化祷告生成工具,解决信徒想祷告但说不出话的prayer paralysis痛点。独立完成从市场洞察-产品定</p>\n<p>义-Prompt工程-技术架构-Vibe Coding开发的全链路,全栈实践项目。</p>\n<h4>工作内容</h4>\n<p><strong>【宗教AI壁垒突破】</strong>分析传统宗教应用与AI技术融合的关键矛盾点,通过解决教义理解准确性、信仰敏感性和教派多元化三大核心挑</p>\n<p>战,实现对传统圣经学习应用的全面超越;</p>\n<p><strong>【出海市场洞察】</strong>调研英语基督徒TAM 1.5亿活跃圣经读者,深度拆解Hallow、Bible Chat等4款直接竞品+3类间接竞品,锁定差异</p>\n<p>化卡位:新教市场+AI主动生成+Freemium,避开Hallow的天主教内容路线和Pray.com的被动收听模式,设计定价模式$5.99/月</p>\n<p>+读书Freemium奖励;</p>\n<p><strong>【产品设计】</strong>主导产品从概念验证到正式上线的全流程,制定符合宗教伦理和心理健康标准的对话系统设计规范,针对10个高频场景</p>\n<p>(焦虑/感恩/认罪/代祷/悲伤/引导/信仰危机等)设计动态场景检测+对应Prompt增强策略,每个场景配置推荐经文库;</p>\n<p><strong>【增长策略设计】</strong>针对自身非本地用户、无教会人脉、小预算的约束条件,设计三阶段冷启动方案,第一阶段招募基督徒Beta</p>\n<p>Tester作为社群桥梁获取种子用户;第二阶段设计TikTok多账号矩阵策略,规划痛点共鸣短视频+Before/After产品演示+圣经冷知识</p>\n<p>幻灯片三套内容模板;第三阶段转为付费放大+Reddit定向垂类社群投放,目标CPI≤$1.00;</p>\n<p><strong>【全球化AI本地适应】</strong>设计AI内容的跨文化适应框架,针对不同语言、文化背景的用户提供差异化体验,通过动态提示词工程实现AI</p>\n<p>回应的文化敏感性调整。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-project-4",
+        "name": "AI工作流",
+        "role": "个人提效/团队提效",
+        "date": "",
+        "description": "<p><strong>【Skill 体系设计与迭代】</strong>自主研究Claude Skills、MCP等前沿AI技术,设计并迭代20+个Skills,覆盖个人全工作链路:PRD 撰写、</p>\n<p>产品调研、知识沉淀等,形成可配置、可组合的个人 AI 操作系统;</p>\n<p><strong>【内容输出与行业影响力】</strong>借助自研写作 Skill+Obsidian体系化产出AI相关文章,在人人都是产品经理平台发布 14 篇深度长文,爆</p>\n<p>款6篇(单篇阅读 6000+),单篇文章(含逻辑图)产出时间2天-20分钟,积累7400+专业粉丝。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-ai-product-education-1",
+        "school": "浙江树人学院",
+        "major": "工业设计专业",
+        "degree": "",
+        "startDate": "2020-09",
+        "endDate": "2024-09",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 4
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-ai-product",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 187.269
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-work-1",
+              "startY": 402.778
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-work-2",
+              "startY": 643.779
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-work-3",
+              "startY": 777.224
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 4,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-project-1",
+              "startY": 877.843
+            }
+          ],
+          "sourceHeight": 1123.61
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 4,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-ai-product-project-1",
+              "startY": -6.96
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-project-2",
+              "startY": 347.442
+            }
+          ],
+          "sourceHeight": 1007.513
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-project-3",
+              "startY": -7.042
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-project-4",
+              "startY": 354.114
+            },
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-education-1",
+              "startY": 489.517
+            }
+          ],
+          "sourceHeight": 669.896
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-product-practice",
+    "name": "AIGC 产品实践",
+    "basic": {
+      "title": "AI产品经理",
+      "location": "",
+      "birthDate": "",
+      "employementStatus": "",
+      "customFields": [
+        {
+          "id": "source-0",
+          "label": "年龄",
+          "value": "24岁",
+          "visible": true,
+          "displayLabel": false
+        },
+        {
+          "id": "source-1",
+          "label": "工作经验",
+          "value": "2年AI产品经验",
+          "visible": true,
+          "displayLabel": false
+        }
+      ]
+    },
+    "selfEvaluationContent": "<p><strong>战略产品规划能力:</strong>具备完整的AI-SaaS平台建设经验,能够基于市场洞察与业务痛点去清晰的产品架构及实施策</p>\n<p>略,并制定从MVP到成熟期的全周期路线图,确保产品可持续发展;</p>\n<p><strong>AIGC产品化设计能力:</strong>精通多模态大模型的训练与应用,推动文案GC、图片GC和海报GC等AI能力的产品化上</p>\n<p>线,主导设计解决方案,将抽象AI能力转化为核心产品功能,提升项目效率;</p>\n<p><strong>多Agent协作系统构建:</strong>借助原子能力封装单Agent(如营销文案智能体),通过主Agent统一编排,实现意图识</p>\n<p>别-规划拆分-自主优化的运行流程,支持“一句话海报”全自动化生成;</p>\n<p><strong>流程节点赋能提效:</strong>擅长将复杂的业务问题拆分为多个节点,借助PE、Agent以及其它一些AI工具能力做插件式赋</p>\n<p>能。通过制定模型评估规则及设计评估策略,有效保障和提升AI模型质量与项目管理效率。</p>",
+    "skillContent": "<p>能力标签:产品规划、AI解决方案、应用层、平台层、AIGC、Agent、PRD、PE</p>",
+    "experience": [
+      {
+        "id": "detail-product-practice-work-1",
+        "company": "阿里巴巴集团",
+        "position": "AI产品经理",
+        "date": "2023.11 - 至今",
+        "details": "<h4>工作内容</h4>\n<p>主导\"AIGC营销平台\"的整体规划与架构建设。利用AIGC技术,系统性地解决金融设计领域长期存在的效率、成</p>\n<p>本和规模化三大瓶颈,将前沿的AI能力转化为能被业务方、运营和设计师直接使用的生产力工具;</p>\n<p><strong>【平台顶层设计与规划】</strong>基于集团预算紧缩与需求增长的核心矛盾,我规划了AI服务平台从探索期到深化期的演</p>\n<p>进路线图,并设计了其包含\"智能生文”、”智能生图、”智能海报”三大核心业务引擎及\"素材库\"、\"计件平台\"两大</p>\n<p>基础设施的整体产品架构;</p>\n<p><strong>【核心功能模块产品化】</strong>我负责将抽象的AI能力,具体化为用户可感知的、能解决业务实际问题的功能模块。例</p>\n<p>如,在\"智能生图\"模块中,我设计了分级供给策略,以满足不同业务场景对图片创意和成本的差异化需求。在\"智</p>\n<p>能生卡\"模块中,我主导了从1.0\"模板填充\"到2.0\"智能创作\"的范式升级;</p>\n<p><strong>【AI自动化工具敏捷开发】</strong>围绕“低成本可复用”的理念,开发多个轻量级AI提效工具。构建数据构造-标注-质检</p>\n<p>自动化数据处理SOP,并设计并落地10+Agent智能体应用,覆盖招聘筛选、内容审核、数据分析等场景,如“简</p>\n<p>历AI机审工作流”,简历初筛效率提升85%,人工审核工作量减少70%</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-product-practice-work-2",
+        "company": "小米科技公司",
+        "position": "产品经理助理",
+        "date": "2023.07 - 2023.10",
+        "details": "<h4>工作内容</h4>\n<p><strong>【全流程用户体验研究】</strong>负责小爱同学语音助手产品优化,针对用户反馈的语音交互痛点进行系统性改进。项目</p>\n<p>覆盖小米智能硬件全生态(智能音箱、手机MIUI、米家IoT设备),重点解决语音识别准确率偏低和多轮对话中</p>\n<p>断率高两大核心问题,直接影响数千万活跃用户的使用体验。</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-product-practice-project-1",
+        "name": "AIGC金融服务平台",
+        "role": "主平台建设",
+        "date": "2023.11 - 2025.02",
+        "description": "<p>项目启动于集团预算紧缩与数字金融业务设计需求持续增长的困境。一方面,受宏观经济环境影响,集团对各业</p>\n<p>务线的设计外包预算削减超40%,传统的外部供应商合作模式面临断供风险;另一方面,数字金融业务快速发</p>\n<p>展,月均设计需求不降反升,涵盖营销海报、产品界面、运营素材等多个维度。传统外部计件模式存在三大痛</p>\n<p>点:成本高昂、交付周期长、质量不稳定。面对这一困境,采用“技术自建+能力内化”的战略思路,通过构建AI</p>\n<p>驱动的内容生产平台,实现从\"外部依赖\"到\"自主可控\"的根本性转变,既要解决燃眉之急的成本压力,更要为未</p>\n<p>来的规模化发展奠定技术基础。</p>\n<h4>平台定位</h4>\n<p>AIGC金融服务平台是一个面向数字金融领域的端到端AI内容生产与服务生态系统。以\"降本增效、自主可控\"为核</p>\n<p>心价值主张,通过整合智能生文、智能生图、智能海报三大核心引擎的模块集成,以及素材库、计件平台两大基</p>\n<p>础设施的完整能力矩阵来满足业务运营配置诉求、生产个体服务以及影响力诉求。</p>\n<h4>职责描述</h4>\n<p><strong>【顶层架构设计与战略规划】</strong>深入分析了传统设计生产模式的结构性问题,提出了“能力自建”的核心战略转型思</p>\n<p>路。设计了”模型层-编排层-应用层”的平台策略能力建设,明确了各层级的功能定位与协同关系,制定了从探索</p>\n<p>期到深化期的完整演进路线图,为平台的可持续发展与规模化赋能奠定了坚实的架构基础;</p>\n<p><strong>【核心AI引擎产品化建设】</strong>主导图片GC、海报GC等前沿AIGC能力的产品化包装与改造,将实验阶段的技术原型</p>\n<p>转化为稳定、高效、可复用的生产级服务。深度参与PosterLLaVa等布局模型的业务化微调,设计了完整的模型</p>\n<p>训练数据标准和评测体系,建立了统一的设计资产管理基建,确保AI能力能够无缝融入现有业务流程;</p>\n<p><strong>【多Agent协作系统建设】</strong>借助底层原子能力封装单Agent能力,包括但不限于金融文案智能体、素材处理智能</p>\n<p>体,再通过主智能体进行统一编排调度。通过“意图识别-规划拆分-智能体调用-自主优化-图文整合”的运行流</p>\n<p>程,实现“一句话海报”的全自动化生成。</p>\n<p><strong>【跨职能团队协同与项目全生命周期管理】</strong>作为项目核心推动者,我承担了连接业务、技术、设计等多方团队的</p>\n<p>关键桥梁角色。主动发起并高效组织涉及算法、前后端、UI设计、业务运营等多职能的项目协调会议,通过清晰</p>\n<p>的需求文档和交互原型建立了团队间的\"通用语言\",有效排除跨部门协作障碍,确保了复杂项目在紧凑时间内的</p>\n<p>高质量交付。</p>\n<h4>项目成果</h4>\n<p><strong>【战略性降本与业务增长】</strong>平台成功覆盖 15+条业务线,通过\"AI计件平台\"的创新模式,上线3个月内节省设计预</p>\n<p>算 150万元。赋能核心业务后,某财富产品展位CTR提升 30.62%,月度转化用户增长 15%。</p>\n<p><strong>【驱动内容生产范式变革】</strong>核心AI引擎使营销素材生产效率提升 90%,单张成本降低 85%。平台累计生成各类</p>\n<p>素材超 1w张,核心能力通过API向内部系统调用超 3万次,实现了从\"人工密集\"到\"AI驱动\"的生产模式转型。</p>\n<p><strong>【实现交付速度与质量双升】</strong> 建立起自主可控的设计生产体系,内部团队人效在AIGC赋能下提升 150%,订单</p>\n<p>平均交付周期从 3-5天 缩短至 1-2天。设计返工率从 30% 降低至 5% 以下,业务方满意度提升至 4.8/5分,彻</p>\n<p>底消除了外部供应商依赖风险。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-product-practice-project-2",
+        "name": "营销海报多Agent系统",
+        "role": "核心项目",
+        "date": "2024.09 - 2025.02",
+        "description": "<p>在金融营销设计领域,海量卡片需求与有限设计资源之间的矛盾日益突出。本项目旨在借助AIGC原子能力,构建</p>\n<p>智能海报生成多Agnet系统,突破传统设计流程的效率和创新瓶颈,实现设计生产的智能化升级。</p>\n<h4>职责描述</h4>\n<p><strong>【多Agent编排架构设计】</strong>构建面向金融营销场景的多Agent协同生成框架。通过精细设计Agent间的交互逻辑和</p>\n<p>能力边界,将文案生成、图片生成、布局生成等原子能力有机集成,实现端到端的智能海报生成流程。</p>\n<p><strong>【设计标签体系与模型微调】</strong>深入定义金融海报设计的多维度标签体系,突破传统\"画框\"模式。通过精细化的标</p>\n<p>签设计和数据标注,为模型学习设计语言和美学规则奠定基础,显著提升模型的内容理解和创作能力。</p>\n<p><strong>【产品化落地与迭代机制】</strong>将复杂的AI技术能力转化为可用的生产力工具。设计从需求分析到模型评估的闭环迭</p>\n<p>代机制,建立多维度的性能评测标准,持续优化模型在实际业务场景中的表现。</p>\n<h4>项目成果</h4>\n<p>智能海报生成系统在金融设计部全面落地,业务采纳率达95%,设计生产效率提升82%,人工成本节省60%,</p>\n<p>有效解决了传统设计流程中的效率和创新瓶颈。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-product-practice-project-3",
+        "name": "招聘测试题机审工作流",
+        "role": "横向需求",
+        "date": "2025.03 - 2025.04",
+        "description": "<p>面对团队人力招聘时,面对每日成百上千份附带业务测试题的简历,传统人工阅卷方式耗时长达30分钟/份,严</p>\n<p>重拖慢招聘效率。项目目标是构建\"人机协同\"的智能阅卷工作流,将业务专家从繁重阅卷工作中解放出来。</p>\n<h4>内容描述</h4>\n<p><strong>【阅卷规则标准化】</strong>主导建立了完整的评分规则库,将复杂业务知识拆解为明确的评分点与扣分项,实现了评分</p>\n<p>标准的客观化与一致性,为自动化阅卷奠定基础。</p>\n<p><strong>【自动化引擎构建】</strong>设计并实现了答案提取与比对引擎,通过关键词识别和多维表格技术,批量从候选人答案中</p>\n<p>提取核心内容并与标准答案自动比对,大幅提升处理效率。</p>\n<p><strong>【工作流程优化集成】</strong>开发了浏览器快速阅卷插件和可视化报告系统,实现一键批量提取作业、沉浸式阅卷和自</p>\n<p>动汇总评分,使业务专家能聚焦于候选人能力的最终评估。</p>\n<h4>项目成果</h4>\n<p>成功构建并实施了完整的智能阅卷工作流,将单份测试题的平均审核耗时从30分钟大幅缩短至10分钟,整体阅卷</p>\n<p>效率提升200%。通过标准化的阅卷规则和自动化评分,显著降低了因不同专家主观判断带来的评分偏差,确保</p>\n<p>了所有候选人评估标准的一致性与公平性。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-product-practice-project-4",
+        "name": "AI资讯日报Agent",
+        "role": "个人研发项目",
+        "date": "",
+        "description": "<p>每日手动搜集、筛选、整理AI资讯不仅耗时耗力,还难以保证发布的时效性和持续性。项目目标是构建一个完全</p>\n<p>自动化的AI内容Agent,实现从信息采集到多平台分发的全流程自动化,提升个人影响力。</p>\n<h4>内容描述</h4>\n<p><strong>【自动化流程实现】</strong>设计了基于Coze的Agent工作流,实现了信息源巡航、内容筛选、结构化生成和自动分发四</p>\n<p>大核心功能模块,使工作流能够模拟专业编辑完成从选题到发布的完整工作。</p>\n<p><strong>【端到端生产构建】</strong>构建Coze Agent与飞书机器人的集成方案,设计定时推送机制。通过精准配置触发器和消息</p>\n<p>模板,实现AI生成内容的秒级推送到个人手机,打通了内容生产到个人消费的最后一公里,确保信息获取的实时</p>\n<p>性和便捷性。</p>\n<h4>项目成果</h4>\n<p>成功构建了一个\"一次设定,永久运行\"的自动化内容工作流,每日为我节省约1.5小时的手动操作时间,让我能更</p>\n<p>专注于深度的思考与创作。通过持续、高质量的AI资讯分享,我的全平台自媒体私域粉丝在短时间内从200人增</p>\n<p>长至1000+,实现了400%的增长。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-product-practice-education-1",
+        "school": "且曼六州大学",
+        "major": "产品设计",
+        "degree": "本科",
+        "startDate": "",
+        "endDate": "",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "skills",
+        "title": "能力标签",
+        "icon": "⚡",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 4
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 5
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-product-practice",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-product-practice-education-1"
+            },
+            {
+              "sectionId": "skills",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "startY": 164.727
+            },
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 212.768
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-product-practice-work-1",
+              "startY": 489.0
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-product-practice-work-2",
+              "startY": 869.73
+            }
+          ],
+          "sourceHeight": 1123.61
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-product-practice-project-1",
+              "startY": -0.745
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 2,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-product-practice-project-2",
+              "startY": 920.439
+            }
+          ],
+          "sourceHeight": 1123.61
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 2,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-product-practice-project-2",
+              "startY": -30.103
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-product-practice-project-3",
+              "startY": 246.54
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-product-practice-project-4",
+              "startY": 641.538
+            }
+          ],
+          "sourceHeight": 1123.61
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-design-transition",
+    "name": "设计转型",
+    "basic": {
+      "title": "AI 产品经理 | AIGC 图像/视频产品 | 企业级内容生产系统 | Agent产品",
+      "location": "北京",
+      "birthDate": "",
+      "employementStatus": "",
+      "customFields": [
+        {
+          "id": "source-0",
+          "label": "工作经验",
+          "value": "5年经验",
+          "visible": true,
+          "displayLabel": false
+        },
+        {
+          "id": "source-1",
+          "label": "薪资",
+          "value": "面议",
+          "visible": true,
+          "displayLabel": false
+        },
+        {
+          "id": "source-2",
+          "label": "GitHub",
+          "value": "https://example.com/jianxiaoli",
+          "visible": true,
+          "displayLabel": false
+        }
+      ]
+    },
+    "selfEvaluationContent": "<p>• <strong>Agent产品架构与工程化:</strong>理解模型能力与产品稳定性之间的差距,能够围绕任务拆解、角色协作、状态管理、人工决</p>\n<p>策、错误恢复、效果评测与权限安全设计Agent运行机制,协同算法、研发和业务推动Agent从Demo走向稳定交付,并以</p>\n<p>质量、效率、成本和资产复用验证价值。</p>\n<p>•<strong>B端AIGC业务结果:</strong>独立搭建“云生导演台\",贯通提需、生成、审核与资产沉淀;累计交付20条品牌AIGC视频,节省约</p>\n<p>200万元广告费、团队提效40%。</p>\n<p>•<strong>C端产品与增长:</strong>推动“零帧起手\"数字人小程序9天内用户规模增长至2.9倍。在1000+创作者、200+作品的黑客松中完成</p>\n<p>5天MVP,通过现场路演沉淀200+名种子社群用户;项目被<strong>[已脱敏]</strong>老师列为报道重点呈现的两个项目之一。</p>\n<p>• <strong>专业与内容影响力:</strong>受邀担任京东黑客松评选嘉宾,参与汇集两百多个AI创意项目的评选;小红书AI/产品内容累计10万</p>\n<p>阅读、1.2万点赞,同时也是「人人都是产品经理」作者。</p>\n<p>•<strong>开源与组织协同:</strong>持续维护GitHub开源项目及“模界志、竞品分析、需求评审”等AI Skill;具备业务、算法、研发、设计、</p>\n<p>内容与媒介的矩阵协同经验,将个人方法沉淀为团队可复用资产。</p>\n<p><strong>个人网站:</strong> https://example.com/jianxiaoli</p>",
+    "skillContent": "",
+    "experience": [
+      {
+        "id": "detail-design-transition-work-1",
+        "company": "北京京东科技有限公司",
+        "position": "AI 产品经理|AIGC内容产品",
+        "date": "2025.06 - 2026.06",
+        "details": "<p>• <strong>产品战略与矩阵:</strong>基于多品牌视频交付复盘,识别企业AIGC核心矛盾由\"能否生成”转向“生产可控、资产复用与成本可量</p>\n<p>化”,规划企业级视频生产CMS”云生导演台\"与AI数字人小程序“零帧起手”产品矩阵。</p>\n<p>•<strong>B端平台与交付:</strong>从0到1搭建“云生导演台”,将提需、脚本、分镜、Prompt、审核、版本与资产归档产品化为标准流程,</p>\n<p>编排多Agent与人工定稿机制;覆盖8+业务线、20人市场团队和5人设计团队,单项目交付由5人14天缩短至2人7天。</p>\n<p>• <strong>业务结果与成本:</strong>牵引市场及零售业务团队交付20个零售AIGCTVC和2个写实数字人项目;单支TVC成本由约20万元降</p>\n<p>至8—10万元,代表项目全网播放近1600万、互动53万+。</p>\n<p>•<strong>C端产品与增长:</strong>负责“零帧起手”数字人小程序内容模板、用户反馈迭代及运营推广,建设100+灵感案例、推动41个模板</p>\n<p>上线,覆盖8类内容场景;JDD首发当日访问2.42万、新增用户3000,峰值日活4500+,9天用户规模增长2.9倍。</p>\n<p>• <strong>组织影响力建设:</strong>沉淀提需SOP、Prompt范式、Agent编排与评测案例,在京东科技内部分享会上复盘AIGC内容生产实</p>\n<p>践,推动团队成员理解并复用AI工作流;受邀担任京东黑客松评选嘉宾,参与汇集264个AI创意项目的评选。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-transition-work-2",
+        "company": "一站发展(北京)云计算科技有限公司",
+        "position": "AI设计师",
+        "date": "2021.07 - 2024.12",
+        "details": "<p>• <strong>AI提案与图像评测:</strong>在前期方案阶段使用Midjourney等生成式平台快速生成多方向样片,围绕品牌关联度、用户识别</p>\n<p>度、形象规范性和场景适配性进行对比评估,在正式制作前验证创意方向;相较传统设计流程,提案效率提升约100%、</p>\n<p>前期工作量减少50%。</p>\n<p>•<strong>AI设计流程与团队赋能:</strong>将生成式AI引入IP与内容生产,建立“需求拆解一AI快速提案一效果评测一LoRA沉淀一资产复</p>\n<p>用”流程;沉淀多场景LoRA与Prompt模板,覆盖部门12人,素材生成效率提升80%、成本降低60%,相关LoRA在</p>\n<p>LiblibAI累计使用2600次。</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-design-transition-project-1",
+        "name": "「云生导演台」| AI前期导演与项目资产工作台",
+        "role": "AI产品经理|产品 Owner",
+        "date": "",
+        "description": "<p>核心维度:0-1产品架构| Agent工作流| 内容经验产品化| 评测迭代闭环|CMS资产治理</p>\n<p>背景与目标:针对零售TVC沟通反复、外制周期长,以及需求、脚本、分镜、Prompt与素材分散、版本难追溯的问题,从0</p>\n<p>规划”AI前期导演与项目资产工作台”;聚焦前期策划、协作与资产归档,不直接承担视频生成。</p>\n<h4>核心职责</h4>\n<p>1. 0-1产品架构与CMS搭建:复盘20个零售TVC及写实数字人项目,以“项目”为最小管理单元,规划需求Brief、脚本、分</p>\n<p>镜、Prompt、素材和版本管理模块;记录内容来源、版权、修改过程与最终版本,使项目从提需至归档全程可追溯。</p>\n<p>2. 内容经验产品化与Agent工作流:将视频用途、目标受众、投放渠道、预算、参考风格及版权要求整理为结构化Brief;把</p>\n<p>TVC、数字人、真人短剧和漫剧的制作经验拆解为创意、编剧、分镜与质检等Agent任务,明确各环节输入输出、人工确</p>\n<p>认点及异常回退方式,最终输出可供可灵、即梦等外部工具使用的脚本、分镜与Prompt。</p>\n<p>3. 质量评测与迭代闭环:以确认后的Brief、脚本和分镜为评审依据,将\"高级感、电影感”等主观要求拆解为12项可检查的导</p>\n<p>演要素,并从事实准确、镜头作用、空间关系、前后镜连续性、模型适配及生成风险六个维度进行评估;将评审结果和修</p>\n<p>改原因回流至Prompt模板、检查规则及工作流程,形成“交付一评审一复盘一沉淀一复用”的迭代闭环。</p>\n<p>4. 流程治理与产品迭代:建立“需求确认一方案/脚本一分镜—10秒样片一成片验收一复盘归档”6阶段SOP,明确责任人、评</p>\n<p>审节点、版权及交付标准;MCM项目先验证20张关键静帧再进入外部制作,减少后期返工。协同业务、研发、设计、内</p>\n<p>容及媒介团队推进V0.1—V1.5共15个版本节点,完成201项功能与流程验证及私有部署,并根据项目复盘收缩低价值功</p>\n<p>能,将产品从“生成工具集合\"聚焦为“AI前期导演与项目资产工作台”。</p>\n<p>商业化路径(规划)</p>\n<p>• 市场定位与GTM:将云生定位为面向品牌市场与内容团队的“AI前期导演与项目资产工作台”,以脚本与分镜协作、</p>\n<p>Prompt沉淀、版本追溯及资产归档为核心能力。区别于可灵、即梦等视频生成平台,云生不绑定具体模型;区别于分秒</p>\n<p>帧、Frame.io等通用协作工具,增加结构化Brief、行业脚本模板及AI前期工作流。基于内部8+业务线和25人团队的使用</p>\n<p>验证,规划“项目试用一团队订阅一业务线扩席一企业系统对接\"的GTM路径。</p>\n<p>•收入与经营模型:设计“基础年费+席位/存储扩容+增值能力”的订阅模式,按照3—20个席位、100GB—2TB存储规划</p>\n<p>699—7999元/年的版本梯度;额外席位、存储空间、行业脚本与Prompt模板、定制工作流作为增值项,私有化部署及企</p>\n<p>业API对接单独询价。视频生成由客户通过外部平台完成,不计入云生收费;以付费转化率、活跃席位、存储扩容率、资</p>\n<p>产复用率、续费率和扩席率评估商业健康度。</p>\n<p>项目成果:交付20个零售AIGCTVC及2个写实数字人;MCM官方渠道累计播放250万+、形成约50篇KOC扩散,其他代表项</p>\n<p>目全网播放近1600万、互动53万+。产品覆盖8+业务线及25个团队,沉淀3种可复用导演Agent;交付由5人14天缩短至2人7</p>\n<p>天,单支TVC成本由20万元降至8—10万元。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-transition-project-2",
+        "name": "零帧起手 AI 数字人小程序",
+        "role": "AI 内容产品与运营",
+        "date": "",
+        "description": "<p>核心维度:内容产品化|模型评测与Data Loop| C端GTM与增长|ROI与合规</p>\n<p>面向普通用户的数字人视频创作小程序,通过人物、题材、脚本、声音和视频模板降低AI内容创作门槛。负责将模型能力转</p>\n<p>化为可直接使用的内容产品,并协同算法、媒介和运营团队推动产品从种子测试走向正式上线及规模增长。</p>\n<h4>核心职责</h4>\n<p>1. 内容产品与场景规划:根据模型能力、生成边界和用户使用场景,规划“人物形象一内容题材一脚本结构一声音—视频模</p>\n<p>板”体系,将产品从唱歌、播客等基础玩法扩展至动物访谈、萌宠、短剧、方言及节日互动等场景,并负责人设、模板及</p>\n<p>示范案例落地。</p>\n<p>2. 模型评测与Data Loop:结合种子社群、1500+用户作品、KOL测评、核心用户访谈及访问/新增/DAU数据,识别模板可</p>\n<p>用性、人物表现和生成稳定性问题;将分析结果回流至内容模板、评测标准和上线节奏,形成“发布一反馈一分析一迭代</p>\n<p>一再验证”的产品闭环。</p>\n<p>3. 产品生命周期与GTM:规划“种子用户冷启动一京东JDD首发一创作赛事一媒体/KOL传播一广告投放一私域沉淀一留存优</p>\n<p>化“增长路径,协同落地国庆征稿、重阳节内容、春节媒体共创及京东员工“万物有灵”1024 UGC活动;结合增长数据、投</p>\n<p>放成本及视频传播资质进行节奏和预算决策。</p>\n<p>项目成果:</p>\n<p>•建设100+灵感模板案例,推动上线,覆盖8类内容场景;沉淀1500+用户作品、400+活跃创作者及8个用户社群。</p>\n<p>•京东JDD首发当日访问2.42万、新增用户3000,峰值DAU 4500+;9天推广期累计用户由3.91万增长至11.37万,规模提</p>\n<p>升至2.9倍。</p>\n<p>• 管理市场活动及内容运营预算11万/年;其中微信4日投放获得135万曝光、9.5万落地页点击,平均点击成本0.12元。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-transition-project-3",
+        "name": "AIGC品牌资产与生成流程|科技园区品牌",
+        "role": "AI设计师/工作流搭建",
+        "date": "",
+        "description": "<p>核心维度:AIGC 图像研究|模型评测与迭代| 生成工作流产品化|数字资产治理</p>\n<p>•AI 图像研究与评测:围绕IP 形象一致性、风格还原、批量生成效率和业务可用性,开展生成模型与 LoRA 方案研究;</p>\n<p>通过样片测试、人工评审和异常案例复盘,持续优化训练素材、Prompt及生成参数。</p>\n<p>•生成能力产品化:将设计经验沉淀为多种LoRA、Prompt模板及标准出图流程,推广至部门12人使用,使素材生成效率</p>\n<p>提升80%、成本降低60%,相关 LoRA 在 LiblibAI 累计使用2600次。</p>\n<p>•IP资产与业务落地:将海外教育及园区服务IP 从单次设计升级为平面、3D、动效、表情和批量内容资产体系,沉淀</p>\n<p>100+可复用数字资产,单条视频/音频项目节省成本4.3万元。</p>\n<p>•跨团队项目推进:协同内容、市场及供应商推进S/A级营销活动,统筹创意方案、资产生产与交付质量;代表活动带动当</p>\n<p>周销售额提升6.8%、交易总人次增加1.1万。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-transition-project-4",
+        "name": "友个家|千人黑客松 5天 MVP",
+        "role": "产品经理/运营",
+        "date": "",
+        "description": "<p>核心维度:用户研究与需求规格| 规则+AI混合匹配|匹配Agent | MVP验证与冷启动</p>\n<p>项目描述:面向合租与近邻社交场景,以“过日子版MBTI”与匹配Agent推荐生活习惯相容、能够包容彼此差异的室友及友邻。</p>\n<p>作为两名产品经理之一,负责MVP范围、PRD、匹配规则与落地推进,协同5人跨职能团队5天完成MVP。</p>\n<p>核心成果:</p>\n<p>1. 用户研究与需求规格:分析4个平台74条有效公开讨论,提炼136条租房痛点,据此定义4个匹配维度、16种“过日子版</p>\n<p>MBTI”、32道情境题及8类共居底线;在开发前明确MVP范围、问卷数据、匹配规则、AI职责边界和验收标准,减少团队</p>\n<p>理解偏差与开发返工。</p>\n<p>2. 匹配Agent与决策边界:设计“底线排除一生活习惯排序—AI解释一用户确认一真人沟通”的匹配流程,由规则处理明确条</p>\n<p>件,Agent负责理解需求和解释推荐依据,不代替用户做最终决定;针对隐私信息、结果不确定及异常输出设置人工确认</p>\n<p>与兜底机制。</p>\n<p>3. MVP落地与运营验证:5天跑通\"共居画像一底线筛选一候选推荐—AI解释—种子社群承接“链路,并规划\"D1室友匹配一</p>\n<p>D2友邻社交一线下活动”的产品路线;搭建“现场触达一人格测试一种子社群一真人运营”冷启动路径,赛后启动推理及服</p>\n<p>务器成本测算,并对接投资人和社区孵化资源。</p>\n<p>项目成果:</p>\n<p>•在1000+创作者黑客松中完成5天MVP,通过现场路演吸引200+用户加入种子社群。</p>\n<p>•项目被<strong>[已脱敏]</strong>老师列为采访报道重点呈现的两个项目之一。采访报道</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-transition-project-5",
+        "name": "不白干|原点社区黑客松三等奖",
+        "role": "AI产品经理",
+        "date": "",
+        "description": "<p>核心维度:任务型Agent | 人工确认(HITL)| 信息可追溯 |24小时MVP</p>\n<p>项目描述:针对群聊中需求模糊、意见冲突和任务反复确认的问题,设计“群聊解析一冲突识别一负责人确认一Brief一个人任</p>\n<p>务单一团队记忆\"AI协作闭环。</p>\n<p>核心成果:</p>\n<p>1.Agent工作流与人工确认:主导产品方案、交互及现场开发,设计“闲聊、工作单、需确认”三种状态,将群聊解析、负责</p>\n<p>人确认、Brief与个人任务单串成完整流程,坚持“未确认不派活”。</p>\n<p>2. 信息追溯与安全规则:保留结论对应的原始消息和确认记录,并通过固定输出格式、负责人权限及异常停止机制,避免AI</p>\n<p>误解需求或越权派发任务。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-transition-project-6",
+        "name": "暖爪|猫咪血液互助与 AI 咨询平台",
+        "role": "AI产品经理",
+        "date": "",
+        "description": "<p>核心维度:0-1产品设计|轻量RAG|隐私保护|人工核验</p>\n<p>项目描述:针对猫咪紧急求血信息分散、隐私暴露及撮合后缺少随访的问题,规划“发布求助一候选推荐一邀约沟通一到院核</p>\n<p>验一养护随访”服务闭环。体验链接:<strong>[已脱敏]</strong></p>\n<p>核心职责与成果:</p>\n<p>1.产品与流程设计:建立求助、邀约及街道级候选推荐规则,通过模糊位置保护用户隐私,并设计“一猫一档“机制记录核验</p>\n<p>和养护情况。</p>\n<p>2. RAG与安全边界:基于猫血互助知识库搭建轻量RAG助手,限定AI仅回答相关知识;信息不足时转人工处理,候选推荐</p>\n<p>仅作辅助,最终医疗判断由医院或兽医完成。</p>\n<p>项目成果:</p>\n<p>• 2人约8天完成10个页面、14个数据模型和21条接口,覆盖北京16区、349个街道。</p>\n<p>• 沉淀2000条领域问答候选数据和103个公开真实场景,完成前端、后端及安全共61/61项测试。</p>\n<p>•用户验证:当前完成17名用户内测,登记9只猫咪,用户满意度87%。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-design-transition-education-1",
+        "school": "山西大同大学",
+        "major": "视觉传达设计",
+        "degree": "本科",
+        "startDate": "2017",
+        "endDate": "2021",
+        "description": "<p>2021届优秀毕业生</p>",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "projects",
+        "title": "代表项目",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 4
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-design-transition",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 129.951
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-work-1",
+              "startY": 447.668
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-work-2",
+              "startY": 740.716
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 3,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-project-1",
+              "startY": 908.733
+            }
+          ],
+          "sourceHeight": 1121.372
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 3,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-design-transition-project-1",
+              "startY": 2.598
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-project-2",
+              "startY": 558.398
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 1,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-project-3",
+              "startY": 993.799
+            }
+          ],
+          "sourceHeight": 1121.372
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 1,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-design-transition-project-3",
+              "startY": 2.598
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-project-4",
+              "startY": 183.738
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-project-5",
+              "startY": 574.889
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-project-6",
+              "startY": 781.912
+            }
+          ],
+          "sourceHeight": 1121.372
+        },
+        {
+          "number": 4,
+          "fragments": [
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-design-transition-education-1",
+              "startY": 8.998
+            }
+          ],
+          "sourceHeight": 1121.372
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-ai-product-master",
+    "name": "硕士 · AI 产品经理 3 年",
+    "basic": {
+      "title": "",
+      "location": "",
+      "birthDate": "",
+      "employementStatus": "",
+      "customFields": [
+        {
+          "id": "source-0",
+          "label": "性别",
+          "value": "男",
+          "visible": true,
+          "displayLabel": false
+        },
+        {
+          "id": "source-1",
+          "label": "年龄",
+          "value": "28岁",
+          "visible": true,
+          "displayLabel": false
+        },
+        {
+          "id": "source-2",
+          "label": "工作经验",
+          "value": "3年AI产品经理工作经验",
+          "visible": true,
+          "displayLabel": false
+        }
+      ]
+    },
+    "selfEvaluationContent": "<p><strong>AI产品0到1与项目推进:</strong>主导并参与Narra Studio、SourceMate等多个AI产品从0到1落地,覆盖需求调研、MVP</p>\n<p>设计、技术评估、上线验证与迭代,并能推动算法、研发、设计等多方协作完成交付。</p>\n<p><strong>AI产品化与评测能力:</strong>能够基于模型能力边界,通过流程拆分、规则约束、Human in the Loop及兜底机制提升稳</p>\n<p>定性,并结合评测集、Bad Case和验收标准持续优化产品效果。</p>\n<p><strong>AI前沿研究与实践能力:</strong>持续跟踪前沿模型、Agentic AI与AI Coding,通过Demo和项目实践快速验证新技术,并</p>\n<p>沉淀为Skill、Prompt模板及AI产品工作流。</p>\n<p><strong>AI内容与开源沉淀:</strong>持续在人人都是产品经理、公众号输出AI产品与技术内容,已发布深度长文十余篇;2025年</p>\n<p>加入WaytoAGI参与社区共创,并将AIPM工作流、Skill/及实践项目开源至GitHub。</p>",
+    "skillContent": "<p>能力标签:产品规划、需求与场景拆解、模型评测、RAG、Agent、PRD、PE</p>",
+    "experience": [
+      {
+        "id": "detail-ai-product-master-work-1",
+        "company": "美航科技有限公司",
+        "position": "AI产品经理",
+        "date": "2025.05 - 2026.07",
+        "details": "<h4>工作内容</h4>\n<p>负责公司AI产品的需求分析、产品规划、项目验证及迭代推进,围绕MCN内容生产、情感陪伴和内部提效等场</p>\n<p>景探索AI产品机会,重点推进Narra Studio从PRD设计到真实业务场景验证。</p>\n<p><strong>【AI产品方向与项目孵化】</strong>围绕用户价值、AI适配度、开发成本和验证周期筛选产品方向,通过轻量Demo和</p>\n<p>真实用户验证核心假设,累计完成十余个AI产品Demo。</p>\n<p><strong>【核心产品规划与落地】</strong>负责Narra Studio等核心项目的用户需求、MVP范围、版本路线及验收标准设计,协</p>\n<p>同算法、研发、设计和业务团队推进产品上线与迭代。</p>\n<p><strong>【AI评测与产品优化】</strong>建立与业务目标对应的评测机制,通过评测集、Bad Case和真实任务表现定位模型、</p>\n<p>Prompt、数据及流程问题,持续优化产品效果。</p>\n<p><strong>【商业验证与能力沉淀】</strong>从需求强度、交付稳定性、模型成本和付费意愿判断产品价值,并将Prompt、Skill、</p>\n<p>评测清单和项目经验沉淀为团队可复用资产。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-master-work-2",
+        "company": "成都嘉爱商贸有限公司",
+        "position": "AI产品经理",
+        "date": "2023.06 - 2025.04",
+        "details": "<h4>工作内容</h4>\n<p>负责公司AI转型探索,推动SourceMate从0到1落地,提升询货与货源筛选效率,减少重复人工投入。</p>\n<p><strong>【产品规划与落地】</strong>梳理采购业务流程和高频咨询需求,完成知识结构、检索方案及AI与人工服务边界设计,并</p>\n<p>推动智能采购RAG个股进入真实业务场景灰度使用。</p>\n<p><strong>【评测与迭代】</strong>与团队建立采购场景评测机制,围绕回答质量、货源召回和关键字段准确性持续优化模型与检索</p>\n<p>方案,并结合Bad Case推动产品迭代。</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-ai-product-master-project-1",
+        "name": "Narra Studio",
+        "role": "AI产品经理",
+        "date": "2025.05 - 2026.07",
+        "description": "<h4>项目概述</h4>\n<p>Narra Studio是面向MCN编导和多账号内容团队的AI编导工作台,解决新人熟悉IP周期长、创作流程分散、内容</p>\n<p>生产依赖个人经验等问题。项目通过IP Skill、动态Context、Few-shot、受控AI工作流和人工确认机制,搭建从</p>\n<p>IP理解、热点选题、标题、逐字稿到分镜脚本的一站式AI编导工作台,提升内容生产效率及多IP复制能力。</p>\n<h4>职责描述</h4>\n<p>负责产品从0到1设计并落地以下内容</p>\n<p><strong>【需求洞察与MVP规划】</strong>通过编导访谈和任务观察梳理IP理解、热点、选题、逐字稿、分镜等流程,识别新人熟</p>\n<p>悉IP慢、模型风格不稳和返工频繁等问题;结合用户价值、任务频率、模型成熟度和成本确定一期范围。</p>\n<p><strong>【产品架构与AI创作流程】</strong>以受控AI工作流为核心,将创作任务拆为固定流程、模型节点、规则校验和人工确认</p>\n<p>;负责PRD、版本路线、交互规则和验收标准,并搭建IP建库、热点选题、标题、逐字稿到分镜的完整链路。</p>\n<p><strong>【IP Skil与Context个性化】</strong>针对通用模型能写但不像目标IP的问题,设计两层IP Skil并从11个维度提取特征;</p>\n<p>按创作阶段动态加载IP规则、任务资料和已确认内容,通过Few-shot提升不同IP与内容类型的匹配度。</p>\n<p><strong>【模型与Prompt稳定性优化】</strong>围绕截图识别、IP分析和内容生成进行模型评测与分级调用;针对格式不稳、字</p>\n<p>段缺失和重复调用,设计结构化输出、结果校验、有限修复和失败降级机制,提升生成质量与稳定性。</p>\n<p><strong>【评测与数据驱动迭代】</strong>建立人工编导、通用模型和IP Skil三组对照评测,围绕采用率、风格贴合度、修改幅度</p>\n<p>、任务耗时和成本验收;结合采用、修改、返工、退出及Bad Case,反推Prompt、规则、模型和工作流优化。</p>\n<p><strong>【业务验证与项目落地】</strong>内部测试后投入MCN真实内容任务进行Pilot,验证编导实际使用效果;协同算法、研</p>\n<p>发、设计和业务团队推进评审、研发、测试和验收,并沉淀IP规则、历史内容和用户反馈进行产品迭代。</p>\n<h4>项目成果</h4>\n<p>1、作为项目负责人,完成Narra Studio从0到1落地,跑通IP资料导入、画像确认、表达规则生成与发布、热点选</p>\n<p>题、标题策划、分步逐字稿、全文检查、动态Few-shot、规则持续校准和分镜脚本的完整流程,并用于MCN旗</p>\n<p>下IP内容生产和新编导训练。</p>\n<p>2、单次标题确认时间由35分钟缩短至8分钟以内,首轮5个标题中至少1个被采用的任务占比达到74%。</p>\n<p>3、在有效历史样本充足的成熟IP任务中,初版逐字稿低修改采用率达到96%,多数稿件经局部调整即可进入分</p>\n<p>镜和拍摄流程。</p>\n<p>4、沉淀IP Skill构建、动态Context、模型选型、Prompt版本管理、评测和Bad Case分析方法,使同一IP的创作</p>\n<p>经验能够持续积累,并支持后续IP和内容类型快速接入。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-master-project-2",
+        "name": "SourceMate",
+        "role": "AI产品经理",
+        "date": "2023.06 - 2025.04",
+        "description": "<h4>项目概述</h4>\n<p>SourceMate是面向分销商及下游采购客户的智能采购RAG客服,解决商品和货源批次增加后询货、问价大量依赖</p>\n<p>人工的问题。项目基于企业微信,通过结构化查询处理动态商品与批次信息,结合RAG处理行业别名、业务知识</p>\n<p>和回答规则,让AI承担标准询货与货源筛选,并将复杂问题和明确采购意向转交人工。</p>\n<h4>职责描述</h4>\n<p>与团队从0到1搭建公司首个AI产品,负责业务产品方案与落地。</p>\n<p><strong>【产品规划与知识检索设计】</strong>梳理采购业务流程和高频咨询,确定完整列货、型号查询、批次问答及人工接管等</p>\n<p>首版能力;将商品、批次、别名和业务规则进行结构化整理,并结合结构化查询、精确匹配、关键词检索和向量</p>\n<p>召回设计采购检索方案。</p>\n<p><strong>【Prompt、模型与准确性优化】</strong>拆分意图识别、实体抽取、回答生成和结果校验等Prompt,并通过同题评测综</p>\n<p>合效果、速度和成本完成模型选型;针对TopK截断、厂号误识别、跨批次字段混用等Bad Case,通过结构化全</p>\n<p>量查询、别名映射和一致性校验持续优化回答质量。</p>\n<p><strong>【评测与灰度落地】</strong>与团队建立100道固定黄金评测集及Bad Case扩展集,针对模型、Prompt、知识和检索变更</p>\n<p>执行回归验证;完成内部测试后选择稳定分销商灰度使用,并保留人工客服兜底,推动产品进入真实采购场景。</p>\n<h4>项目成果</h4>\n<p>1、完成SourceMate从需求调研、产品设计、知识整理到分销商灰度使用的0到1落地。</p>\n<p>2、固定100题端到端内部评测通过率由92%提升至97%,高风险错误为0。</p>\n<p>3、内部评测中AI客服首次有效回答保持在8秒以内,支持按照品类、国家、厂号或等级、发货地和物流状态完成</p>\n<p>货源筛选,并携带商品和批次上下文转接人工。</p>\n<p>4、按典型工作日口径保守测算,AI预计可承接约60%的基础询货,人工处理会话量预计下降约33%,团队日均</p>\n<p>预计减少约1.6小时重复查货与回复时间。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-ai-product-master-project-3",
+        "name": "Hi!Paw",
+        "role": "个人研发项目",
+        "date": "",
+        "description": "<h4>项目概述</h4>\n<p>出于对AI陪伴的兴趣,希望尝试把情侣共同养一只AI宠物的想法做成真实产品。面向异地或见面较少的情侣,设</p>\n<p>计一个只属于两个人的虚拟空间,让双方通过共同照料、孵化和互动,获得微信聊天之外的轻量陪伴体验。</p>\n<p>项目内容</p>\n<p>以独立开发者身份完成产品构思、功能设计与Vibe Coding,借助AI拆解需求、生成和修改代码、设计页面与数据</p>\n<p>状态,并持续调试、测试和整合,验证个人完成包含双人关系、状态流转与Agent能力产品原型的可行性。</p>\n<p>围绕共同孵化一只属于两个人的AI宠物搭建核心体验:</p>\n<p>1、设计情侣邀请、双人绑定和共享宠物空间。</p>\n<p>2、实现三日共同喂养、照料与抚摸,双方完成任务后逐步解锁孵化。</p>\n<p>3、设计双人问答、对宠物说一句话、共同命名与破壳流程,让双方输入影响宠物性格与表现。</p>\n<p>4、接入宠物回复、性格标签和轻量共同记忆,通过结构化输出与规则校验,避免模型直接干扰业务状态。</p>\n<h4>项目成果</h4>\n<p>独立完成从兴趣想法到可测试产品原型的Vibe Coding实践,跑通情侣绑定、共同照料、同步孵化、共同命名和宠</p>\n<p>物互动等核心流程。通过项目验证了使用AI完成需求拆解、代码生成、Agent接入、复杂状态设计和问题调试的完</p>\n<p>整过程,沉淀了一套先定义最小闭环,再让AI分模块实现,最后由人工判断、整合和验收的个人开发方法。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-ai-product-master-education-1",
+        "school": "石家庄铁道大学",
+        "major": "",
+        "degree": "硕士",
+        "startDate": "",
+        "endDate": "",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      },
+      {
+        "id": "detail-ai-product-master-education-2",
+        "school": "四川师范大学",
+        "major": "",
+        "degree": "本科",
+        "startDate": "",
+        "endDate": "",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "skills",
+        "title": "能力标签",
+        "icon": "⚡",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 4
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 5
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-ai-product-master",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-master-education-1"
+            },
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-master-education-2"
+            },
+            {
+              "sectionId": "skills",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "startY": 173.365
+            },
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 214.287
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-master-work-1",
+              "startY": 498.295
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-master-work-2",
+              "startY": 846.433
+            }
+          ],
+          "sourceHeight": 1123.815
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-master-project-1",
+              "startY": 3.259
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 12,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-master-project-2",
+              "startY": 715.728
+            }
+          ],
+          "sourceHeight": 1123.815
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 12,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "itemId": "detail-ai-product-master-project-2",
+              "startY": 3.249
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-ai-product-master-project-3",
+              "startY": 276.358
+            }
+          ],
+          "sourceHeight": 1123.815
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-mechanical-transition",
+    "name": "机械工程转型",
+    "basic": {
+      "title": "AI产品经理",
+      "location": "",
+      "birthDate": "",
+      "employementStatus": "离职",
+      "customFields": []
+    },
+    "selfEvaluationContent": "<p>•智能制造业务洞察:近3年聚焦治具设计场景,能够深入工程师作业流程识别高重复、强规则、可量化的AI 机会,负责3款企业</p>\n<p>内部效率工具从需求定义到上线应用。</p>\n<p>• AI 方案与人机协同:能够围绕业务目标完成产品架构、AI方案和人机协同设计,合理划分Workflow、Agent、RAG、规则引擎与</p>\n<p>人工复核的职责边界。</p>\n<p>• 评测验收与迭代:具备评测指标、测试样本和 Bad Case 闭环建设经验,能够将准确率、结果完整性、响应效率等指标转化为产品</p>\n<p>验收与迭代依据。</p>\n<p>•跨团队交付与企业落地:能够协调业务主管、工程师、研发和测试推进开发、验收、上线与推广,累计覆盖 50名内部用户并取得</p>\n<p>可量化的效率与质量提升。</p>\n<p>• ToC 产品从0到1:负责2款ToC AI产品从0到1并公开上线,覆盖多模态识别、个性化推荐与 AIGC 创作场景,具备冷启动和</p>\n<p>用户反馈驱动迭代经验。</p>",
+    "skillContent": "",
+    "experience": [
+      {
+        "id": "detail-mechanical-transition-work-1",
+        "company": "富士康科技集团-IPEBG",
+        "position": "AI产品经理",
+        "date": "2023.07 - 2026.05",
+        "details": "<p>所在 IPEBG 治具设计业务团队服务内部智能制造场景,负责3D制图、模型检查和BOM 生成方向的AI产品规划与交付,协同治具设</p>\n<p>计工程师、业务主管、研发和测试团队,推动业务流程从人工操作向智能辅助转型。</p>\n<p>•业务洞察与产品规划:深入治具设计作业现场,拆解 3D制图、模型检查和BOM 填写流程,结合业务价值、规则可枚举性和技术</p>\n<p>可行性识别AI产品机会,制定产品路线图与阶段目标,负责3款内部效率工具立项落地。</p>\n<p>•AI 方案与产品设计:负责需求分析、产品架构、业务流程、原型及PRD设计,结合视觉识别、规则引擎、RAG与固定工作流制定</p>\n<p>解决方案,明确AI 自动处理、异常拒绝与人工复核的职责边界。</p>\n<p>•评测验收与迭代优化:围绕准确率、冗余标注、处理时长和结果完整性建立验收指标,组织业务样本测试与 Bad Case 分析,协同</p>\n<p>研发持续优化识别规则、知识库、模型配置和交互流程。</p>\n<p>•跨团队交付与业务结果:协调工程师、业务主管、研发和测试资源推进开发、验收、上线与推广;3D制图时间缩短50%、尺寸标</p>\n<p>注准确率达到 65%,模型检查问题发生率降低20%、BOM 填写时间减少30%,累计覆盖 50 名内部用户。</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-mechanical-transition-project-1",
+        "name": "智绘 ZhiDraw(3D工程图智能生成平台)",
+        "role": "项目负责人",
+        "date": "2024.08 - 2026.05",
+        "description": "<p>治具设计工程师将3D 模型转换为 2D工程图时,视图生成、基准判断、尺寸与公差标注高度依赖人工,工程规范与历史经验分散,导</p>\n<p>致制图周期长、质量一致性不足。本人作为项目负责人,负责产品规划、AI方案设计、评测验收与上线交付,建设融合几何计算、工</p>\n<p>程知识与人工复核的工程图智能生成平台。</p>\n<h4>核心职责</h4>\n<p>1.场景拆解与首期产品定义:访谈10名治具设计工程师并回收35份问卷,梳理3D转2D 全流程,识别视图生成、基准选择、尺寸</p>\n<p>标注与人工校核等高价值场景;结合业务价值与技术可行性明确首期产品范围、产品边界和验收标准,确定“AI完成标准化标注、</p>\n<p>工程师负责复核与复杂判断”的人机分工。</p>\n<p>2. AI 工作流与知识增强:主导工程知识 RAG 产品从需求定义、方案设计到上线应用的全流程建设,基于工程师真实作业场景明确高</p>\n<p>价值任务与知识库边界;结合业务语料和查询特征推动 Embedding模型选型,设计多路召回与 Rerank 策略,并持续基于用户反</p>\n<p>馈及问答 Bad Case 优化召回准确率与回答可信度,完成产品落地及迭代闭环。</p>\n<p>3. Agent决策与人机协同:围绕“生成可复核工程图”目标设计 Agent 的任务规划与工具调用机制,使其能够根据零件特征和知识</p>\n<p>检索结果动态选择基准判断、尺寸规划与规则校验工具;在置信不足或规则冲突时触发人工确认,并将复核结论回写任务上下文与</p>\n<p>Bad Case 库,形成可追溯的决策闭环。</p>\n<p>4. 评测体系与产品迭代:围绕尺寸标注质量、结果完整性与生成效率搭建产品评测体系,组织样本测试与 Bad Case 验收;针对早期</p>\n<p>冗余标注和误标问题完善颜色、公差、基准及标注约束,协同研发持续优化规则与工作流,完成本地化上线应用和多格式结果输出。</p>\n<h4>项目成果</h4>\n<p>• 产品交付:完成STEP/STP 单零件制图产品本地化上线,支持标准工程视图生成及 DWG、PDF、JSON 输出,完成工程知识 RAG</p>\n<p>与 Agent能力的产品化落地。</p>\n<p>• 准确率提升:通过规则约束与 Bad Case 迭代,将尺寸标注准确率由20%-30%提升至65%。</p>\n<p>• 制图效率提升:单项目2D 绘图时间由约2小时缩短至1小时,制图效率提升50%,覆盖50名内部用户。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-mechanical-transition-project-2",
+        "name": "易搭 Yida(AI 穿搭助手)",
+        "role": "产品负责人",
+        "date": "2026.05 - 至今",
+        "description": "<p>用户日常穿搭需同时考虑个人衣柜、天气、场景、偏好与衣物状态,相关信息分散且推荐结果难以直接执行。本人作为产品负责人,</p>\n<p>负责用户研究、产品方案、多模态识别、推荐评测与版本上线,从0到1构建基于真实衣柜的AI穿搭助手。</p>\n<h4>核心职责</h4>\n<p>1.用户洞察与产品定义:围绕衣物录入成本、推荐可执行性和生成等待等问题梳理用户旅程,规划衣物上传、AI识别、衣柜管理、穿</p>\n<p>搭推荐、结果反馈与虚拟试穿6个核心环节,明确各环节的输入、输出及验收标准。</p>\n<p>2. 多模态识别与异常兜底:负责衣物图像处理与文本标签结构化方案,采用抠图模型与文本大模型串联完成白底单品提取及品类、颜</p>\n<p>色、风格、季节等标签生成,并以抠图质量、字段完整性、响应时延和调用成本作为选型依据;针对处理失败提供重试与人工分类</p>\n<p>入口,避免识别异常阻断衣物录入。</p>\n<p>3. 推荐策略与评测体系:设计“天气、季节、场景、脏衣状态硬过滤+风格与历史偏好生成”的固定推荐工作流;围绕硬约束合规、</p>\n<p>搭配合理性、单品真实性、效果图质量和多样性5个维度建立评测标准,并构建覆盖通勤、约会、雨天、脏衣过滤等6类 Golden</p>\n<p>Set,用于版本回归、Bad Case 定位和策略迭代。</p>\n<p>4. 冷启动与迭代闭环:组织首批用户体验测试,归因保存缓慢、生成耗时和推荐同质化等问题,负责移动端保存、生成效率、穿搭去</p>\n<p>重与反馈链路优化,并完成国内云服务迁移和公开版本发布。</p>\n<h4>项目成果</h4>\n<p>•产品交付:公开上线v1.0,落地数字衣柜、智能穿搭、虚拟试穿与单件搭配4项核心功能,形成衣物录入、推荐、反馈与效果图生</p>\n<p>成闭环。</p>\n<p>• 用户验证:完成首批约60名用户冷启动,约50名用户已实际完成约1600件衣物上传和130次推荐生成;以6类 Golden Set 支</p>\n<p>撑核心场景验收与版本回归。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-mechanical-transition-project-3",
+        "name": "拾光后期(AI图片风格创作工具)",
+        "role": "产品负责人",
+        "date": "2026.07 - 至今",
+        "description": "<p>摄影爱好者具有风格化创作需求,但传统修图工具参数复杂、学习成本高,生成式工具又容易出现主体丢失、照片重绘和风格偏移。</p>\n<p>本人作为产品负责人,负责产品规划、模型方案、质量评测与版本上线,从0到1构建面向非专业用户的AI 图片风格创作工具。</p>\n<h4>核心职责</h4>\n<p>1. 创作场景与产品链路:规划10种视觉创作场景,设计图片上传、场景选择、参数配置、结果生成、继续修改和下载的完整链路,明</p>\n<p>确各场景的输入规范、生成约束与质量验收标准。</p>\n<p>2. 模型选型与路由策略:围绕生成效果、稳定性、响应速度和调用成本开展模型对比,设计主模型、失败回退、提示词模板和参数默</p>\n<p>认值策略,在保障生成质量的同时降低用户理解专业参数的成本。</p>\n<p>3. 多模态评测与 Bad Case:建立图片生成Bad Case 集,从主体一致性、原图保真度、风格符合度、文字控制和人像光影等维度开</p>\n<p>展人工验收,定位主体丢失、照片重绘、擅自加字和补光失真等问题。</p>\n<p>4. 质量迭代与上线交付:根据用户反馈定位照片质感丢失问题,判断原因为生成环节对原图重绘过度,重新明确真实影像保留与风格</p>\n<p>化处理的边界,并采用原始影像与风格化元素分层合成方案,持续优化生成质量、结果稳定性与调用成本,完成公开版本发布。</p>\n<h4>项目成果</h4>\n<p>•产品交付:产品公开上线,覆盖10种视觉创作场景,形成上传、生成、修改和下载闭环。</p>\n<p>•用户验证:完成首轮种子用户测试,43 名用户累计生成约180次,人均生成约4次。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-mechanical-transition-education-1",
+        "school": "北方民族大学",
+        "major": "机械电子工程",
+        "degree": "本科",
+        "startDate": "2019-09",
+        "endDate": "2023-06",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 4
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-mechanical-transition",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 114.129
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-mechanical-transition-work-1",
+              "startY": 321.35
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-mechanical-transition-project-1",
+              "startY": 549.811
+            }
+          ],
+          "sourceHeight": 1122.594
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-mechanical-transition-project-2",
+              "startY": -4.971
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-mechanical-transition-project-3",
+              "startY": 329.647
+            },
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-mechanical-transition-education-1",
+              "startY": 600.671
+            }
+          ],
+          "sourceHeight": 1122.594
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-graduate-fde",
+    "name": "应届硕士 · FDE",
+    "basic": {
+      "title": "AI 产品经理|FDE 前端部署工程师",
+      "location": "",
+      "birthDate": "",
+      "employementStatus": "",
+      "customFields": []
+    },
+    "selfEvaluationContent": "<p>•<strong>AI 产品0→1全链路独立交付:</strong>在腾讯智影 PGC创作团队实习期间,围绕“AI网感帮修”等AI创作功能进行竞品分析、市</p>\n<p>场调研与模型评测,拆解妙鸭、秒画、美图等竞品玩法,挖掘社媒平台用户修图痛点并明确目标用户,配合算法团队推进网</p>\n<p>感LoRA 与换脸方案的评测验收,支撑功能立项与迭代。在技术层面,能基于 SDD 将模糊需求转化为可执行规格,并以</p>\n<p>Vibe Coding工作范式独立搭建前后端分离产品。目前个人已上线2款产品,服务80+名用户;同时在 GitHub 开源10+</p>\n<p>款个人产品,形成可验证、可追溯的作品集。</p>\n<p>•<strong>前沿技术追踪转化为团队生产力:</strong>持续跟进 AI前沿资讯,第一时间试用最新模型、拆解新技术的能力边界,评估其对公司业</p>\n<p>务的赋能空间,并将技术理解转化为实际项目经验。熟悉 Agent 工作流设计,已将个人的开发、运营流程固化为可复用的</p>\n<p>skill,总计个人提效4h/d。</p>\n<p>•<strong>从上线到获得第一批用户的增长闭环:</strong>不依赖投放预算,通过个人自媒体账号(总浏览过万)与线上线下科技社群(黑客</p>\n<p>松、OPC社群等)双渠道发掘种子用户,独立完成产品冷启动。累计为产品获取 500+名早期用户,创建测试群,并基于用</p>\n<p>户反馈驱动迭代,跑通“做出产品一触达用户一收集反馈一快速改进”的完整闭环。</p>\n<p>•<strong>可用英语作为工作语言,直达一手信息源:</strong>通过CET-6 考试,托福83分,具备流畅阅读英文技术文档、论文与官方</p>\n<p>Release Note的能力。日常直接跟踪英文一手信息源和海外开发者社区,不依赖翻译和二手解读。</p>\n<p>•<strong>学习与创新能力突出:</strong>本科专业第3、保送至985高校攻读硕士,参与核量子化学课题与国家自然科学基金项目,累计发表</p>\n<p>2篇SCI论文、获得2项专利及1项软件著作权。</p>",
+    "skillContent": "",
+    "experience": [
+      {
+        "id": "detail-graduate-fde-work-1",
+        "company": "腾讯•智影",
+        "position": "AI 产品经理实习生",
+        "date": "2024.05 - 2025.04",
+        "details": "<p>以产品视角深度参与 AIGC创作产品线的规划与落地,在推进智影AI玩法迭代的同时,持续开展前沿技术研究与分享,并作为多</p>\n<p>方协作的枢纽推动项目高效交付。</p>\n<p>•智影项目:推动 AI 内容创作平台落地,覆盖 AI绘画、换脸、写真、简笔画及视频转绘等玩法。配合团队围绕 AI 网感帮修、</p>\n<p>AI 网感自拍等核心功能跑通从调研到上线的闭环:通过竞品拆解与用户痛点调研输出 PRD,配合算法完成网感LoRA 训练与</p>\n<p>换脸效果验收,并基于北极星指标数据设计 AB测试与埋点看板支撑迭代。</p>\n<p>•技术分享:持续跟进 AI前沿技术,系统研究文生图/图生图工作流、换脸算法与视频转绘等方向的技术原理、参数调优与效</p>\n<p>果边界,结合智影业务场景阅读相关技术论文、撰写技术文章并进行团队内部分享,让技术认知反哺产品决策。</p>\n<p>•跨部门协作:作为产品与多方之间的协作枢纽,协助与算法对齐训练方案并完成效果评测,与设计、研发、测试联动推进开</p>\n<p>发与验收,协调数据团队搭建埋点和 AB 实验,配合运营跑通“热点发现一承接一上线”全链路,推动项目按时交付。</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-graduate-fde-project-1",
+        "name": "项目1:腾讯•智影•小程序发现页玩法优化",
+        "role": "",
+        "date": "2024.05 - 2025.04",
+        "description": "<p>项目背景:</p>\n<p>智影是腾讯面向C端用户的 AIGC 创作平台。项目源于社媒分享盛行下用户对“网感照片”的强烈需求。传统修图复杂耗时、效</p>\n<p>果难对齐流行趋势,而妙鸭等 AI换脸应用已验证零门槛出图的可行性。因此,智影借 AI能力填补这一市场空缺。我参与期间正</p>\n<p>值小程序改版后的成长期,核心任务是补齐打磨 AI修图、换脸等玩法至行业头部水平,为内容生态增长打基础。</p>\n<p>核心职责:</p>\n<p>•协助开展 AIGC 竞品和热门玩法调研:持续关注妙鸭相机、Remini 等同类产品及社交平台上的热门 AI内容,整理不同玩</p>\n<p>法用户定位、生成效果和传播特点;围绕IP 合作、节日及社会热点收集案例,协助团队完成玩法脑暴和初步方案设计。</p>\n<p>•跟进 AI 玩法需求及项目上线:参与玩法需求梳理,协助明确用户操作流程、生成链路、玩法规则、素材要求及上线时</p>\n<p>间;维护项目排期和进度表,跟进算法效果、视觉素材、功能开发和测试进度,及时整理并同步问题和风险。</p>\n<p>•Agent +模板设计:基于 Stable Diffusion WebUI 等生图工具搭建修图工作流,配置 ControlNet、LoRA 等能力完成</p>\n<p>出图链路调参;围绕不同玩法场景设计并持续优化 Prompt 模板,包括正向提示词、{tag}动态标签替换、负向提示词库</p>\n<p>等,兼顾人像美学与网感风格,沉淀“更像自己/经典/更具网感〞等多档效果模板。</p>\n<p>•负责效果测试及数据整理:使用不同类型图片对AI玩法批量测试,记录人物相似度不足、画面异常、生成失败和耗时过</p>\n<p>长等 badcase 并推动优化;玩法上线后整理曝光、点击、生成、发布等数据,参与分析用户转化情况并输出复盘结论。</p>\n<p>•评测体系搭建:围绕换脸、转绘、网感LoRA 等算法方案组织多轮效果评测,从准确性、自然性、稳定性、效率等维度建</p>\n<p>立统一评测标准与badcase 记录机制;通过批量出图对比确定各模型的最优参数与适用场景,并将评测结论沉淀为文</p>\n<p>档,辅助算法团队选型与迭代。</p>\n<p>项目成果(腾讯智影):</p>\n<p>• 深度参与国庆、中秋等节日 AI写真玩法的策划与落地,推动节日玩法按期上线。</p>\n<p>•累计带动制作同款作品300个,模板使用量TOP3均为节日玩法,为发现页持续补充创作场景。</p>\n<p>•完成多轮效果测试,推动 badcase 率由12.3% 收敛至 3.1%。</p>\n<p>•基于小程序北极星指标完成 AB测试样本量与周期估算,支撑迭代决策,提升排期效率。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-graduate-fde-project-2",
+        "name": "项目2:Paper Radar 论文雷达",
+        "role": "",
+        "date": "2025.09 - 2026.04",
+        "description": "<p>项目背景:</p>\n<p>科研人员需要持续追踪多个期刊和学术数据库,传统检索方式存在数据源分散、重复论文多、元数据不完整、筛选效率低及英文</p>\n<p>论文阅读成本高等问题。独立开发 Paper Radar,将论文抓取、跨源融合、相关性筛选、中文结构化总结和定期报告整合为自动</p>\n<p>化工作流,帮助科研人员更及时、准确地发现和理解高相关论文。</p>\n<p>核心职责:</p>\n<p>•负责产品调研与需求定义:围绕科研人员“论文发现一筛选一阅读一持续跟踪”全链路,设计竞品及替代方案拆解、半结</p>\n<p>构化用户访谈/任务观察、原型与真实样本验证的三层调研框架;访谈研究生课题组的一线科研人员及导师,沉淀核心场</p>\n<p>景、需求池及产品验证指标。</p>\n<p>•主导智能化技术选型:对比 Agent 与“模型+Prompt Engineering+确定性工作流”方案,选择由程序完成抓取、融</p>\n<p>合、去重和筛选,仅使用大模型进行中文总结;通过版本化 Prompt、JSON Schema、证据等级、缓存及预算控制降低</p>\n<p>幻觉与调用成本,保证结果可复现、可审计并支持模型替换。</p>\n<p>•建立需求排序机制:用户价值&gt;数据风险&gt;前置依赖&gt;实施成本。按照“先保证数据正确,再提升筛选准确率,继而实</p>\n<p>现自动运行,最后优化阅读体验”原则推进;将语义重排、邮件产品化、用户权限和商业化验证等非核心能力延后迭代。</p>\n<p>项目成果(Paper Radar):</p>\n<p>•独立完成 Paper Radar 从1.0 至3.0的2次版本迭代,新增及优化用户功能3项。</p>\n<p>•单次文献筛选时间由5分钟降至 3分钟;每周累计生成论文总结100+篇、定期报告1份。</p>\n<p>•产品覆盖科研用户 50名,其中23名保持周度使用4周以上,周度活跃率达 46%,注册至首次使用转化率达 65%。</p>\n<p>•用户反馈整体积极,NPS达72分,验证了产品在科研文献追踪场景中的实际价值。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-graduate-fde-project-3",
+        "name": "项目3:Drop Todo",
+        "role": "",
+        "date": "2026.06 - 2026.08",
+        "description": "<p>项目背景:</p>\n<p>传统待办工具主要解决任务记录与状态管理问题,但任务完成后的反馈较弱,用户难以持续感知长期积累。Drop Todo 将任务完</p>\n<p>成行为与水滴动效、成长型花园结合,构建“完成任务—即时反馈—花园成长一持续使用”的正向循环,使抽象的完成记录转化</p>\n<p>为可持续积累的视觉成果,增强成就感与产品陪伴感。</p>\n<p>核心职责:</p>\n<p>•产品规划与体验设计:独立负责产品从概念验证到版本交付的全流程规划,围绕“以可视化成长增强任务完成反馈”确定</p>\n<p>产品定位,梳理任务创建、完成反馈、花园成长、花朵收集及权益解锁等核心场景;制定阶段性PRD,拆分版本里程碑、</p>\n<p>功能边界、验收标准和风险控制方案,推动产品从 MVP 持续迭代至可公开分发版本。</p>\n<p>•客户端架构与核心功能开发:独立完成 macOS 客户端架构及核心功能开发,覆盖 SwiftUI/AppKit 界面、任务状态管</p>\n<p>理、花园领域模型、确定性随机算法与本地数据持久化。</p>\n<p>•测试验证与版本交付:建立覆盖单元测试、集成测试、UI 自动化、性能测试及可靠性测试的质量保障体系;完成 Release</p>\n<p>构建、自动化质量门禁、安装包生成及发布前验证,形成从开发、测试到官网分发的版本交付闭环。</p>\n<p>•市场验证与冷启动:以线下千人规模黑客松作为产品首轮冷启动场景,进行现场演示并邀请真实体验;同步在OPC社群</p>\n<p>及个人自媒体平台发布产品介绍与体验入口,汇总用户反馈并迭代优先级;开展 GEO 内容建设,形成“内容触达一产品</p>\n<p>体验一用户反馈一迭代优化”的闭环。</p>\n<p>•商业化:调研 Forest、Things 3、TickTick 等效率工具,拆解一次性买断、Freemium 订阅、订阅与终身版并行、虚拟</p>\n<p>内容增值等模式;设计“露芽一四季一星辉”三级权益体系,提出“四季¥19、星辉¥39”的早期一次性定价假设,并先</p>\n<p>通过离线邀请码验证高阶花池吸引力。</p>\n<p>项目成果 (Drop Todo):</p>\n<p>•独立推进4个阶段版本迭代,产品从 1.0升级至5.0,完成核心体验重构,落地完成花园、百花图鉴等8 项核心能力。</p>\n<p>•设计包含16 种花朵、5档稀有度、3级花池的成长收集体系,通过固定种子批量模拟验证花种覆盖与稀有度分布。</p>\n<p>• 完成 5,000次任务完成事件的存储、重启恢复及图鉴派生验证,连续 20次快速创建测试均低于300ms 性能预算。</p>\n<p>•最终用户周均使用天数达5天,次日留存率50%,版本更新后活跃度提升20%。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-graduate-fde-education-1",
+        "school": "大连理工大学(985)",
+        "major": "计算化学方向",
+        "degree": "全日制硕士",
+        "startDate": "2023-09",
+        "endDate": "2026-06",
+        "description": "<p>•综合排名前 20%;免试攻读(保送)</p>\n<p>• 核反应堆氩气介质中特殊核素的反应机制及 PBTK 模型研究(横向课题,机密),子课题负责人。</p>\n<p>•海洋大气硝酸促进含碘化合物成核机制(国家自然科学基金项目),发表SCI 学术论文1篇:论文链接</p>",
+        "visible": true,
+        "gpa": ""
+      },
+      {
+        "id": "detail-graduate-fde-education-2",
+        "school": "郑州大学(211)",
+        "major": "环境科学方向",
+        "degree": "全日制本科",
+        "startDate": "2019-09",
+        "endDate": "2023-07",
+        "description": "<p>• 综合排名专业第 3</p>\n<p>• 冬季供暖对城市大气黑碳的影响,发表SCI 学术论文1篇:论文链接</p>\n<p>荣誉:国家励志奖学金(国家级);河南省优秀毕业论文(省级)</p>\n<p>竞赛成果:</p>\n<p>• 节油减碳智能控制系统(软件著作权1项:2022SR0242993);</p>\n<p>• 新型原位资源化生态厕所(实用新型专利2项:ZL202122398321.X;ZL202122394597.0)</p>",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "experience",
+        "title": "实习经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 4
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-graduate-fde",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 137.912
+            },
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-graduate-fde-education-1",
+              "startY": 498.71
+            },
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-graduate-fde-education-2",
+              "startY": 635.89
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "toBlock": 3,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-graduate-fde-work-1",
+              "startY": 831.931
+            }
+          ],
+          "sourceHeight": 1122.594
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "experience",
+              "fromBlock": 3,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-graduate-fde-work-1",
+              "startY": -0.224
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-graduate-fde-project-1",
+              "startY": 165.964
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 5,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-graduate-fde-project-2",
+              "startY": 818.878
+            }
+          ],
+          "sourceHeight": 1122.594
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 5,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-graduate-fde-project-2",
+              "startY": -0.224
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-graduate-fde-project-3",
+              "startY": 347.323
+            }
+          ],
+          "sourceHeight": 1122.594
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-insurance-transition",
+    "name": "保险产品转型",
+    "basic": {
+      "title": "AI产品经理",
+      "location": "",
+      "birthDate": "",
+      "employementStatus": "",
+      "customFields": [
+        {
+          "id": "source-0",
+          "label": "工作年限",
+          "value": "5年",
+          "visible": true,
+          "displayLabel": false
+        }
+      ]
+    },
+    "selfEvaluationContent": "<p>1.<strong>业务驱动的AI产品规划能力:</strong>具备5年保险产品经验,能够从内容生产、顾问咨询和客户经营等真实场景识</p>\n<p>别AI机会,并综合运用Prompt Engineering、RAG、Agent、多模态AIGC与规则引擎完成场景拆解、MVP定</p>\n<p>义和AI工作流设计,将模型能力转化为可运营的业务功能。</p>\n<p>2.<strong>AI产品0-1与Vibe Coding验证:</strong>主导保创AI与保险智能客服需求、PRD、原型、工作流到上线验收,并独</p>\n<p>立完成AI客户经营助手;具备使用Vibe Coding辅助方案拆解、交互原型和关键链路验证的能力,可在研发投</p>\n<p>入前快速验证产品假设。</p>\n<p>3.<strong>Agent与RAG产品架构能力:</strong>熟悉Agent工作流、RAG知识库及多模型协同设计,能够规划“意图识别一知</p>\n<p>识检索一规则校验一证据判断一答案生成”链路,明确大模型、业务规则、权威数据与人工确认的职责边界;</p>\n<p>智能客服首期完成20+款保险产品知识化处理,上线3个月后相关咨询量环比下降13.5%。</p>\n<p>4.<strong>AI评测治理与数据迭代:</strong>围绕事实准确性、内容完整性、渠道适配、合规风险和异常场景设计评测集与</p>\n<p>Badcase闭环,并建立引用溯源、版本管理、越界拦截、降级重试和人工兜底。确保AI输出可解释、可追踪、</p>\n<p>可运营,并避免AI替代保险公司作出核保、医疗或理赔决定。</p>",
+    "skillContent": "<p>能力标签:AI产品规划、RAG知识库、Agent、多模态AIGC、AI评测、保险数字化、</p>\n<p>CMS、PE、项目推进</p>",
+    "experience": [
+      {
+        "id": "detail-insurance-transition-work-1",
+        "company": "明亚保险经纪",
+        "position": "AI 产品经理",
+        "date": "2023.12 - 2026.07",
+        "details": "<p>1.<strong>【CMS产品规划】</strong>基于保险运营图片生产、文章产出、培训课程等业务需求增长但人工产出速度有限的核心</p>\n<p>矛盾出发,主导规划CMS平台,利用AIGC技术,设计了包含‘文生文’、‘文生图’、‘文生视频’、‘素材库’等产</p>\n<p>品架构,将AI能力转化为可提升业务效率的实际功能。</p>\n<p>2.<strong>【从0到1主导AI智能客服落地】</strong>客服人员每天需要回复大量简单、重复、有固定答案的问题,大量同质化问</p>\n<p>题浪费人力。主动发起智能客服项目,通过问题归类、Agent搭建、PE工程限制问答范围、RAG知识库、</p>\n<p>badcase问题处理及功能迭代,全程主导完成MVP版上线。</p>\n<p>3.<strong>【保险产品数字化】</strong>推进新保险公司及寿险、年金险、意外险、医疗险等产品通过API/H5接入明亚APP;负</p>\n<p>责投保链路与后台配置优化,所负责经代产品APP出单率平均80%以上,中邮产品出单率达90%以上。</p>\n<p>4.<strong>【增长与体验优化】</strong>围绕产品分类、标签、收藏及投保步骤优化前后台体验;上线收藏夹后月点击近8,000</p>\n<p>次、日均约220次、UV 3,011。推动所负责保险公司产品接入明亚小程序,覆盖率达90%。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-insurance-transition-work-2",
+        "company": "新华保险",
+        "position": "产品经理",
+        "date": "2021.07 - 2023.12",
+        "details": "<p><strong>【保全产品规划】</strong>负责掌上新华APP万能险追加保费、账户查询及领取能力设计,将柜面流程迁移至线上;拆</p>\n<p>解保单选择、金额录入、资料上传、被保人确认与支付等环节,并通过端外确认等方案降低多人场景操作成本。</p>\n<p><strong>【平台化配置】</strong>梳理险种、人脸、证件、限额等公共能力,规划后台配置系统,支持运维统一导入、查询与调</p>\n<p>整规则,减少公共能力变更的重复需求与人工维护。</p>\n<p><strong>【业务结果】</strong>相关方案上线后,APP日活跃度提升1%,新客户留存率同比提升3%,主推险种销量同比提升</p>\n<p>10%。</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-insurance-transition-project-1",
+        "name": "项目一:保创AI•保险内容CMS",
+        "role": "",
+        "date": "2025.12 - 2026.07",
+        "description": "<p><strong>【背景】</strong>基于公司对接保险产品的目标调整,合作的保险公司和需要对接的产品增多,因此所需的产品营销图片、</p>\n<p>产品文章、销售培训课程等诉求增多且要求产出的时效缩短,同时人力资源紧张,无法支持增多的大量需求。面</p>\n<p>对这一问题,急需通过搭建AI驱动的内容生产平台,来解决内容生产的效率问题。</p>\n<p><strong>【平台定位】</strong>保创AI是一个面向内部运营人员的内容生产与管理的CMS系统。通过AI生图、AI生文、AI生视频,</p>\n<p>来满足运营人员对内容的诉求。达到公司降本增效的目的。</p>\n<p><strong>【职责边界】</strong>负责业务调研、产品架构、MVP与PRD、模型能力评估、Prompt/Agent工作流、AI评测验收及跨</p>\n<p>业务/运营/研发/设计/合规推进;算法与研发团队负责模型接入、工程实现和基础设施交付。</p>\n<p><strong>【行动】</strong></p>\n<p>1、<strong>【产品架构】</strong>设计“资料对接-事实确认-AI生成-人工修改-两级审核-素材沉淀”的闭环,规划产品资料库、</p>\n<p>AI创作中心、审核中心、素材中心、品牌中心、版本管理、权限与审计等模块;支持PDF、DOCX、XLSX资料</p>\n<p>按产品/版本统一管理。</p>\n<p>2、<strong>【模型能力评估与分工】</strong>从事实准确性、结构化输出、中文可控性、风格一致性、响应速度、调用成本与</p>\n<p>API稳定性等维度评估文本、图像和语音能力;由DeepSeek承担文章、提纲和脚本等结构化生成,Qwen</p>\n<p>Image生成背景与插图,浏览器语音能力支持课程播放。</p>\n<p>3、<strong>【Prompt Engineering】</strong>按文章、图片和培训场景设计模板化Prompt,明确角色、任务、知识上下文、渠</p>\n<p>道语气、输出结构与禁止项;保险责任、产品数字、品牌标识和免责声明从已确认事实读取或采用确定性排版,</p>\n<p>避免模型自由改写关键事实。</p>\n<p>4、<strong>【多模态Agent工作流】</strong>将营销图片GC、文章GC、销售培训视频GC拆为三条独立链路,并采用“先确认、</p>\n<p>后生成”;图片先确认文案,文章先确认提纲,培训先确认课程结构与脚本;补齐取消、重试、驳回、撤回与返</p>\n<p>回上一步等反向流程,控制生成成本与等待风险。</p>\n<p>5、<strong>【AI评测与验收】</strong>围绕真实业务场景、内容完整性、渠道适配、视觉规范、合规风险及生成稳定性、压力测</p>\n<p>试制定人工评审与典型用例回归维度,持续沉淀Badcase并用于Prompt、工作流和交互规则迭代。</p>\n<p>6、<strong>【质量与合规治理】</strong>建立产品事实确认、产品审核与合规审核;通过不可变提交版本、驳回重提、操作审计</p>\n<p>及产品版本影响分析,识别上游资料更新对历史内容的影响,并支持保留、修改、失效或恢复。</p>\n<p><strong>【项目结果】</strong>完成资料接入、三类AI内容生成、人工修改、两级审核、素材入库与下载复用的MVP,支持公众号</p>\n<p>/小红书文章、PNG营销图片和DOCX输出;上线3个月后,图片生产周期由2个工作日/人降至1.5个,文章效率</p>\n<p>提升20%,培训视频制作效率提升30%。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-insurance-transition-project-2",
+        "name": "项目二:保险智能客服 明小星",
+        "role": "",
+        "date": "2024.05 - 2025.12",
+        "description": "<p><strong>【背景】</strong>面向客服人员接收到大量简单、重复、有固定回复的问题,急需建立一套可持续接入不同保险产品及资</p>\n<p>料版本的智能咨询客服,覆盖保险经纪人投保前的高频工作场景;同时建立答案溯源、风险拦截、人工确认和异</p>\n<p>常兜底机制,以便缩短经纪人了解和推荐产品所需时间和解决部分投保前环节的常见问题。</p>\n<p><strong>【行动】</strong></p>\n<p>1、<strong>【场景与范围拆分】</strong>面向保险经纪人投保前咨询,将需求拆解为保障责任、除外责任、投保规则、职业查询、</p>\n<p>投保流程、材料清单、健康告知、理赔渠道和正式投保入口9类能力。</p>\n<p>2、<strong>【RAG与证据链】</strong>设计“意图识别-产品及版本定位-知识检索-业务规则校验-证据完整性判断-答案生成”工</p>\n<p>作流;关键结论关联正式资料、章节、页码与原文,证据不足或资料冲突时停止下结论并引导人工核实。</p>\n<p>3、<strong>【高风险决策边界】</strong>职业与健康告知场景采用“事实提取-用户确认-规则匹配-结果解释”;将健康告知限定</p>\n<p>为“发现匹配项/暂未发现匹配项/信息不足” ,明确AI不替代保险公司作出核保、医疗或理赔决定。</p>\n<p>4、<strong>【安全与兜底】</strong>建立业务白名单、越界拦截、提示词注入防护、投保链接校验、上传文件安全检查、敏感信</p>\n<p>息保护、会话隔离、超时重试与人工兜底机制。</p>\n<p><strong>【项目结果】</strong>首期完成20+款保险产品及职业数据的知识化处理,建立多产品、多版本资料组织方式;上线3个月,</p>\n<p>投保环节相关咨询量环比下降13.5%。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-insurance-transition-project-3",
+        "name": "项目一:智能账本•AI客户经营助手",
+        "role": "0-1个人独立产品",
+        "date": "2026.03 - 2026.05",
+        "description": "<h2>个人项目经历 Personal Project Experience</h2>\n<p><strong>【业务背景】</strong>小型美容店依赖纸质账本或在线表格记录购买、核销与反馈,容易漏记、错记、余额计算错误;客</p>\n<p>户跟进依赖店主记忆,难以及时识别回访、复购或续卡机会。</p>\n<p><strong>【行动】</strong></p>\n<p>1、<strong>【产品定位与架构】</strong>将记账工具升级为“准确账务+可确认客户事实+可解释经营建议”的AI助手,规划自然</p>\n<p>语言记账、客户档案、产品服务、今日事项、知识库、推荐反馈与AI管理后台,并覆盖移动端、电脑端和管理员</p>\n<p>端。</p>\n<p>2、<strong>【Agent工作流与数据边界】</strong>设计“自然语言/语音输入-意图及实体识别-结构化确认卡-人工确认-业务数据</p>\n<p>写入-余额反馈”链路;Agent负责理解语言与提出操作建议,余额和消费结果由权威业务数据计算,避免模型直</p>\n<p>接改数或自行算账。</p>\n<p>3、<strong>【记忆与事实治理】</strong>将持续对话、按日会话、客户上下文与权威档案分层;AI提取的偏好、消费反馈和敏感事</p>\n<p>实展示来源、置信度及冲突信息,必须经店主确认后才能写入档案并参与后续推荐。</p>\n<p>4、<strong>【可解释推荐】</strong>围绕复购、回访与续卡设计“规则候选-强制排除-优先级评分-知识检索取证-沟通话术生成”;</p>\n<p>将拒绝营销、历史不适、产品停用、知识未确认和冷却期设为硬性排除条件,控制打扰与误推风险。</p>\n<p><strong>【项目结果】</strong>产品上线后获得10+用户,自然语言记账效率提升20%。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-insurance-transition-project-4",
+        "name": "项目二:入神话|多模态AI互动中国神话产品",
+        "role": "个人项目",
+        "date": "2026.06 - 2026.08",
+        "description": "<p><strong>【背景】</strong>:针对AI小说、剧本产品“一次输入、被动生成”、用户参与感弱及长剧情容易遗忘的问题,因此设计一</p>\n<p>款让用户以专属动漫角色进入中国神话,并通过自然语言和关键选择持续改变剧情的C端互动产品。</p>\n<p><strong>【核心工作】</strong>:</p>\n<p>1.<strong>【多Agent架构】</strong>拆分角色生成、状态裁判、叙事导演和内容生成4类Agent,完成“照片与对话创建角色一理</p>\n<p>解用户行动一更新剧情状态一生成下一幕一输出个人作品”的工作流设计。</p>\n<p>2.<strong>【Prompt与剧情记忆】</strong>将原典事实、人物关系、承诺、物品及风险结构化存储;通过状态裁判输出JSON补</p>\n<p>丁、规则层校验、叙事Agent生成内容,解决模型遗忘前序选择、人物设定漂移和剧情分支合流问题。</p>\n<p>3.<strong>【多模态内容生成】</strong>基于统一的角色卡和剧情档案生成角色形象、场景插画、个性化小说、动画剧本及动态漫</p>\n<p>分镜,保证不同内容形态中的角色与结局一致。</p>\n<p><strong>【项目成果】</strong>:独立完成产品定位、AI架构、Agent工作流及可运行Web MVP;建立10个中国神话故事池,完</p>\n<p>整落地《女娲补天》首卷,包含4条画面线索、4个核心剧情方向和12种结局,打通角色创建、自由行动、剧情记</p>\n<p>忆及多模态内容生成闭环。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-insurance-transition-education-1",
+        "school": "山西财经大学",
+        "major": "",
+        "degree": "本科",
+        "startDate": "",
+        "endDate": "",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "skills",
+        "title": "能力标签",
+        "icon": "⚡",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 4
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 5
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-insurance-transition",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-insurance-transition-education-1"
+            },
+            {
+              "sectionId": "skills",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "startY": 138.611
+            },
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 194.112
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-insurance-transition-work-1",
+              "startY": 583.577
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "toBlock": 2,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-insurance-transition-work-2",
+              "startY": 954.534
+            }
+          ],
+          "sourceHeight": 1122.594
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "experience",
+              "fromBlock": 2,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-insurance-transition-work-2",
+              "startY": -26.296
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-insurance-transition-project-1",
+              "startY": 86.552
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 3,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-insurance-transition-project-2",
+              "startY": 930.129
+            }
+          ],
+          "sourceHeight": 1122.594
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 3,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-insurance-transition-project-2",
+              "startY": -26.296
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 1,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-insurance-transition-project-3",
+              "startY": 259.51
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 1,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-insurance-transition-project-3",
+              "startY": 308.405
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-insurance-transition-project-4",
+              "startY": 724.339
+            }
+          ],
+          "sourceHeight": 1122.594
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-civil-transition",
+    "name": "土木工程转型",
+    "basic": {
+      "title": "AI产品经理/FDE",
+      "location": "",
+      "birthDate": "",
+      "employementStatus": "",
+      "customFields": [
+        {
+          "id": "source-0",
+          "label": "年龄",
+          "value": "28",
+          "visible": true,
+          "displayLabel": false
+        },
+        {
+          "id": "source-1",
+          "label": "工作经验",
+          "value": "6+年",
+          "visible": true,
+          "displayLabel": false
+        }
+      ]
+    },
+    "selfEvaluationContent": "<p>• 完整AI产品落地能力:熟悉主流LLM、图像模型、视频模型基座能力边界与成本,能基于业务目标设计模型选型及</p>\n<p>架构方案,进行 RAG、Prompt Engineering、Agent 编排工程化落地;拥有企业级智能工作平台项目、AI方案</p>\n<p>智审平台产品从0到1稳定交付完整经验。</p>\n<p>• 用户研究与需求洞察能力:擅长梳理不同业务线、跨部门、多角色协作流程,并识别高频、重复、耗时的关键问</p>\n<p>题,判定AI产品切入方向,并将其落地价值明确、技术可行、可复制推广的AI 应用场景。</p>\n<p>•极客属性与 Vibe Coding能力:熟练使用 Claude Code、Codex 等 Agentic Coding 工具,以AI 原生方式独</p>\n<p>立完成产品想法从验证到上线的全流程,个人 GitHub 账号拥有10+个ToB/To C项目及效率类 Skills,自建产品</p>\n<p>经理 AI工作台,自动化承接个人50% 日常工作,兼具产品洞察与工程落地能力。</p>\n<p>•数据飞轮与效果迭代闭环:擅长构建数据收集、模型优化、产品迭代的增长飞轮,设计用户反馈机制与数据标注</p>\n<p>体系;主导构建场景标注评测集,持续通过 Bad Case 分析挖掘长尾场景,将修复结论注入 Few-shot 示例库,</p>\n<p>实现模型效果与用户体验的双向持续提升。</p>",
+    "skillContent": "",
+    "experience": [
+      {
+        "id": "detail-civil-transition-work-1",
+        "company": "中冶天工集团有限公司",
+        "position": "信息中心管理部|AI产品经理",
+        "date": "2023.06 - 2026.08",
+        "details": "<p>核心职责:</p>\n<p>•产品需求调研与规划:面向公司、分公司及项目多层级开展业务调研,评估业务价值、数据条件、实施成本与技</p>\n<p>术边界,明确 AI产品定位、能力边界与核心指标,主导产品从0到1推进落地。</p>\n<p>•企业 AI产品体系建设:先后主导施工方案 AI智能审查平台、企业级 Agent应用及开发平台等多条产品线规划,</p>\n<p>完成从单点工具到平台化 AI产品矩阵的演进,推动业务流程、Agent分工与企业规范转化为可落地的产品功能。</p>\n<p>•模型评测与效果优化:搭建围绕准确率、内容完整性、响应速度与稳定性的评测体系,负责 Prompt设计、检索</p>\n<p>排序、测试集建设与 Bad Case 分析,持续优化产品效果、抑制幻觉与无依据误报。</p>\n<p>•项目交付与规模化推广:推进产品从需求评审、原型设计、研发测试到灰度上线的完整过程,组织内部培训、使</p>\n<p>用反馈收集与典型案例编写,推动 AI 产品在全公司范围的普及与落地应用。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-civil-transition-work-2",
+        "company": "某大型房建项目",
+        "position": "项目工程师",
+        "date": "2020.07 - 2023.05",
+        "details": "",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-civil-transition-project-1",
+        "name": "核心项目1|天工开物|企业级智能工作平台项目",
+        "role": "AI产品经理",
+        "date": "2026.01 - 2026.08",
+        "description": "<p>项目背景:</p>\n<p>牵头建设公司专属的智能工作平台,面向企业产品、研发与一线业务人员,采用“应用+研发”双引擎定位:应用侧预</p>\n<p>置数字员工与 Skill,业务人员开箱即用、直接提效;研发侧提供创作窗口,支持各层级员工自定义数字员工与 Skill的</p>\n<p>编排与复用。平台将需求分析、PRD审阅、产品开发、测试验收与上线管理收敛到同一AI工作台,支持一句话创建</p>\n<p>项目、多模型协作、多项目并行、人工确认、成本统计与项目文件沉淀,形成从需求到上线的端到端闭环。</p>\n<p>核心职责:</p>\n<p>•双层产品架构设计:根据企业真实业务场景封装预设数字员工与Skill,支撑产品开发人员与一线业务人员零门槛开</p>\n<p>箱即用,并预留创作接口与编排窗口,让非技术用户以自然语言编排自定义数字员工与Skill,并沉淀回预设库,形</p>\n<p>成先使用,后自造,再反哺平台的产品数据飞轮。</p>\n<p>• Agent工作机制设计:按产品经理、架构师、前端、开发、审查等角色规划 Agent分工,设计任务流转、执行状</p>\n<p>态、失败重试与结果查看,通过 Human in the Loop 机制让用户在关键节点审核产出、提出修改或批准进入下一</p>\n<p>阶段。</p>\n<p>• 模型与研发标准管理:规划多模型配置、角色路由、连接测试、Token 用量与成本估算。</p>\n<p>• 产品交付与持续迭代:组织从需求评审、原型设计、研发测试到上线推广的实施,协调产品、研发、业务人员解</p>\n<p>决交付问题;编写使用手册与典型案例,开展内部培训,并根据用户反馈安排版本迭代。</p>\n<p>项目成果:</p>\n<p>•已完成研发团队及公司范围内30个项目,共计600+员工推广使用,一线员工人均提效&gt;20%,单个项目开发上线</p>\n<p>相较原有流程缩短超90%。</p>\n<p>•组织约300名员工开展 Vibe Coding 培训与实践比赛,累计生成 300+个 MVP 原型,完成10+ 个 AI项目实际</p>\n<p>落地。</p>\n<p>•平台累计沉淀7个数字员工、封装50+条Skil,将企业AI产品制作方式从单点AI工具类产品制作到平台化 AI产品</p>\n<p>矩阵的演进。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-civil-transition-project-2",
+        "name": "核心项目2|天工智审|建筑方案 AI审查平台",
+        "role": "AI产品经理",
+        "date": "2025.03 - 至今",
+        "description": "<p>项目背景:</p>\n<p>面向全国各地不同分公司的技术部门和方案审核人员,解决专项施工方案篇幅长、规则多、人工审查耗时且容易遗</p>\n<p>漏红线问题的痛点。产品通过大模型与规则引擎辅助识别严重缺陷、内容缺失、规范引用异常和前后矛盾,生成可</p>\n<p>追溯的结构化审查意见。</p>\n<p>核心职责:</p>\n<p>•需求分析与产品规划:深入梳理方案审核流程,明确目标用户、核心场景、产品能力边界,制定红线召回率、规</p>\n<p>则覆盖率和审查时长等核心指标。</p>\n<p>• Agent 方案设计:主导设计文档解析、工程类型匹配、规则选择、逐项审查、证据校验、结果自审和报告生成流</p>\n<p>程,合理划分规则引擎、大模型及人工审核的职责。</p>\n<p>•RAG 知识库搭建:推动严重缺陷清单、编制指南、200余本现行规范和历史审批意见结构化,建立按方案工程类</p>\n<p>型自动匹配、规则来源匹配、存疑内容转人工核查的规则体系。</p>\n<p>• 模型评测与效果优化:围绕准确性、完整性、时延和稳定性开展模型评测,持续优化 Prompt、规则匹配、证据引</p>\n<p>用、结果去重和自审策略,减少幻觉及无依据误报。</p>\n<p>项目成果:</p>\n<p>• 平台覆盖10家分公司和70名审核人员,累计完成近110个项目的600余份方案审核,意见准确率超过95%,单</p>\n<p>份方案审核耗时缩短约90%以上。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-civil-transition-project-3",
+        "name": "辅助项目1|Layra(AI智能穿搭项目)",
+        "role": "产品负责人",
+        "date": "2026.05 - 至今",
+        "description": "<p>项目背景:</p>\n<p>用户日常穿搭需同时考虑个人衣柜、天气、场景、偏好与衣物状态,相关信息分散且推荐结果难以直接执行。本人</p>\n<p>作为产品负责人,负责用户研究、产品方案、多模态识别、推荐评测与版本上线,从0到1构建基于真实衣柜的AI</p>\n<p>穿搭助手。</p>\n<p>核心职责:</p>\n<p>•用户洞察与产品定义:围绕衣物录入成本、推荐可执行性和生成等待等问题梳理用户旅程,规划衣物上传、AI识</p>\n<p>别、衣柜管理、穿搭推荐、结果反馈与虚拟试穿6个核心环节,明确各环节的输入、输出及验收标准。</p>\n<p>•AI技术选型与异常兜底:负责衣物图像处理与文本标签结构化方案,采用抠图模型与文本大模型串联完成白底单</p>\n<p>品提取及品类、颜色、风格、季节等标签生成,并以抠图质量、字段完整性、响应时延和调用成本作为选型依据;</p>\n<p>针对处理失败提供重试与人工分类入口,避免识别异常阻断衣物录入。</p>\n<p>•推荐策略与评测体系:设计天气、季节、场景、脏衣状态硬过滤+风格与历史偏好生成的固定推荐工作流;围绕</p>\n<p>硬约束合规、搭配合理性、单品真实性、效果图质量和多样性5个维度建立评测标准,并构建覆盖通勤、约会、</p>\n<p>雨天、脏衣过滤等6类 Golden Set,用于版本回归、Bad Case 定位和策略迭代。</p>\n<p>•冷启动与迭代闭环:组织首批用户体验测试,归因保存缓慢、生成耗时和推荐同质化等问题,负责移动端保存、</p>\n<p>生成效率、穿搭去重与反馈链路优化,并完成国内云服务迁移和公开版本发布。</p>\n<p>项目成果:</p>\n<p>•产品交付:公开上线v1.0,落地数字衣柜、智能穿搭、虚拟试穿与单件搭配4项核心功能,形成衣物录入、推荐、</p>\n<p>反馈与效果图生成闭环。</p>\n<p>•用户验证:产品总计300名用户,已实际完成约1600余件衣物上传和500余次推荐生成。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-civil-transition-project-4",
+        "name": "辅助项目2|Motif Cue|视频剪辑AI动效工作台项目",
+        "role": "产品负责人",
+        "date": "2026.01 - 至今",
+        "description": "<p>项目背景:</p>\n<p>Motif Cue 是一款面向知识类视频创作者的AI动效编排工具,解决人工理解字幕、选择动效并逐段对齐时间轴耗时</p>\n<p>较长的问题。系统读取 SRT字幕完成内容识别与动效编排,用户可在线预览和调整结果,随后导出透明背景视频,</p>\n<p>用于剪辑软件中的后期合成。</p>\n<p>核心职责:</p>\n<p>• AI编排与流程设计:设计SRT解析、语义分段、内容分类、动效匹配、JSON 生成及质量检查流程,划分AI 推荐、</p>\n<p>程序校验和人工调整的职责,提升动效初稿的可用性与生成稳定性。</p>\n<p>•剪辑交互与软件衔接:围绕字幕时间轴设计动效预览、逐段调整、参数修改和效果替换功能,支持透明背景视频</p>\n<p>导出,使生成结果能够直接叠加至主流剪辑软件中使用。</p>\n<p>•模板体系与偏好设计:规划动效模板分类、适用场景及颜色、布局、节奏等参数,记录用户确认和修改行为,将</p>\n<p>高频使用的动效整理为可复用模板与制作 Skill,减少后续视频的重复调整。</p>\n<p>项目成果:</p>\n<p>• 产品累计服务300余名用户,完成2000余条视频制作导出,建设100余种可复用动效模板。</p>\n<p>•视频动效80%的AI 初稿动效可以直接使用,首次制作效率即可提升 80%以上,同用户连续制作3至5期后,制</p>\n<p>作效率进一步提升至90%以上。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-civil-transition-education-1",
+        "school": "天津城建大学",
+        "major": "土木工程",
+        "degree": "本科",
+        "startDate": "2016",
+        "endDate": "2020",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {
+      "custom-certifications": [
+        {
+          "id": "detail-civil-transition-certification-1",
+          "subtitle": "建筑工程",
+          "dateRange": "2024年",
+          "title": "国家一级建造师",
+          "description": "",
+          "visible": true
+        }
+      ],
+      "custom-awards": [
+        {
+          "id": "detail-civil-transition-awards-1",
+          "subtitle": "",
+          "dateRange": "",
+          "title": "专利、工法与荣誉",
+          "description": "<p>•个人专利3项。</p>\n<p>•行业级工法1项。</p>\n<p>• 分公司年度优秀青年员工、五四青年杰出代表。</p>\n<p>• 2026年|全国治金建设行业协会QC一等奖。</p>\n<p>• 2026年 |天津建筑业协会QC一等奖。</p>\n<p>• 2024年|全国治金建设行业协会QC一等奖。</p>",
+          "visible": true
+        }
+      ]
+    },
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 4
+      },
+      {
+        "id": "custom-certifications",
+        "title": "专业证书",
+        "icon": "🏅",
+        "enabled": true,
+        "order": 5
+      },
+      {
+        "id": "custom-awards",
+        "title": "其他履历、获奖情况",
+        "icon": "🏆",
+        "enabled": true,
+        "order": 6
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-civil-transition",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": false,
+              "startY": 142.224
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "toBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-work-1",
+              "startY": 405.186
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-work-2",
+              "startY": 459.032
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-civil-transition-work-1",
+              "startY": 481.692
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 13,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-project-1",
+              "startY": 669.518
+            }
+          ],
+          "sourceHeight": 1122.594
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 13,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-civil-transition-project-1",
+              "startY": -5.996
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-project-2",
+              "startY": 187.912
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-project-3",
+              "startY": 550.406
+            }
+          ],
+          "sourceHeight": 1122.594
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-project-4",
+              "startY": 2.162
+            },
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-education-1",
+              "startY": 346.212
+            },
+            {
+              "sectionId": "custom-certifications",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-certification-1",
+              "startY": 409.874
+            },
+            {
+              "sectionId": "custom-awards",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-civil-transition-awards-1",
+              "startY": 471.92
+            }
+          ],
+          "sourceHeight": 1122.594
+        }
+      ]
+    }
+  },
+  {
+    "id": "detail-design-operations",
+    "name": "设计 / 运营转型",
+    "basic": {
+      "title": "AI产品经理",
+      "location": "",
+      "birthDate": "",
+      "employementStatus": "月内到岗",
+      "customFields": [
+        {
+          "id": "source-0",
+          "label": "性别",
+          "value": "男",
+          "visible": true,
+          "displayLabel": false
+        },
+        {
+          "id": "source-1",
+          "label": "年龄",
+          "value": "32岁",
+          "visible": true,
+          "displayLabel": false
+        }
+      ]
+    },
+    "selfEvaluationContent": "<p>战略产品规划能力:完整的AI-CMS平台搭建经验,基于前沿AI能力系统性解决内容生产在效率、质量和规模化方面</p>\n<p>的瓶颈,基于业务痛点和用户增长制定从MVP到成熟期的产品全周期线路,确保可持续发展</p>\n<p>AI Native的产品构建力:熟悉大语言模型、多模态生成及实时语音能力的产品化路径,能围绕模型选型、Prompt</p>\n<p>与上下文设计、MCP标准化工具接入、模型路由与降级策略,将大模型能力抽象为可配置、可复用的产品模块</p>\n<p>Agent矩阵设计:具备Agent的规划经验,能够将复杂业务拆分为原子能力、专业Agent与统一编排三层架构,通</p>\n<p>过Agent能力边界定义与交接协议,形成覆盖内容生产与用户服务的Agent产品矩阵。</p>\n<p>评测体系搭建:具备AI产品全链路评测体系设计能力,能够从模型效果、产品体验和业务价值三个层面建立Golden</p>\n<p>Case及核心指标,完善数据飞轮,通过线上反馈回流、评测集扩充进行模型迭代</p>",
+    "skillContent": "<p>能力标签:产品规划、AI解决方案、模型评测、Harness、AIGC、Agent、PRD、PE</p>",
+    "experience": [
+      {
+        "id": "detail-design-operations-work-1",
+        "company": "北京深纳普思人工智能技术有限公司",
+        "position": "AI产品经理",
+        "date": "2026.06 - 2026.07",
+        "details": "<h4>工作内容</h4>\n<p>负责国内业务线AI产品相关任务的统筹与推进。团队2人围绕医疗级可穿戴设备业务,从需求分析、产品方案、AI能</p>\n<p>力设计、评测验收到上线迭代的完整链路,推动AI能力在医疗健康业务中的平台化落地。</p>\n<p><strong>【智能健康顾问】</strong>梳理设备使用、健康指标、咨询及售后服务等场景,重构医疗知识库工程,文档解析、Chunking</p>\n<p>策略、Embedding模型选型、向量库;搭建Agentic RAG增强链路优化,引入向量检索+关键词检索+混合排序的</p>\n<p>多路召回机制,叠加Rerank重排模型;同时完善风险提示、人工兜底转接,推动回答准确率提升8%,平均响应时</p>\n<p>间缩短5%。</p>\n<p><strong>【AI商城改造】</strong>围绕用户选品等问题,规划GEO、智能搜索及商品推荐三类能力。通过商品标题、参数、适用场景</p>\n<p>和FAQ的结构化建设提升内容可检索性;优化查询意图识别、语义召回、筛选排序和Query改写重召回;结合用户</p>\n<p>画像、设备数据及浏览行为,制定商品召回、过滤、排序与推荐理由生成,商品转化率提升 3%。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-operations-work-2",
+        "company": "安徽省刀锋网络科技有限公司",
+        "position": "AI产品负责人",
+        "date": "2019.11 - 2026.05",
+        "details": "<h4>工作内容</h4>\n<p>作为语音增长业务组及3人 AIGC创新业务线的主产品负责人,前期围绕GMV增长负责聊天室、公会生态与礼物商业</p>\n<p>化,后期由我主导从0到1建设AIGC业务生产平台,主导从业务洞察、产品战略、平台架构、Agent设计、评测体系</p>\n<p>到业务投产的完整链路,推动AI能力从技术探索走向规模化生产。</p>\n<p><strong>【产品战略与平台架构】</strong>针对内容生产依赖多岗位串行、制作周期长、返工率高等问题,将原有内容管理平台升级</p>\n<p>为AIGC内容生成平台;设计内容资产层、AI能力层、Agent应用层四层架构,打通素材管理、模型接入、智能生</p>\n<p>产、人工审核、版本追踪、配置发布及数据回流链路,推动内容生产及上线周期缩短70%。</p>\n<p><strong>【Agent产品矩阵】</strong>围绕内容生产提效、娱乐业务创新,规划并落地AI直播礼物智能生产、AI虚拟人陪聊Agent:</p>\n<p>通过Prompt、Image、Video Agent完成礼物批量生产;通过流式语音交互、Persona设定与分层记忆承接用户陪</p>\n<p>伴需求;累计覆盖多个业务场景,带动相关业务流水提升约5%。</p>\n<p><strong>【AI能力产品化】</strong>将文生图、图生视频、实时语音和代码生成等底层模型能力封装为可配置、可审核、可复用的标</p>\n<p>准模块,建立Prompt模板、模型接入、失败重试及多格式交付机制,使运营、设计能够直接使用AI完成业务生产。</p>\n<p><strong>【评测与数据体系】</strong>建立覆盖生成质量、指令遵循、素材一致性、安全性、响应速度、稳定性及调用成本的评测标</p>\n<p>准,通过Golden Case、人工评审、回归测试和业务反馈持续优化;围绕素材类型、产量、PV、业务覆盖、满意度</p>\n<p>及流水建立数据看板,形成数据驱动的产品迭代机制。</p>\n<p><strong>【语音社交与商业化】</strong>围绕GMV拆解付费用户数、ARPPU及背包礼物占比等核心指标,落地高价值用户增长、主</p>\n<p>播评价激励、公会管理、流量分发及礼物营收玩法,推动大R用户数提升10%+、平台整体流水提升近5%、前50%主</p>\n<p>播收入提升约8%。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-operations-work-3",
+        "company": "北京初聚科技有限公司",
+        "position": "产品经理",
+        "date": "2018.09 - 2019.11",
+        "details": "<h4>工作内容</h4>\n<p><strong>【游戏产品与商业化】</strong>负责小游戏及内容业务的整体规划,围绕用户活跃、留存和收入目标,推进游戏立项、玩法</p>\n<p>设计、内容接入、运营分发与广告变现,联动天神娱乐旗下游戏及流量,推动游戏内容持续供给和规模化运营。</p>\n<p><strong>【海外广告平台规划】</strong>负责Altamob海外移动广告平台规划,建设广告主投放、媒体变现及RTB竞价三大核心模</p>\n<p>块,打通广告创建、实时竞价、曝光点击、效果归因及对账结算链路;基于OpenRTB 2.x完成DSP/SSP渠道接入,</p>\n<p>并落地流量分配、监测、分成和多币种结算方案。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-operations-work-4",
+        "company": "郑州时空隧道信息技术有限公司",
+        "position": "交互设计",
+        "date": "2017.10 - 2018.09",
+        "details": "<h4>工作内容</h4>\n<p><strong>【业务交互设计】</strong>我系统梳理从服务选择、下单支付、订单履约到收益结算、商家对账的完整用户路径,明确不同</p>\n<p>角色、订单状态和异常场景下的交互规则,输出业务流程、信息架构、高保真原型及设计规范。</p>\n<p><strong>【数据分析】</strong>结合业务数据、用户反馈和关键路径分析定位体验问题,建立问题分类与优化优先级;作为产品、研</p>\n<p>发与运营之间的协作桥梁,持续推动方案评审、开发验收和上线复盘,并沉淀三端统一的交互规范及通用组件库。</p>",
+        "visible": true
+      }
+    ],
+    "projects": [
+      {
+        "id": "detail-design-operations-project-1",
+        "name": "GIFTY AI直播礼物智能生产平台",
+        "role": "核心项目",
+        "date": "2023.06 - 2026.05",
+        "description": "<p>背景与目标</p>\n<p>直播礼物依赖运营提需、设计逐个制作的串行流程,单个素材制作周期长、返工率高,难以支撑活动期的批量与高</p>\n<p>频更新。目标是把内容生产从人力线性投入改造为标准化产线:AI批量出初稿、人工审核终审,并沉淀可复用的</p>\n<p>Prompt与生产工作流</p>\n<p>用户画像</p>\n<p>平台主要面向产品、运营及设计团队。运营负责提出礼物主题、活动和数量需求;产品负责礼物规则及业务配置;</p>\n<p>设计师负责候选素材筛选、质量审核和必要的人工调整,对素材创意、动画效果及交付规格要求较高。</p>\n<h4>核心职责</h4>\n<p><strong>【需求管理与场景拆解】</strong>深入梳理运营提需、产品确认、设计制作、素材审核及配置上线的传统流程,定位需求理</p>\n<p>解偏差、批量生产困难和返工率高等问题;将礼物生产拆分为需求解析、Prompt生成、图片生成、视频生成、</p>\n<p>Alpha通道抠图、人工审核和配置发布等关键节点,输出产品路线、PRD及生产解决方案。</p>\n<p><strong>【平台规划与架构设计】</strong>设计“内容资产层-AI能力层-Agent应用层-业务发布层”四层产品架构,统一素材入</p>\n<p>库、标签、检索、审核、版本、权限及配置发布能力;将礼物需求结构化、批量生成、人工确认、失败重试、版本</p>\n<p>追踪、质量评测及业务发布串联成完整生产闭环</p>\n<p><strong>【Prompt工程与效果调优】</strong>建立角色设定、任务目标、结构化输入、生成约束、负向限制及输出格式组成的模块</p>\n<p>化Prompt体系,针对不同主题、风格和模型维护可配置模板及版本记录;结合Few-shot、Golden Case和单变量</p>\n<p>对比测试,持续优化主体漂移、元素缺失、风格不一致、构图异常及动作偏差等问题,并根据不同模型特性调整提</p>\n<p>示词策略,推动生成结果首轮通过率由60%提升至75%</p>\n<p><strong>【多Agent编排与生产闭环】</strong>搭建“运营需求-Prompt Agent-Image Agent-Video Agent-人工验收-配置发</p>\n<p>布”的多Agent生产链路,统一Agent间输入输出Schema、任务状态机、质量门与版本追踪,并结合人机协作;支</p>\n<p>持批量任务创建与过程追踪,完成产量化视频素材的连续生产,实现礼物内容的标准化、批量化交付</p>\n<p><strong>【评测体系与Bad Case优化】</strong>建立建立覆盖指令遵循、图像一致性、帧间稳定性(闪烁抖动)、Alpha边缘质量、</p>\n<p>首轮通过率、生成延迟与单素材成本的评测标准;通过Golden Case、人工盲评、失败样本分类和回归测试持续优</p>\n<p>化Prompt模板、模型参数及生产规则</p>\n<p><strong>【上线运营与能力复用】</strong>围绕素材类型、素材数量、素材PV、业务覆盖、用户送礼及礼物流水建设数据看板,并建</p>\n<p>立运营、设计和产品的周期性反馈机制;沉淀Prompt模板、模型配置、评测标准和生产工作流,为直播活动、节日</p>\n<p>主题及其他内容生产场景提供可复用能力</p>\n<h4>项目成果</h4>\n<p>1.搭建AI礼物批量生产线并完成投产,累计落地5个业务场景、交付8类礼物素材,单批次可并行产出20套完整素</p>\n<p>材,设计团队在同等人力下,单素材从需求到上线周期缩短70%;</p>\n<p>2.通过模块化Prompt体系、参考图垫图与一致性方案迭代,生成结果首轮通过率由60%提升至75%,未通过样本</p>\n<p>经二次生成与失败归因回流,持续反哺模板与负向词库;</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-operations-project-2",
+        "name": "Nomi AI虚拟陪聊",
+        "role": "创新项目",
+        "date": "2026.01 - 2026.05",
+        "description": "<p>背景与目标</p>\n<p>面向高价值付费用户,解决真人陪玩不在线、公会主播供给不稳定等问题,打造支持1V1持续陪伴与多角色互动的</p>\n<p>实时语音Agent,以会话时长、用户留存和会员开通率为核心指标。</p>\n<h4>核心职责</h4>\n<p><strong>【产品架构与语音链路】</strong>设计实时会话、角色扮演、长期记忆、语音输出及安全治理五层架构,搭建“语音识别-</p>\n<p>LLM推理-流式TTS”链路,支持用户打断、静默等待、断线重连和异常降级。</p>\n<p><strong>【角色与记忆体系】</strong>建设角色人设、语言风格、关系阶段和话题策略,区分短期上下文、用户偏好及长期关系记</p>\n<p>忆,支持多角色、多音色切换。</p>\n<p><strong>【安全与商业化】</strong>建立敏感内容识别、未成年人保护及人工复核机制,设计免费体验、会员订阅、专属角色和音色</p>\n<p>权益,形成会员转化闭环。</p>\n<p><strong>【评测与迭代】</strong>围绕响应延迟、角色一致性、记忆准确率及安全拦截率建立评测体系,通过Golden Case、灰度测</p>\n<p>试和真实反馈持续优化。</p>\n<h4>项目成果</h4>\n<p>1.从0到1完成AI虚拟人陪聊Agent建设与上线,打通实时语音、角色配置、长期记忆、安全治理及会员权益链路,</p>\n<p>累计上线12个虚拟角色,语音首包响应延迟控制在约280ms。</p>\n<p>2.通过角色Prompt调优、记忆召回优化、打断交互及灰度评测持续改善陪伴体验,推动用户平均会话时长提升</p>\n<p>8%、会员开通率提升9个百分点,验证AI陪伴场景的用户价值与商业化可行性。</p>",
+        "visible": true
+      },
+      {
+        "id": "detail-design-operations-project-3",
+        "name": "Ludora AI游戏开发",
+        "role": "创新项目",
+        "date": "2026.05 - 至今",
+        "description": "<p>背景与目标</p>\n<p>面向游戏产品、策划、美术、研发及测试团队,解决需求传递链路长、原型验证慢、素材成本高和重复开发等问</p>\n<p>题,探索从自然语言需求到可玩版本的Agent化生产链路。</p>\n<h4>核心职责</h4>\n<p><strong>【Agent架构设计】</strong>搭建任务编排、策划、素材、代码及测试Agent协作体系,覆盖需求理解、任务拆解、内容生</p>\n<p>产、代码实现和版本交付。</p>\n<p><strong>【策划与内容生成】</strong>将自然语言创意转化为玩法说明、功能清单和验收标准,并辅助生成关卡、任务、数值、角色</p>\n<p>及场景素材。</p>\n<p><strong>【代码与测试构建】</strong>结合项目上下文辅助生成和修改代码,接入测试用例生成、功能回归、异常定位及多端构建流</p>\n<p>程。</p>\n<p><strong>【评测与能力复用】</strong>围绕需求完成度、素材与代码采纳率、测试通过率及构建成功率评估Agent效果,并沉淀可复</p>\n<p>用的工作流、Prompt和评测集。</p>\n<h4>项目成果</h4>\n<p>1.跑通从自然语言创意、玩法拆解、素材与代码生成到测试构建的Agent化开发闭环,累计完成10个可玩游戏原</p>\n<p>型。</p>\n<p>2.沉淀策划、素材、代码及测试Agent的可复用工作流、Prompt模板和评测集,形成从需求输入到版本交付的标</p>\n<p>准化游戏生产方案。</p>",
+        "visible": true
+      }
+    ],
+    "education": [
+      {
+        "id": "detail-design-operations-education-1",
+        "school": "",
+        "major": "视觉传达设计",
+        "degree": "本科",
+        "startDate": "",
+        "endDate": "",
+        "description": "",
+        "visible": true,
+        "gpa": ""
+      }
+    ],
+    "customData": {},
+    "menuSections": [
+      {
+        "id": "basic",
+        "title": "基本信息",
+        "icon": "👤",
+        "enabled": true,
+        "order": 0
+      },
+      {
+        "id": "education",
+        "title": "教育经历",
+        "icon": "🎓",
+        "enabled": true,
+        "order": 1
+      },
+      {
+        "id": "skills",
+        "title": "能力标签",
+        "icon": "⚡",
+        "enabled": true,
+        "order": 2
+      },
+      {
+        "id": "selfEvaluation",
+        "title": "个人优势",
+        "icon": "📝",
+        "enabled": true,
+        "order": 3
+      },
+      {
+        "id": "experience",
+        "title": "工作经历",
+        "icon": "💼",
+        "enabled": true,
+        "order": 4
+      },
+      {
+        "id": "projects",
+        "title": "项目经历",
+        "icon": "🚀",
+        "enabled": true,
+        "order": 5
+      }
+    ],
+    "detailLayout": {
+      "version": 2,
+      "sourceTemplateId": "detail-design-operations",
+      "pages": [
+        {
+          "number": 1,
+          "fragments": [
+            {
+              "sectionId": "education",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-education-1"
+            },
+            {
+              "sectionId": "skills",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "startY": 151.988
+            },
+            {
+              "sectionId": "selfEvaluation",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "startY": 245.322
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-work-1",
+              "startY": 475.181
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "toBlock": 7,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-work-2",
+              "startY": 815.284
+            }
+          ],
+          "sourceHeight": 1123.815
+        },
+        {
+          "number": 2,
+          "fragments": [
+            {
+              "sectionId": "experience",
+              "fromBlock": 7,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-design-operations-work-2",
+              "startY": -3.147
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-work-3",
+              "startY": 282.693
+            },
+            {
+              "sectionId": "experience",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-work-4",
+              "startY": 483.636
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "toBlock": 11,
+              "showSectionTitle": true,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-project-1",
+              "startY": 666.582
+            }
+          ],
+          "sourceHeight": 1123.815
+        },
+        {
+          "number": 3,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 11,
+              "showSectionTitle": false,
+              "showItemHeader": false,
+              "itemId": "detail-design-operations-project-1",
+              "startY": -4.596
+            },
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-project-2",
+              "startY": 542.611
+            }
+          ],
+          "sourceHeight": 1123.815
+        },
+        {
+          "number": 4,
+          "fragments": [
+            {
+              "sectionId": "projects",
+              "fromBlock": 0,
+              "showSectionTitle": false,
+              "showItemHeader": true,
+              "itemId": "detail-design-operations-project-3",
+              "startY": -1.329
+            }
+          ],
+          "sourceHeight": 1123.815
+        }
+      ]
+    }
+  }
+]

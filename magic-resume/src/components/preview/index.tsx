@@ -230,7 +230,7 @@ const PreviewPanel = React.forwardRef<HTMLDivElement, PreviewPanelProps>(
               <div data-resume-content style={{ width: "100%", display: "flow-root", zoom: scaleFactor }}>
                 <ResumeTemplateComponent data={activeResume} template={template} />
               </div>
-              {pageBreakLinesVisible && contentHeight > 0 && (
+              {pageBreakLinesVisible && template.category !== "detail" && contentHeight > 0 && (
                 <>
                   <div>
                     {Array.from(

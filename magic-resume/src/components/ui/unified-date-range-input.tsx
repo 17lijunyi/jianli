@@ -2,7 +2,7 @@
 import { DateInput } from "@heroui/date-input";
 import { HeroUIProvider } from "@heroui/react";
 import { CalendarDate, parseDate } from "@internationalized/date";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 interface UnifiedDateRangeInputProps {
@@ -62,6 +62,7 @@ export function UnifiedDateRangeInput({
   );
 
   const isPresent = value.includes("至今") || value.includes("Present");
+  useEffect(() => setRange(parseRange(value)), [value]);
 
   const updateValue = (
     newStart: CalendarDate | null,

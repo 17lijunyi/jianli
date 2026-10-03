@@ -4,6 +4,7 @@ import { HeroUIProvider } from "@heroui/react";
 import { CalendarDate, parseDate } from "@internationalized/date";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { Input } from "./input";
 
 interface UnifiedDateInputProps {
   value: string;
@@ -25,6 +26,7 @@ export function UnifiedDateInput({
     if (!input) return null;
     try {
       let normalized = input.replace(/[./]/g, "-");
+      normalized = normalized.replace(/^(\d{4})-(\d{1,2})$/, (_, year, month) => `${year}-${month.padStart(2, "0")}`);
       if (normalized.length === 7) normalized = `${normalized}-01`;
       return parseDate(normalized);
     } catch {
@@ -37,9 +39,11 @@ export function UnifiedDateInput({
   const [selectedDate, setSelectedDate] = useState<CalendarDate | null>(() =>
     parseValue(value)
   );
+  const [yearOnly, setYearOnly] = useState(() => /^\d{4}$/.test(value));
 
   useEffect(() => {
     setSelectedDate(parseValue(value));
+    if (/^\d{4}$/.test(value)) setYearOnly(true);
   }, [value]);
 
   const handleDateChange = (date: CalendarDate | null) => {
@@ -54,8 +58,25 @@ export function UnifiedDateInput({
 
   return (
     <div className={className}>
+      {yearOnly ? <Input
+        value={value}
+        aria-label={label || "日期"}
+        placeholder="YYYY 或 YYYY/MM"
+        disabled={isPresent}
+        onChange={(event) => {
+          if (/^[\d./-]{0,10}$/.test(event.target.value)) onChange(event.target.value);
+        }}
+        onBlur={() => {
+          const date = parseValue(value);
+          if (date) {
+            onChange(`${date.year}/${String(date.month).padStart(2, "0")}`);
+            setYearOnly(false);
+          }
+        }}
+      /> :
       <HeroUIProvider locale="ja-JP">
         <DateInput
+          aria-label={label || "日期"}
           value={isPresent ? null : selectedDate}
           onChange={handleDateChange}
           isRequired={isRequired}
@@ -71,6 +92,7 @@ export function UnifiedDateInput({
           }}
         />
       </HeroUIProvider>
+      }
     </div>
   );
 }

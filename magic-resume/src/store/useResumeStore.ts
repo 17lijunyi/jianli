@@ -19,6 +19,7 @@ import {
   blankResumeStateEn,
 } from "@/config/initialResumeData";
 import { getTemplateSeed } from "@/config/templateSeeds";
+import { upgradeDetailResume } from "@/lib/upgradeDetailResume";
 import { generateUUID } from "@/utils/uuid";
 import {
   HISTORY_LIMIT,
@@ -600,13 +601,16 @@ export const useResumeStore = create(
 
       setActiveResume: (resumeId) => {
         const { resumes, activeResume, activeResumeId } = get();
-        const nextResume = resumes[resumeId] ?? null;
+        const storedResume = resumes[resumeId];
+        const nextResume = storedResume ? upgradeDetailResume(storedResume) : null;
 
         if (activeResumeId === resumeId && activeResume === nextResume) {
           return;
         }
 
-        set({ activeResume: nextResume, activeResumeId: resumeId });
+        set({ activeResume: nextResume, activeResumeId: resumeId,
+          ...(nextResume && nextResume !== storedResume ? { resumes: { ...resumes, [resumeId]: nextResume } } : {}),
+        });
       },
 
       updateBasicInfo: (data) => {
@@ -970,6 +974,7 @@ export const useResumeStore = create(
         });
       },
       addResume: (resume: ResumeData) => {
+        resume = upgradeDetailResume(resume);
         set((state) => ({
           resumes: {
             ...state.resumes,
@@ -1002,7 +1007,8 @@ export const useResumeStore = create(
       }),
       merge: (persistedState, currentState) => {
         const persisted = persistedState as Partial<PersistedResumeStore>;
-        const resumes = persisted.resumes ?? currentState.resumes;
+        const resumes = Object.fromEntries(Object.entries(persisted.resumes ?? currentState.resumes)
+          .map(([id, resume]) => [id, upgradeDetailResume(resume)]));
         const activeResumeId =
           persisted.activeResumeId ?? currentState.activeResumeId;
 

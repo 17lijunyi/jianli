@@ -180,6 +180,29 @@ export interface MenuSection {
   order: number;
 }
 
+/** Original-page layout references; the editable content lives in normal resume fields. */
+export interface DetailFragment {
+  sectionId: string;
+  itemId?: string;
+  fromBlock?: number;
+  toBlock?: number;
+  showSectionTitle?: boolean;
+  showItemHeader?: boolean;
+  startY?: number;
+}
+
+export interface DetailPageLayout {
+  number: number;
+  sourceHeight?: number;
+  fragments: DetailFragment[];
+}
+
+export interface DetailLayout {
+  version: 2;
+  sourceTemplateId: string;
+  pages: DetailPageLayout[];
+}
+
 export interface ResumeData {
   id: string;
   title: string;
@@ -198,6 +221,7 @@ export interface ResumeData {
   draggingProjectId: string | null;
   menuSections: MenuSection[];
   globalSettings: GlobalSettings;
+  detailLayout?: DetailLayout;
 }
 
 export interface ResumeStore {

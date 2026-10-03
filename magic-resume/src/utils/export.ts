@@ -551,13 +551,15 @@ export const exportToPdf = async ({
 
     hidePageBreakLines(clonedElement);
 
-    const [capturedStyles] = await Promise.all([
+    const [capturedStyles, fontCss] = await Promise.all([
       getOptimizedStyles(),
+      getFontFaceCss(selectedFontFamily),
       optimizeImages(clonedElement)
     ]);
 
     // 注入 PdfExport.tsx 中的样式增强
     const styles = `
+      ${fontCss}
       ${capturedStyles}
       html, body { background: white !important; background-color: white !important; }
       html, body, #${elementId} {
@@ -575,7 +577,7 @@ export const exportToPdf = async ({
       body: JSON.stringify({
         content: clonedElement.outerHTML,
         styles,
-        margin: pagePadding
+        margin: clonedElement.hasAttribute("data-detail-print-document") ? 0 : pagePadding
       }),
       mode: "cors",
       signal: AbortSignal.timeout(PDF_EXPORT_CONFIG.TIMEOUT)

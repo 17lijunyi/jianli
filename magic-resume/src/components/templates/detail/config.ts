@@ -1,4 +1,5 @@
 import type { ResumeTemplate } from "@/types/template";
+import { getDetailPreset } from "./presets";
 
 const sources = [
   ["detail-ai-product", "AI 产品经理", "以个人优势、工作经历和项目成果展开的 AI 产品经理简历", 3, "right"],
@@ -22,12 +23,12 @@ export const detailConfigs: ResumeTemplate[] = sources.map(
     category: "detail",
     pageCount,
     colorScheme: {
-      primary: id === "detail-graduate-fde" ? "#22394e" : "#171717",
+      primary: id === "detail-graduate-fde" ? "#4d6273" : "#171717",
       secondary: "#737373",
       background: "#ffffff",
       text: "#171717",
     },
-    spacing: { sectionGap: 8, itemGap: id === "detail-mechanical-transition" ? 2 : 3, contentPadding: 36 },
+    spacing: { sectionGap: getDetailPreset(id).sectionGap, itemGap: getDetailPreset(id).paragraphGap, contentPadding: getDetailPreset(id).pagePadding },
     basic: { layout },
     availableSections: ["skills", "experience", "projects", "education", "selfEvaluation", "certificates"],
   }),
