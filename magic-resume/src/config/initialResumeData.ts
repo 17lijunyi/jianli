@@ -17,11 +17,11 @@ const initialGlobalSettings: GlobalSettings = {
 export const initialResumeState = {
   title: "新建简历",
   basic: {
-    name: "宋哈娜",
+    name: "简小励",
     title: "高级前端工程师",
     employementStatus: "离职",
-    email: "zhangsan@example.com",
-    phone: "13800138000",
+    email: "jianxiaoli@example.com",
+    phone: "13800000000",
     location: "北京市朝阳区",
     birthDate: "2025-01",
     fieldOrder: DEFAULT_FIELD_ORDER,
@@ -35,10 +35,10 @@ export const initialResumeState = {
     photoConfig: DEFAULT_CONFIG,
     customFields: [
       {
-        id: "personal",
-        label: "个人网站",
-        value: "https://zhangsan.dev",
-        icon: "Globe",
+        id: "wechat",
+        label: "微信",
+        value: "jianxiaoli",
+        icon: "MessageCircle",
       },
     ],
     photo: "/avatar.png",
@@ -174,11 +174,11 @@ export const initialResumeState = {
 export const initialResumeStateEn = {
   title: "New Resume",
   basic: {
-    name: "Dva",
+    name: "简小励",
     title: "Senior Frontend Engineer",
     employementStatus: "Available",
-    email: "john.smith@123.com",
-    phone: "555-123-4567",
+    email: "jianxiaoli@example.com",
+    phone: "13800000000",
     location: "San Francisco, CA",
     birthDate: "",
     fieldOrder: DEFAULT_FIELD_ORDER,
@@ -190,7 +190,9 @@ export const initialResumeStateEn = {
       location: "MapPin",
     },
     photoConfig: DEFAULT_CONFIG,
-    customFields: [],
+    customFields: [
+      { id: "wechat", label: "微信", value: "jianxiaoli", icon: "MessageCircle" },
+    ],
     photo: "/avatar.png",
     githubKey: "",
     githubUseName: "",

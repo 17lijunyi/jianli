@@ -1,112 +1,61 @@
-/* Modified for 简励 by 17lijunyi, 2026-09-30. See root NOTICE and MODIFICATIONS.md. */
-import { ImageIcon, Layout, PanelsLeftBottom } from "lucide-react";
-import { motion } from "framer-motion";
+/* Modified for 简励 by 17lijunyi, 2026-10-03. See root NOTICE and MODIFICATIONS.md. */
+import { useMemo } from "react";
+import { PanelsLeftBottom } from "lucide-react";
 import { useTranslations, useLocale } from "@/i18n/compat/client";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet-no-overlay";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet-no-overlay";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
 import { DEFAULT_TEMPLATES } from "@/config";
 import { useResumeStore } from "@/store/useResumeStore";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { useTemplateSnapshots } from "@/hooks/useTemplateSnapshots";
-
-type TemplateItem = (typeof DEFAULT_TEMPLATES)[number];
-
-interface TemplatePreviewProps {
-  template: TemplateItem;
-  isActive: boolean;
-  snapshotSrc: string | null;
-  onSelect: (templateId: string) => void;
-}
-
-const TemplatePreview = ({
-  template,
-  isActive,
-  snapshotSrc,
-  onSelect,
-}: TemplatePreviewProps) => {
-  return (
-    <button
-      onClick={() => onSelect(template.id)}
-      className={cn(
-        "relative group rounded-lg overflow-hidden border-2 transition-all duration-200 hover:scale-[1.02] text-left",
-        isActive
-          ? "border-primary dark:border-primary shadow-lg dark:shadow-primary/30"
-          : "border-gray-100 hover:border-gray-200 dark:border-neutral-800 dark:hover:border-neutral-700"
-      )}
-    >
-      <div className="relative aspect-[210/297] w-full overflow-hidden bg-gray-50 dark:bg-gray-900">
-        {snapshotSrc ? (
-          <img
-            src={snapshotSrc}
-            alt={template.name}
-            className="h-full w-full object-cover object-top"
-            loading="eager"
-            draggable={false}
-          />
-        ) : (
-          <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-gray-50 to-gray-100 text-gray-500 dark:from-neutral-900 dark:to-neutral-950 dark:text-neutral-400">
-            <ImageIcon className="h-8 w-8" />
-            <span className="px-4 text-center text-sm font-medium">
-              {template.name}
-            </span>
-          </div>
-        )}
-      </div>
-      {isActive && (
-        <motion.div
-          layoutId="template-selected"
-          className="absolute inset-0 z-20 flex items-center justify-center bg-black/10 dark:bg-black/40 pointer-events-none"
-        >
-          <Layout className="h-8 w-8 text-primary shadow-sm" />
-        </motion.div>
-      )}
-    </button>
-  );
-};
+import TemplateDocumentPreview from "@/components/preview/TemplateDocumentPreview";
+import { createTemplatePreviewData, isTemplatePreviewLocale } from "@/lib/templatePreview";
+import { TEMPLATE_CATEGORIES, getTemplateCategory, getTemplateLabel } from "@/lib/templateCatalog";
 
 const TemplateSheet = () => {
   const t = useTranslations("templates");
-  const locale = useLocale();
+  const templateT = useTranslations("dashboard.templates");
+  const currentLocale = useLocale();
+  const locale = isTemplatePreviewLocale(currentLocale) ? currentLocale : "zh";
   const { activeResume, setTemplate } = useResumeStore();
-  const { snapshotMap } = useTemplateSnapshots(locale);
-
-  const currentTemplate =
-    DEFAULT_TEMPLATES.find((template) => template.id === activeResume?.templateId) ||
-    DEFAULT_TEMPLATES[0];
+  const previews = useMemo(() => Object.fromEntries(
+    DEFAULT_TEMPLATES.map((template) => [template.id, createTemplatePreviewData(template, locale)])
+  ), [locale]);
+  const currentTemplate = DEFAULT_TEMPLATES.find((template) => template.id === activeResume?.templateId) || DEFAULT_TEMPLATES[0];
 
   return (
     <Sheet>
       <SheetTrigger asChild>
         <button type="button" aria-label={t("switchTemplate")}><PanelsLeftBottom size={20} /></button>
       </SheetTrigger>
-      <SheetContent side="left" forceMount className="template-sheet w-1/2 sm:max-w-1/2">
-        <SheetHeader>
-          <SheetTitle>{t("switchTemplate")}</SheetTitle>
-        </SheetHeader>
-        <SheetDescription />
-
-        <div className="mt-4 h-[calc(100vh-8rem)]">
-          <ScrollArea className="h-full w-full pr-4">
-            <div className="grid grid-cols-4 gap-4 pb-8">
-              {DEFAULT_TEMPLATES.map((template) => (
-                <TemplatePreview
-                  key={template.id}
-                  template={template}
-                  isActive={template.id === currentTemplate.id}
-                  snapshotSrc={snapshotMap[template.id]}
-                  onSelect={setTemplate}
-                />
-              ))}
-            </div>
-          </ScrollArea>
-        </div>
+      <SheetContent side="left" className="template-sheet w-1/2 sm:max-w-1/2 flex flex-col">
+        <SheetHeader><SheetTitle>{t("switchTemplate")}</SheetTitle></SheetHeader>
+        <SheetDescription>{locale === "en" ? "Switching layouts keeps your current content. Create a resume from the template library to use a complete example." : "切换版式会保留当前简历内容。如需使用完整示例，请从模板库新建简历。"}</SheetDescription>
+        <Tabs defaultValue={getTemplateCategory(currentTemplate)} className="mt-4 flex flex-1 min-h-0 flex-col">
+          <TabsList className="h-auto shrink-0 self-start rounded-full mb-3 p-1" aria-label="模板专栏">
+            {TEMPLATE_CATEGORIES.map((category) => (
+              <TabsTrigger key={category.id} value={category.id} className="rounded-full px-3 py-2">
+                {category.label}<span className="ml-1 opacity-60">{DEFAULT_TEMPLATES.filter((template) => getTemplateCategory(template) === category.id).length}</span>
+              </TabsTrigger>
+            ))}
+          </TabsList>
+          {TEMPLATE_CATEGORIES.map((category) => (
+            <TabsContent key={category.id} value={category.id} className="min-h-0 flex-col data-[state=active]:flex data-[state=active]:flex-1 data-[state=inactive]:hidden">
+              <ScrollArea className="flex-1 min-h-0 w-full pr-4">
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 pb-8">
+                  {DEFAULT_TEMPLATES.filter((template) => getTemplateCategory(template) === category.id).map((template) => (
+                    <button key={template.id} type="button" onClick={() => setTemplate(template.id)} aria-label={getTemplateLabel(template, templateT)} aria-pressed={template.id === currentTemplate.id} className="text-left">
+                      <div className={cn("aspect-[210/297] overflow-hidden rounded-lg border-2 bg-white transition-colors", template.id === currentTemplate.id ? "border-primary shadow-md" : "border-gray-100 dark:border-neutral-800 hover:border-primary/40")}>
+                        <TemplateDocumentPreview data={previews[template.id]} template={template} firstPageOnly />
+                      </div>
+                      <div className="mt-2 text-xs text-center">{getTemplateLabel(template, templateT)}</div>
+                    </button>
+                  ))}
+                </div>
+              </ScrollArea>
+            </TabsContent>
+          ))}
+        </Tabs>
       </SheetContent>
     </Sheet>
   );

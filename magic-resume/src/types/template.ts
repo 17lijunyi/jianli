@@ -6,6 +6,9 @@ export interface ResumeTemplate {
   description: string;
   thumbnail: string;
   layout: string;
+  category?: "standard" | "detail";
+  /** Original page count for the bundled, editable sample. */
+  pageCount?: number;
   colorScheme: {
     primary: string;
     secondary: string;

@@ -1,8 +1,5 @@
 import { DEFAULT_TEMPLATES } from "@/config";
-import {
-  initialResumeState,
-  initialResumeStateEn,
-} from "@/config/initialResumeData";
+import { getTemplateSeed } from "@/config/templateSeeds";
 import type { ResumeData } from "@/types/resume";
 import type { ResumeTemplate } from "@/types/template";
 
@@ -41,14 +38,17 @@ export const getTemplateById = (templateId: string | undefined): ResumeTemplate 
   DEFAULT_TEMPLATES.find((template) => template.id === templateId) ??
   DEFAULT_TEMPLATES[0];
 
-export const getTemplatePreviewBaseData = (locale: TemplatePreviewLocale) =>
-  locale === "en" ? initialResumeStateEn : initialResumeState;
+export const getTemplatePreviewBaseData = (
+  locale: TemplatePreviewLocale,
+  templateId?: string
+) => getTemplateSeed(templateId, locale);
 
 export const createTemplatePreviewData = (
   template: ResumeTemplate,
-  locale: TemplatePreviewLocale
+  locale: TemplatePreviewLocale,
+  selectedColor?: string
 ): ResumeData => {
-  const baseData = getTemplatePreviewBaseData(locale);
+  const baseData = getTemplatePreviewBaseData(locale, template.id);
 
   return {
     ...baseData,
@@ -58,7 +58,7 @@ export const createTemplatePreviewData = (
     updatedAt: new Date(0).toISOString(),
     globalSettings: {
       ...baseData.globalSettings,
-      themeColor: template.colorScheme.primary,
+      themeColor: selectedColor || template.colorScheme.primary,
       sectionSpacing: template.spacing.sectionGap,
       paragraphSpacing: template.spacing.itemGap,
       pagePadding: template.spacing.contentPadding,

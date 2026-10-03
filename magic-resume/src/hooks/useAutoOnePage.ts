@@ -1,5 +1,5 @@
 import { useLayoutEffect, useState, type RefObject } from "react";
-import { A4_HEIGHT_PX, RESUME_CONTENT_SELECTOR } from "@/utils/resumeLayout";
+import { A4_HEIGHT_PX, RESUME_CONTENT_SELECTOR, syncExplicitResumePages } from "@/utils/resumeLayout";
 
 const MIN_SCALE = 0.9;
 
@@ -56,9 +56,11 @@ export function useAutoOnePage({
     let frameId: number | undefined;
     const measure = () => {
       frameId = undefined;
+      syncExplicitResumePages(measurement);
       const availableHeight = A4_HEIGHT_PX - 2 * pagePadding;
       const naturalHeight = parseFloat(getComputedStyle(measuredContent).height);
-      const scaleFactor = enabled && naturalHeight > availableHeight
+      const allowOnePage = enabled && !measuredContent.querySelector("[data-explicit-resume-pages]");
+      const scaleFactor = allowOnePage && naturalHeight > availableHeight
         ? Math.max(MIN_SCALE, availableHeight / naturalHeight)
         : 1;
 
@@ -74,7 +76,7 @@ export function useAutoOnePage({
         contentHeight: renderedHeight + 2 * pagePadding,
         scaleFactor,
         isScaled: scaleFactor < 1,
-        cannotFit: enabled && renderedHeight > availableHeight + 0.5,
+        cannotFit: allowOnePage && renderedHeight > availableHeight + 0.5,
       };
       setLayout((previous) =>
         previous.contentHeight === next.contentHeight &&

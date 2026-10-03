@@ -15,11 +15,10 @@ import {
 } from "../types/resume";
 import { DEFAULT_TEMPLATES } from "@/config";
 import {
-  initialResumeState,
-  initialResumeStateEn,
   blankResumeState,
   blankResumeStateEn,
 } from "@/config/initialResumeData";
+import { getTemplateSeed } from "@/config/templateSeeds";
 import { generateUUID } from "@/utils/uuid";
 import {
   HISTORY_LIMIT,
@@ -304,15 +303,15 @@ export const useResumeStore = create(
         let initialResumeData: any;
         if (isBlank) {
           initialResumeData =
-            locale === "en" ? blankResumeStateEn : blankResumeState;
+            structuredClone(locale === "en" ? blankResumeStateEn : blankResumeState);
         } else {
           initialResumeData =
-            locale === "en" ? initialResumeStateEn : initialResumeState;
+            getTemplateSeed(templateId, locale);
         }
 
         const id = generateUUID();
         const template = templateId
-          ? DEFAULT_TEMPLATES.find((t) => t.id === templateId)
+          ? DEFAULT_TEMPLATES.find((t) => t.id === templateId) ?? DEFAULT_TEMPLATES[0]
           : DEFAULT_TEMPLATES[0];
 
         const newResume: ResumeData = {
@@ -320,7 +319,15 @@ export const useResumeStore = create(
           id,
           createdAt: new Date().toISOString(),
           updatedAt: new Date().toISOString(),
-          templateId: template?.id,
+          templateId: template.id,
+          globalSettings: {
+            ...initialResumeData.globalSettings,
+            themeColor: template.colorScheme.primary,
+            sectionSpacing: template.spacing.sectionGap,
+            paragraphSpacing: template.spacing.itemGap,
+            pagePadding: template.spacing.contentPadding,
+          },
+          basic: { ...initialResumeData.basic, layout: template.basic.layout },
           title: `${locale === "en" ? "New Resume" : "新建简历"} ${id.slice(
             0,
             6

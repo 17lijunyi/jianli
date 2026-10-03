@@ -1,7 +1,6 @@
 /* Modified for 简励 by 17lijunyi, 2026-09-30. See root NOTICE and MODIFICATIONS.md. */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale, useTranslations } from "@/i18n/compat/client";
-import { motion } from "framer-motion";
 import { useRouter } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 import { DEFAULT_TEMPLATES } from "@/config";
@@ -9,13 +8,12 @@ import { useResumeStore } from "@/store/useResumeStore";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import ResumeTemplateComponent from "@/components/templates";
-import { initialResumeState, initialResumeStateEn } from "@/config/initialResumeData";
+import TemplateDocumentPreview from "@/components/preview/TemplateDocumentPreview";
+import { createTemplatePreviewData, isTemplatePreviewLocale } from "@/lib/templatePreview";
+import { TEMPLATE_CATEGORIES, getTemplateCategory, getTemplateLabel } from "@/lib/templateCatalog";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import type { ResumeTemplate } from "@/types/template";
-import { normalizeFontFamily } from "@/utils/fonts";
 
-const A4_WIDTH_PX = 793.700787;
-const PREVIEW_MODAL_SCALE = 0.529166667;
 
 const PRESET_COLORS = [
   { name: "default", value: "" },
@@ -28,42 +26,11 @@ const PRESET_COLORS = [
   { name: "black", value: "#000000" },
 ];
 
-const getTemplateKey = (templateId: string) =>
-  templateId === "left-right" ? "leftRight" : templateId;
-
-type TemplatePreviewBaseData =
-  | typeof initialResumeState
-  | typeof initialResumeStateEn;
-
-const buildTemplatePreviewData = (
-  baseData: TemplatePreviewBaseData,
-  template: ResumeTemplate,
-  selectedColor: string,
-  mockId: string
-) =>
-({
-  ...baseData,
-  id: mockId,
-  templateId: template.id,
-  globalSettings: {
-    ...baseData.globalSettings,
-    themeColor: selectedColor || template.colorScheme.primary,
-    sectionSpacing: template.spacing.sectionGap,
-    paragraphSpacing: template.spacing.itemGap,
-    pagePadding: template.spacing.contentPadding,
-  },
-  basic: {
-    ...baseData.basic,
-    layout: template.basic.layout,
-  },
-} as any);
-
 interface TemplateCardItemProps {
-  index: number;
   template: ResumeTemplate;
   templateName: string;
   templateDescription: string;
-  baseData: TemplatePreviewBaseData;
+  locale: "zh" | "en";
   selectedColor: string;
   onPreview: () => void;
   onUseTemplate: () => void;
@@ -72,52 +39,25 @@ interface TemplateCardItemProps {
 }
 
 const TemplateCardItem = ({
-  index,
   template,
   templateName,
   templateDescription,
-  baseData,
+  locale,
   selectedColor,
   onPreview,
   onUseTemplate,
   previewLabel,
   useTemplateLabel,
 }: TemplateCardItemProps) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [scale, setScale] = useState(0.24);
-
-  useEffect(() => {
-    if (!containerRef.current) return;
-
-    const observer = new ResizeObserver((entries) => {
-      const { width } = entries[0].contentRect;
-      if (width > 0) {
-        setScale(width / A4_WIDTH_PX);
-      }
-    });
-
-    observer.observe(containerRef.current);
-    return () => observer.disconnect();
-  }, []);
-
-  const previewData = buildTemplatePreviewData(
-    baseData,
-    template,
-    selectedColor,
-    `template-preview-${template.id}`
+  const previewData = useMemo(
+    () => createTemplatePreviewData(template, locale, selectedColor),
+    [template, locale, selectedColor]
   );
 
   return (
     <article className="template-gallery-card">
       <button type="button" className="resume-paper-cover template-paper-cover" onClick={onPreview} aria-label={`${previewLabel} ${templateName}`}>
-        <div ref={containerRef} className="absolute inset-0 pointer-events-none">
-          <div className="resume-preview absolute top-0 left-0" style={{
-            width: "210mm", minHeight: "297mm", transform: `scale(${scale})`, transformOrigin: "top left",
-            padding: `${template.spacing.contentPadding}px`, fontFamily: normalizeFontFamily(previewData.globalSettings?.fontFamily), textAlign: "left",
-          }}>
-            <ResumeTemplateComponent data={previewData} template={template}/>
-          </div>
-        </div>
+        <TemplateDocumentPreview data={previewData} template={template} firstPageOnly />
       </button>
       <div className="template-card-caption"><h3>{templateName}</h3><p title={templateDescription}>{templateDescription}</p></div>
       <div className="template-card-actions">
@@ -130,7 +70,8 @@ const TemplateCardItem = ({
 
 const TemplatesPage = () => {
   const t = useTranslations("dashboard.templates");
-  const locale = useLocale();
+  const currentLocale = useLocale();
+  const locale = isTemplatePreviewLocale(currentLocale) ? currentLocale : "zh";
   const router = useRouter();
   const createResume = useResumeStore((state) => state.createResume);
   const [previewTemplate, setPreviewTemplate] = useState<string | null>(null);
@@ -160,10 +101,14 @@ const TemplatesPage = () => {
     }
   };
 
-  const baseData = locale === "en" ? initialResumeStateEn : initialResumeState;
   const activePreviewTemplate =
     DEFAULT_TEMPLATES.find((template) => template.id === previewTemplate) ??
     null;
+
+  const activePreviewData = useMemo(
+    () => activePreviewTemplate ? createTemplatePreviewData(activePreviewTemplate, locale, selectedColor) : null,
+    [activePreviewTemplate, locale, selectedColor]
+  );
 
   const handleCreateResume = (templateId: string) => {
     const template = DEFAULT_TEMPLATES.find((entry) => entry.id === templateId);
@@ -230,26 +175,36 @@ const TemplatesPage = () => {
             </div>
           </div>
 
-          <div className="template-gallery">
-            {DEFAULT_TEMPLATES.map((template, index) => {
-              const templateKey = getTemplateKey(template.id);
-              return (
-                <TemplateCardItem
-                  key={template.id}
-                  index={index}
-                  template={template}
-                  templateName={t(`${templateKey}.name`)}
-                  templateDescription={t(`${templateKey}.description`)}
-                  baseData={baseData}
-                  selectedColor={selectedColor}
-                  onPreview={() => setPreviewTemplate(template.id)}
-                  onUseTemplate={() => handleCreateResume(template.id)}
-                  previewLabel={t("preview")}
-                  useTemplateLabel={t("useTemplate")}
-                />
-              );
-            })}
-          </div>
+          <Tabs defaultValue="standard">
+            <TabsList className="mb-6 h-auto rounded-full p-1" aria-label="模板专栏">
+              {TEMPLATE_CATEGORIES.map((category) => (
+                <TabsTrigger key={category.id} value={category.id} className="rounded-full px-5 py-2.5">
+                  {category.label}
+                  <span className="ml-2 text-xs opacity-60">{DEFAULT_TEMPLATES.filter((template) => getTemplateCategory(template) === category.id).length}</span>
+                </TabsTrigger>
+              ))}
+            </TabsList>
+            {TEMPLATE_CATEGORIES.map((category) => (
+              <TabsContent key={category.id} value={category.id}>
+                <div className="template-gallery">
+                  {DEFAULT_TEMPLATES.filter((template) => getTemplateCategory(template) === category.id).map((template) => (
+                    <TemplateCardItem
+                      key={template.id}
+                      template={template}
+                      templateName={getTemplateLabel(template, t)}
+                      templateDescription={getTemplateLabel(template, t, "description")}
+                      locale={locale}
+                      selectedColor={selectedColor}
+                      onPreview={() => setPreviewTemplate(template.id)}
+                      onUseTemplate={() => handleCreateResume(template.id)}
+                      previewLabel={t("preview")}
+                      useTemplateLabel={t("useTemplate")}
+                    />
+                  ))}
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
 
           <Dialog
             open={!!previewTemplate}
@@ -257,48 +212,16 @@ const TemplatesPage = () => {
               if (!open) setPreviewTemplate(null);
             }}
           >
-            {activePreviewTemplate && (
-              <DialogContent className="template-preview-dialog max-w-[680px] p-0 overflow-auto border-0 shadow-lg rounded-xl bg-white dark:bg-gray-900">
+            {activePreviewTemplate && activePreviewData && (
+              <DialogContent className="template-preview-dialog max-w-[680px] max-h-[calc(100dvh-80px)] p-0 overflow-auto border-0 shadow-lg rounded-xl bg-white dark:bg-gray-900">
                 <div className="flex flex-col">
                   <div className="border-b border-gray-100 dark:border-gray-800 px-4 py-4">
                     <DialogTitle className="text-lg font-medium">
-                      {t(`${getTemplateKey(activePreviewTemplate.id)}.name`)}
+                      {getTemplateLabel(activePreviewTemplate, t)}
                     </DialogTitle>
                   </div>
-                  <div className="overflow-hidden flex items-center justify-center bg-gray-50 dark:bg-gray-950 py-8 pointer-events-none">
-                    <div
-                      className="relative bg-white shadow-md ring-1 ring-gray-200/50 overflow-hidden"
-                      style={{ width: "420px", height: "594px" }}
-                    >
-                      <div
-                        className="resume-preview absolute top-0 left-0 bg-white"
-                        style={{
-                          width: "210mm",
-                          height: "297mm",
-                          transform: `scale(${PREVIEW_MODAL_SCALE})`,
-                          transformOrigin: "top left",
-                          padding: `${activePreviewTemplate.spacing.contentPadding}px`,
-                          fontFamily: normalizeFontFamily(
-                            buildTemplatePreviewData(
-                              baseData,
-                              activePreviewTemplate,
-                              selectedColor,
-                              "template-preview-modal"
-                            ).globalSettings?.fontFamily
-                          ),
-                        }}
-                      >
-                        <ResumeTemplateComponent
-                          data={buildTemplatePreviewData(
-                            baseData,
-                            activePreviewTemplate,
-                            selectedColor,
-                            "preview-mock-id-large"
-                          )}
-                          template={activePreviewTemplate}
-                        />
-                      </div>
-                    </div>
+                  <div className="bg-gray-50 dark:bg-gray-950 p-4 sm:p-8">
+                    <TemplateDocumentPreview data={activePreviewData} template={activePreviewTemplate} />
                   </div>
                   <div className="p-3 pt-2 border-t border-gray-100 dark:border-gray-800 flex justify-center">
                     <Button

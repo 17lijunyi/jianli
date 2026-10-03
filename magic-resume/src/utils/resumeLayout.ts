@@ -1,6 +1,22 @@
 export const A4_HEIGHT_PX = 297 * 96 / 25.4;
 export const RESUME_CONTENT_SELECTOR = "[data-resume-content]";
 
+/** Keep the next original page on an A4 boundary after a user adds more text. */
+export function syncExplicitResumePages(root: HTMLElement): void {
+  root.querySelectorAll<HTMLElement>("[data-detail-page]").forEach((page) => {
+    const body = page.querySelector<HTMLElement>("[data-detail-page-body]");
+    const pageHeight = Number(page.dataset.detailPageHeight);
+    if (!body || !Number.isFinite(pageHeight) || pageHeight <= 0) return;
+    // Computed height is in document CSS pixels; getBoundingClientRect would
+    // accidentally include the presentation scale in the gallery/editor.
+    const height = parseFloat(getComputedStyle(body).height) || body.scrollHeight;
+    const pageCount = Math.max(1, Math.ceil(height / pageHeight));
+    const minHeight = `${pageCount * pageHeight}px`;
+    if (page.style.minHeight !== minHeight) page.style.minHeight = minHeight;
+    page.dataset.detailPhysicalPages = String(pageCount);
+  });
+}
+
 // 同一份规则用于预览、测量副本和导出，避免视口高度改变文档排版。
 export const RESUME_LAYOUT_CSS = `
   [data-resume-document] .min-h-screen,

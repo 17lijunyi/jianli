@@ -2,6 +2,8 @@
 import React, { useMemo } from "react";
 import { useParams } from "@tanstack/react-router";
 import ResumeTemplateComponent from "../templates";
+import TemplateDocumentPreview from "./TemplateDocumentPreview";
+import { RESUME_LAYOUT_CSS } from "@/utils/resumeLayout";
 import { cn } from "../../lib/utils";
 import { normalizeFontFamily } from "@/utils/fonts";
 import {
@@ -45,6 +47,14 @@ const IframeTemplateViewer = () => {
     mockData.globalSettings?.fontFamily
   );
 
+  if (!isSnapshotMode) {
+    return (
+      <div className="min-h-screen bg-gray-100 p-4">
+        <TemplateDocumentPreview data={mockData} template={template} maxWidth={TEMPLATE_PREVIEW_WIDTH_PX} />
+      </div>
+    );
+  }
+
   return (
     <div
       className={cn(
@@ -54,6 +64,7 @@ const IframeTemplateViewer = () => {
     >
       <div
         {...{ [TEMPLATE_SNAPSHOT_ROOT_ATTRIBUTE]: "" }}
+        data-resume-document
         className={cn(
           "bg-white relative origin-top-left",
           isSnapshotMode ? "" : "mx-auto"
@@ -70,7 +81,10 @@ const IframeTemplateViewer = () => {
           padding: `${template.spacing.contentPadding}px`,
         }}
       >
-        <ResumeTemplateComponent data={mockData} template={template} />
+        <style>{RESUME_LAYOUT_CSS}</style>
+        <div data-resume-content style={{ width: "100%", display: "flow-root" }}>
+          <ResumeTemplateComponent data={mockData} template={template} />
+        </div>
       </div>
     </div>
   );

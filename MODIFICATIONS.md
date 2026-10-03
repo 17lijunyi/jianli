@@ -48,3 +48,32 @@
 本公开快照不包含上游部署工作流、本机环境文件、用户数据、备份或测试导出。前端依赖和核心简历业务沿用上游。
 
 发布构建补充：`magic-resume/package.json` 固定为已验证的 pnpm 11.19.0，与 `pnpm-workspace.yaml` 的构建依赖设置一致。
+
+## 2026-10-03：模板专栏与完整内容示例
+
+模板库、新建弹窗和编辑器模板侧栏拆分为「简历模版」与「简历细节模版」，各 9 款。新增 9 份共 28 页的可编辑内容示例，保留工作、项目和教育等完整正文；姓名、联系方式和照片统一为示例资料。仅新建模板使用新资料，不迁移或覆盖已有简历。
+
+新增文件：
+
+- `magic-resume/src/components/preview/TemplateDocumentPreview.tsx`
+- `magic-resume/src/components/templates/detail/`
+- `magic-resume/src/config/detailTemplates.json`
+- `magic-resume/src/config/templateSeeds.ts`
+- `magic-resume/src/lib/templateCatalog.ts`
+- `magic-resume/tests/template-library.test.ts`
+
+修改文件：
+
+- `magic-resume/src/app/app/dashboard/resumes/CreateResumeModal.tsx`
+- `magic-resume/src/app/app/dashboard/templates/page.tsx`
+- `magic-resume/src/components/preview/IframeTemplateViewer.tsx`
+- `magic-resume/src/components/shared/TemplateSheet.tsx`
+- `magic-resume/src/components/templates/registry.ts`
+- `magic-resume/src/config/initialResumeData.ts`
+- `magic-resume/src/hooks/useAutoOnePage.ts`
+- `magic-resume/src/lib/templatePreview.ts`
+- `magic-resume/src/store/useResumeStore.ts`
+- `magic-resume/src/types/template.ts`
+- `magic-resume/src/utils/resumeLayout.ts`
+
+验证：模板数据与切换回归 6 项通过；生产构建通过；九份模板导出 PDF 分别为 3、3、4、3、2、3、3、3、4 页，并核对 980 个正文段落与标题无遗漏；桌面独立数据回归覆盖编辑、保存、JSON/PDF 导出、导入、复制、删除及重启恢复。
